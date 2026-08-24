@@ -1,0 +1,11 @@
+# Quantumult X native rules converted from Sukka Ruleset.
+# Source: https://ruleset.skk.moe/List/non_ip/stream_biliintl.conf
+# Upstream: https://github.com/SukkaW/Surge
+# License: AGPL-3.0
+# Type: main; policy: proxy; rules: 6
+host, this_ruleset_is_made_by_sukkaw.ruleset.skk.moe, proxy
+host-suffix, bilibili.tv, proxy
+host-suffix, biliintl.com, proxy
+host, apm-misaka.biliapi.net, proxy
+host, upos-bstar-mirrorakam.akamaized.net, proxy
+host, upos-bstar1-mirrorakam.akamaized.net, proxy

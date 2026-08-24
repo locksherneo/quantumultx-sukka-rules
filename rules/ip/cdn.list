@@ -1,0 +1,8 @@
+# Quantumult X native rules converted from Sukka Ruleset.
+# Source: https://ruleset.skk.moe/List/ip/cdn.conf
+# Upstream: https://github.com/SukkaW/Surge
+# License: AGPL-3.0
+# Type: main; policy: direct; rules: 3
+ip-cidr, 162.159.200.1/32, direct
+ip-cidr, 162.159.200.123/32, direct
+ip-cidr, 185.199.108.0/22, direct

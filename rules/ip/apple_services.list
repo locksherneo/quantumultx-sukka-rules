@@ -1,0 +1,15 @@
+# Quantumult X native rules converted from Sukka Ruleset.
+# Source: https://ruleset.skk.moe/List/ip/apple_services.conf
+# Upstream: https://github.com/SukkaW/Surge
+# License: AGPL-3.0
+# Type: main; policy: proxy; rules: 10
+ip-cidr, 17.0.0.0/8, proxy
+ip-cidr, 63.92.224.0/19, proxy
+ip-cidr, 65.199.22.0/23, proxy
+ip-cidr, 139.178.128.0/18, proxy
+ip-cidr, 144.178.0.0/19, proxy
+ip-cidr, 144.178.36.0/22, proxy
+ip-cidr, 144.178.48.0/20, proxy
+ip-cidr, 192.35.50.0/24, proxy
+ip-cidr, 198.183.17.0/24, proxy
+ip-cidr, 205.180.175.0/24, proxy

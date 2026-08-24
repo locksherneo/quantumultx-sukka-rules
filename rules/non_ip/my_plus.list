@@ -1,0 +1,19 @@
+# Quantumult X native rules converted from Sukka Ruleset.
+# Source: https://ruleset.skk.moe/List/non_ip/my_plus.conf
+# Upstream: https://github.com/SukkaW/Surge
+# License: AGPL-3.0
+# Type: main; policy: proxy; rules: 14
+host-suffix, kxcdn.com, proxy
+host-suffix, sososo.io, proxy
+host-suffix, 18comic.org, proxy
+host-suffix, 18comic.vip, proxy
+host-suffix, azurefd.net, proxy
+host-suffix, akamaihd.net, proxy
+host-suffix, akamaized.net, proxy
+host, simpcraft.com, proxy
+host-suffix, vo.msecnd.net, proxy
+host-suffix, hentaiverse.org, proxy
+host, api.wakatime.com, proxy
+host, hv-monster-submit.skk.moe, proxy
+host-suffix, akamai-content-networks.com, proxy
+host, a1ewuiz2p7wdvw-ats.iot.us-west-2.amazonaws.com, proxy

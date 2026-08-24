@@ -1,0 +1,14 @@
+# Quantumult X native rules converted from Sukka Ruleset.
+# Source: https://ruleset.skk.moe/List/non_ip/download.conf
+# Upstream: https://github.com/SukkaW/Surge
+# License: AGPL-3.0
+# Type: main; policy: direct; rules: 9
+host-wildcard, download*.mediafire.com, direct
+host-wildcard, ftp.??.debian.org, direct
+host-wildcard, ftp.??.freebsd.org, direct
+host-wildcard, s3.*.backblazeb2.com, direct
+host-wildcard, *.s3.*.backblazeb2.com, direct
+host-wildcard, cdn-*.comaps.app, direct
+host-wildcard, cdn-*.comaps.tech, direct
+host-wildcard, cdn-*.organicmaps.app, direct
+host-wildcard, dl-*.mypikpak.com, direct

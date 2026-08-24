@@ -1,0 +1,1139 @@
+{
+  "branch": "main",
+  "deferred_ip_rules": 48,
+  "failed_sources": [],
+  "repository": "locksherneo/quantumultx-sukka-rules",
+  "rewrite_rules": 179,
+  "sources": [
+    {
+      "deferred_ip": 0,
+      "issues": {},
+      "license": "AGPL-3.0",
+      "policy": "direct",
+      "recovered_domains": 0,
+      "rewrite": 0,
+      "rules": 158,
+      "source": "domainset/apple_cdn",
+      "statistics": {
+        "markers_removed": 1,
+        "source_rule_lines": 159
+      }
+    },
+    {
+      "deferred_ip": 0,
+      "issues": {},
+      "license": "AGPL-3.0",
+      "policy": "direct",
+      "recovered_domains": 0,
+      "rewrite": 0,
+      "rules": 4631,
+      "source": "domainset/cdn",
+      "statistics": {
+        "markers_removed": 1,
+        "source_rule_lines": 4632
+      }
+    },
+    {
+      "deferred_ip": 0,
+      "issues": {},
+      "license": "AGPL-3.0",
+      "policy": "direct",
+      "recovered_domains": 0,
+      "rewrite": 0,
+      "rules": 1965,
+      "source": "domainset/download",
+      "statistics": {
+        "markers_removed": 1,
+        "source_rule_lines": 1966
+      }
+    },
+    {
+      "deferred_ip": 0,
+      "issues": {},
+      "license": "AGPL-3.0",
+      "policy": "direct",
+      "recovered_domains": 0,
+      "rewrite": 0,
+      "rules": 52,
+      "source": "domainset/game-download",
+      "statistics": {
+        "markers_removed": 1,
+        "source_rule_lines": 53
+      }
+    },
+    {
+      "deferred_ip": 0,
+      "issues": {},
+      "license": "AGPL-3.0",
+      "policy": "reject",
+      "recovered_domains": 0,
+      "rewrite": 0,
+      "rules": 6,
+      "source": "domainset/icloud_private_relay",
+      "statistics": {
+        "markers_removed": 1,
+        "source_rule_lines": 7
+      }
+    },
+    {
+      "deferred_ip": 0,
+      "issues": {},
+      "license": "AGPL-3.0",
+      "policy": "reject",
+      "recovered_domains": 0,
+      "rewrite": 0,
+      "rules": 135439,
+      "source": "domainset/reject",
+      "statistics": {
+        "markers_removed": 1,
+        "source_rule_lines": 135440
+      }
+    },
+    {
+      "deferred_ip": 0,
+      "issues": {},
+      "license": "AGPL-3.0",
+      "policy": "reject",
+      "recovered_domains": 0,
+      "rewrite": 0,
+      "rules": 75794,
+      "source": "domainset/reject_extra",
+      "statistics": {
+        "markers_removed": 1,
+        "source_rule_lines": 75795
+      }
+    },
+    {
+      "deferred_ip": 0,
+      "issues": {},
+      "license": "AGPL-3.0",
+      "policy": "reject",
+      "recovered_domains": 0,
+      "rewrite": 0,
+      "rules": 147457,
+      "source": "domainset/reject_phishing",
+      "statistics": {
+        "markers_removed": 1,
+        "source_rule_lines": 147458
+      }
+    },
+    {
+      "deferred_ip": 0,
+      "issues": {},
+      "license": "AGPL-3.0",
+      "policy": "direct",
+      "recovered_domains": 0,
+      "rewrite": 0,
+      "rules": 3346,
+      "source": "domainset/speedtest",
+      "statistics": {
+        "markers_removed": 2,
+        "source_rule_lines": 3348
+      }
+    },
+    {
+      "deferred_ip": 0,
+      "issues": {
+        "url_regex_policy_unsupported": [
+          "URL-REGEX,https://www\\.google\\.com/.*continue=https://gemini\\.google\\.com.+"
+        ]
+      },
+      "license": "AGPL-3.0",
+      "policy": "proxy",
+      "recovered_domains": 0,
+      "rewrite": 0,
+      "rules": 49,
+      "source": "non_ip/ai",
+      "statistics": {
+        "markers_removed": 1,
+        "source_rule_lines": 51,
+        "url_regex_policy_unsupported": 1
+      }
+    },
+    {
+      "deferred_ip": 0,
+      "issues": {},
+      "license": "AGPL-3.0",
+      "policy": "direct",
+      "recovered_domains": 0,
+      "rewrite": 0,
+      "rules": 0,
+      "source": "non_ip/apple_cdn",
+      "statistics": {
+        "upstream_deprecated": 1
+      }
+    },
+    {
+      "deferred_ip": 0,
+      "issues": {},
+      "license": "AGPL-3.0",
+      "policy": "direct",
+      "recovered_domains": 0,
+      "rewrite": 0,
+      "rules": 9,
+      "source": "non_ip/apple_cn",
+      "statistics": {
+        "markers_removed": 1,
+        "source_rule_lines": 10
+      }
+    },
+    {
+      "deferred_ip": 0,
+      "issues": {},
+      "license": "AGPL-3.0",
+      "policy": "proxy",
+      "recovered_domains": 0,
+      "rewrite": 0,
+      "rules": 5,
+      "source": "non_ip/apple_intelligence",
+      "statistics": {
+        "markers_removed": 1,
+        "source_rule_lines": 6
+      }
+    },
+    {
+      "deferred_ip": 1,
+      "issues": {
+        "no_resolve_not_supported": [
+          "IP-CIDR,17.0.0.0/8,no-resolve"
+        ],
+        "unsupported_process_name": [
+          "PROCESS-NAME,com.apple.geod",
+          "PROCESS-NAME,mapspushd",
+          "PROCESS-NAME,com.apple.Maps",
+          "PROCESS-NAME,apsd"
+        ]
+      },
+      "license": "AGPL-3.0",
+      "policy": "proxy",
+      "recovered_domains": 0,
+      "rewrite": 0,
+      "rules": 16,
+      "source": "non_ip/apple_services",
+      "statistics": {
+        "markers_removed": 1,
+        "no_resolve_not_supported": 1,
+        "source_rule_lines": 26,
+        "unsupported_process_name": 8
+      }
+    },
+    {
+      "deferred_ip": 0,
+      "issues": {},
+      "license": "AGPL-3.0",
+      "policy": "direct",
+      "recovered_domains": 0,
+      "rewrite": 0,
+      "rules": 83,
+      "source": "non_ip/cdn",
+      "statistics": {
+        "markers_removed": 1,
+        "source_rule_lines": 84
+      }
+    },
+    {
+      "deferred_ip": 0,
+      "issues": {
+        "unsupported_and": [
+          "AND,((DOMAIN-SUFFIX,sharepoint.com),(PROCESS-NAME,*CloudMounter))",
+          "AND,((DOMAIN-SUFFIX,sharepoint.com),(SRC-IP,10.0.0.0/8))",
+          "AND,((DOMAIN-SUFFIX,sharepoint.com),(SRC-IP,172.16.0.0/12))",
+          "AND,((DOMAIN-SUFFIX,sharepoint.com),(SRC-IP,192.168.0.0/16))"
+        ]
+      },
+      "license": "AGPL-3.0",
+      "policy": "proxy",
+      "recovered_domains": 0,
+      "rewrite": 0,
+      "rules": 0,
+      "source": "non_ip/cloudmounter",
+      "statistics": {
+        "markers_removed": 1,
+        "source_rule_lines": 41,
+        "unsupported_and": 40
+      }
+    },
+    {
+      "deferred_ip": 0,
+      "issues": {
+        "unsupported_process_name": [
+          "PROCESS-NAME,v2ray",
+          "PROCESS-NAME,xray",
+          "PROCESS-NAME,ss-local",
+          "PROCESS-NAME,clash"
+        ]
+      },
+      "license": "AGPL-3.0",
+      "policy": "direct",
+      "recovered_domains": 0,
+      "rewrite": 0,
+      "rules": 182,
+      "source": "non_ip/direct",
+      "statistics": {
+        "markers_removed": 1,
+        "source_rule_lines": 219,
+        "unsupported_process_name": 36
+      }
+    },
+    {
+      "deferred_ip": 0,
+      "issues": {},
+      "license": "AGPL-3.0",
+      "policy": "direct",
+      "recovered_domains": 0,
+      "rewrite": 0,
+      "rules": 868,
+      "source": "non_ip/domestic",
+      "statistics": {
+        "markers_removed": 1,
+        "source_rule_lines": 869
+      }
+    },
+    {
+      "deferred_ip": 0,
+      "issues": {
+        "url_regex_policy_unsupported": [
+          "URL-REGEX,^http://(.+)\\.gvt\\d\\.com/edgedl"
+        ]
+      },
+      "license": "AGPL-3.0",
+      "policy": "direct",
+      "recovered_domains": 0,
+      "rewrite": 0,
+      "rules": 9,
+      "source": "non_ip/download",
+      "statistics": {
+        "markers_removed": 1,
+        "source_rule_lines": 11,
+        "url_regex_policy_unsupported": 1
+      }
+    },
+    {
+      "deferred_ip": 0,
+      "issues": {},
+      "license": "AGPL-3.0",
+      "policy": "proxy",
+      "recovered_domains": 0,
+      "rewrite": 0,
+      "rules": 1,
+      "source": "non_ip/gitlab",
+      "statistics": {
+        "markers_removed": 1,
+        "source_rule_lines": 2
+      }
+    },
+    {
+      "deferred_ip": 0,
+      "issues": {},
+      "license": "AGPL-3.0",
+      "policy": "proxy",
+      "recovered_domains": 0,
+      "rewrite": 0,
+      "rules": 1269,
+      "source": "non_ip/global",
+      "statistics": {
+        "markers_removed": 1,
+        "source_rule_lines": 1270
+      }
+    },
+    {
+      "deferred_ip": 0,
+      "issues": {},
+      "license": "AGPL-3.0",
+      "policy": "proxy",
+      "recovered_domains": 0,
+      "rewrite": 0,
+      "rules": 0,
+      "source": "non_ip/global_plus",
+      "statistics": {
+        "upstream_deprecated": 1
+      }
+    },
+    {
+      "deferred_ip": 0,
+      "issues": {},
+      "license": "AGPL-3.0",
+      "policy": "direct",
+      "recovered_domains": 0,
+      "rewrite": 0,
+      "rules": 49,
+      "source": "non_ip/lan",
+      "statistics": {
+        "markers_removed": 1,
+        "source_rule_lines": 50
+      }
+    },
+    {
+      "deferred_ip": 0,
+      "issues": {},
+      "license": "AGPL-3.0",
+      "policy": "proxy",
+      "recovered_domains": 0,
+      "rewrite": 0,
+      "rules": 83,
+      "source": "non_ip/microsoft",
+      "statistics": {
+        "markers_removed": 1,
+        "source_rule_lines": 84
+      }
+    },
+    {
+      "deferred_ip": 0,
+      "issues": {
+        "url_regex_policy_unsupported": [
+          "URL-REGEX,^http://www\\.microsoft\\.com/pki/",
+          "URL-REGEX,^http://www\\.microsoft\\.com/pkiops/"
+        ]
+      },
+      "license": "AGPL-3.0",
+      "policy": "direct",
+      "recovered_domains": 0,
+      "rewrite": 0,
+      "rules": 52,
+      "source": "non_ip/microsoft_cdn",
+      "statistics": {
+        "markers_removed": 1,
+        "source_rule_lines": 55,
+        "url_regex_policy_unsupported": 2
+      }
+    },
+    {
+      "deferred_ip": 0,
+      "issues": {
+        "unsupported_process_name": [
+          "PROCESS-NAME,nmap"
+        ]
+      },
+      "license": "AGPL-3.0",
+      "policy": "direct",
+      "recovered_domains": 0,
+      "rewrite": 0,
+      "rules": 1,
+      "source": "non_ip/my_direct",
+      "statistics": {
+        "markers_removed": 1,
+        "source_rule_lines": 3,
+        "unsupported_process_name": 1
+      }
+    },
+    {
+      "deferred_ip": 0,
+      "issues": {},
+      "license": "AGPL-3.0",
+      "policy": "proxy",
+      "recovered_domains": 0,
+      "rewrite": 0,
+      "rules": 7,
+      "source": "non_ip/my_git",
+      "statistics": {
+        "markers_removed": 1,
+        "source_rule_lines": 8
+      }
+    },
+    {
+      "deferred_ip": 0,
+      "issues": {},
+      "license": "AGPL-3.0",
+      "policy": "proxy",
+      "recovered_domains": 0,
+      "rewrite": 0,
+      "rules": 14,
+      "source": "non_ip/my_plus",
+      "statistics": {
+        "markers_removed": 1,
+        "source_rule_lines": 15
+      }
+    },
+    {
+      "deferred_ip": 0,
+      "issues": {},
+      "license": "AGPL-3.0",
+      "policy": "proxy",
+      "recovered_domains": 0,
+      "rewrite": 0,
+      "rules": 16,
+      "source": "non_ip/my_proxy",
+      "statistics": {
+        "markers_removed": 1,
+        "source_rule_lines": 17
+      }
+    },
+    {
+      "deferred_ip": 0,
+      "issues": {
+        "unsupported_and": [
+          "AND,((DOMAIN-KEYWORD,genuine), (DOMAIN-KEYWORD,autodesk))"
+        ],
+        "unsupported_dest_port": [
+          "DEST-PORT,7680"
+        ],
+        "unsupported_process_name": [
+          "PROCESS-NAME,Tencent Lemon",
+          "PROCESS-NAME,LemonMonitor",
+          "PROCESS-NAME,LemonDaemon",
+          "PROCESS-NAME,LemonAgent"
+        ]
+      },
+      "license": "AGPL-3.0",
+      "policy": "reject",
+      "recovered_domains": 0,
+      "rewrite": 0,
+      "rules": 45,
+      "source": "non_ip/my_reject",
+      "statistics": {
+        "markers_removed": 1,
+        "source_rule_lines": 53,
+        "unsupported_and": 1,
+        "unsupported_dest_port": 1,
+        "unsupported_process_name": 5
+      }
+    },
+    {
+      "deferred_ip": 0,
+      "issues": {},
+      "license": "AGPL-3.0",
+      "policy": "proxy",
+      "recovered_domains": 0,
+      "rewrite": 0,
+      "rules": 13,
+      "source": "non_ip/my_tw",
+      "statistics": {
+        "markers_removed": 1,
+        "source_rule_lines": 14
+      }
+    },
+    {
+      "deferred_ip": 0,
+      "issues": {},
+      "license": "AGPL-3.0",
+      "policy": "proxy",
+      "recovered_domains": 0,
+      "rewrite": 0,
+      "rules": 6,
+      "source": "non_ip/my_us",
+      "statistics": {
+        "markers_removed": 1,
+        "source_rule_lines": 7
+      }
+    },
+    {
+      "deferred_ip": 0,
+      "issues": {},
+      "license": "AGPL-3.0",
+      "policy": "direct",
+      "recovered_domains": 0,
+      "rewrite": 0,
+      "rules": 4,
+      "source": "non_ip/neteasemusic",
+      "statistics": {
+        "markers_removed": 1,
+        "source_rule_lines": 5
+      }
+    },
+    {
+      "deferred_ip": 0,
+      "issues": {},
+      "license": "AGPL-3.0",
+      "policy": "reject",
+      "recovered_domains": 0,
+      "rewrite": 0,
+      "rules": 27,
+      "source": "non_ip/reject-drop",
+      "statistics": {
+        "markers_removed": 1,
+        "reject_action_normalized": 1,
+        "source_rule_lines": 28
+      }
+    },
+    {
+      "deferred_ip": 0,
+      "issues": {
+        "unsupported_and": [
+          "AND,((PROTOCOL,UDP), (DOMAIN-SUFFIX,googlevideo.com))"
+        ]
+      },
+      "license": "AGPL-3.0",
+      "policy": "reject",
+      "recovered_domains": 0,
+      "rewrite": 0,
+      "rules": 43,
+      "source": "non_ip/reject-no-drop",
+      "statistics": {
+        "markers_removed": 1,
+        "reject_action_normalized": 1,
+        "source_rule_lines": 45,
+        "unsupported_and": 1
+      }
+    },
+    {
+      "deferred_ip": 0,
+      "issues": {},
+      "license": "AGPL-3.0",
+      "policy": "reject",
+      "recovered_domains": 0,
+      "rewrite": 176,
+      "rules": 0,
+      "source": "non_ip/reject-url-regex",
+      "statistics": {
+        "markers_removed": 1,
+        "source_rule_lines": 177,
+        "url_regex_moved_to_rewrite": 176
+      }
+    },
+    {
+      "deferred_ip": 47,
+      "issues": {
+        "no_resolve_not_supported": [
+          "IP-CIDR,39.97.128.148/32,no-resolve",
+          "IP-CIDR,39.97.130.51/32,no-resolve",
+          "IP-CIDR,42.81.232.18/32,no-resolve",
+          "IP-CIDR,42.187.182.106/32,no-resolve"
+        ]
+      },
+      "license": "AGPL-3.0",
+      "policy": "reject",
+      "recovered_domains": 0,
+      "rewrite": 3,
+      "rules": 319,
+      "source": "non_ip/reject",
+      "statistics": {
+        "markers_removed": 1,
+        "no_resolve_not_supported": 47,
+        "source_rule_lines": 370,
+        "url_regex_moved_to_rewrite": 3
+      }
+    },
+    {
+      "deferred_ip": 0,
+      "issues": {
+        "unsupported_process_name": [
+          "PROCESS-NAME,SogouInput",
+          "PROCESS-NAME,SogouTaskManager",
+          "PROCESS-NAME,SogouServices"
+        ]
+      },
+      "license": "AGPL-3.0",
+      "policy": "direct",
+      "recovered_domains": 0,
+      "rewrite": 0,
+      "rules": 11,
+      "source": "non_ip/sogouinput",
+      "statistics": {
+        "markers_removed": 1,
+        "source_rule_lines": 15,
+        "unsupported_process_name": 3
+      }
+    },
+    {
+      "deferred_ip": 0,
+      "issues": {
+        "unsupported_process_name": [
+          "PROCESS-NAME,com.amazon.avod.thirdpartyclient",
+          "PROCESS-NAME,tv",
+          "PROCESS-NAME,music",
+          "PROCESS-NAME,com.bstar.intl"
+        ]
+      },
+      "license": "AGPL-3.0",
+      "policy": "proxy",
+      "recovered_domains": 0,
+      "rewrite": 0,
+      "rules": 321,
+      "source": "non_ip/stream",
+      "statistics": {
+        "markers_removed": 1,
+        "source_rule_lines": 336,
+        "unsupported_process_name": 14
+      }
+    },
+    {
+      "deferred_ip": 0,
+      "issues": {
+        "unsupported_process_name": [
+          "PROCESS-NAME,com.bstar.intl"
+        ]
+      },
+      "license": "AGPL-3.0",
+      "policy": "proxy",
+      "recovered_domains": 0,
+      "rewrite": 0,
+      "rules": 6,
+      "source": "non_ip/stream_biliintl",
+      "statistics": {
+        "source_rule_lines": 7,
+        "unsupported_process_name": 1
+      }
+    },
+    {
+      "deferred_ip": 0,
+      "issues": {},
+      "license": "AGPL-3.0",
+      "policy": "proxy",
+      "recovered_domains": 0,
+      "rewrite": 0,
+      "rules": 10,
+      "source": "non_ip/stream_eu",
+      "statistics": {
+        "markers_removed": 1,
+        "source_rule_lines": 11
+      }
+    },
+    {
+      "deferred_ip": 0,
+      "issues": {
+        "unsupported_process_name": [
+          "PROCESS-NAME,com.viu.pad",
+          "PROCESS-NAME,com.viu.phone",
+          "PROCESS-NAME,com.vuclip.viu",
+          "PROCESS-NAME,com.hktve.viutv"
+        ]
+      },
+      "license": "AGPL-3.0",
+      "policy": "proxy",
+      "recovered_domains": 0,
+      "rewrite": 0,
+      "rules": 31,
+      "source": "non_ip/stream_hk",
+      "statistics": {
+        "markers_removed": 1,
+        "source_rule_lines": 37,
+        "unsupported_process_name": 5
+      }
+    },
+    {
+      "deferred_ip": 0,
+      "issues": {},
+      "license": "AGPL-3.0",
+      "policy": "proxy",
+      "recovered_domains": 0,
+      "rewrite": 0,
+      "rules": 27,
+      "source": "non_ip/stream_jp",
+      "statistics": {
+        "markers_removed": 1,
+        "source_rule_lines": 28
+      }
+    },
+    {
+      "deferred_ip": 0,
+      "issues": {},
+      "license": "AGPL-3.0",
+      "policy": "proxy",
+      "recovered_domains": 0,
+      "rewrite": 0,
+      "rules": 3,
+      "source": "non_ip/stream_kr",
+      "statistics": {
+        "markers_removed": 1,
+        "source_rule_lines": 4
+      }
+    },
+    {
+      "deferred_ip": 0,
+      "issues": {
+        "unsupported_process_name": [
+          "PROCESS-NAME,com.linecorp.linetv"
+        ]
+      },
+      "license": "AGPL-3.0",
+      "policy": "proxy",
+      "recovered_domains": 0,
+      "rewrite": 0,
+      "rules": 37,
+      "source": "non_ip/stream_tw",
+      "statistics": {
+        "markers_removed": 1,
+        "source_rule_lines": 39,
+        "unsupported_process_name": 1
+      }
+    },
+    {
+      "deferred_ip": 0,
+      "issues": {
+        "unsupported_process_name": [
+          "PROCESS-NAME,com.hulu.plus"
+        ]
+      },
+      "license": "AGPL-3.0",
+      "policy": "proxy",
+      "recovered_domains": 0,
+      "rewrite": 0,
+      "rules": 51,
+      "source": "non_ip/stream_us",
+      "statistics": {
+        "markers_removed": 1,
+        "source_rule_lines": 53,
+        "unsupported_process_name": 1
+      }
+    },
+    {
+      "deferred_ip": 0,
+      "issues": {},
+      "license": "AGPL-3.0",
+      "policy": "proxy",
+      "recovered_domains": 0,
+      "rewrite": 0,
+      "rules": 14,
+      "source": "non_ip/telegram",
+      "statistics": {
+        "markers_removed": 1,
+        "source_rule_lines": 15
+      }
+    },
+    {
+      "deferred_ip": 0,
+      "issues": {
+        "no_resolve_not_supported": [
+          "IP-CIDR,4.151.200.38/32,no-resolve",
+          "IP-CIDR,4.155.146.196/32,no-resolve",
+          "IP-CIDR,4.197.172.116/32,no-resolve",
+          "IP-CIDR,4.217.235.100/32,no-resolve"
+        ]
+      },
+      "license": "AGPL-3.0",
+      "policy": "proxy",
+      "recovered_domains": 0,
+      "rewrite": 0,
+      "rules": 23,
+      "source": "ip/ai",
+      "statistics": {
+        "markers_removed": 1,
+        "no_resolve_not_supported": 23,
+        "source_rule_lines": 24
+      }
+    },
+    {
+      "deferred_ip": 0,
+      "issues": {
+        "no_resolve_not_supported": [
+          "IP-CIDR,17.0.0.0/8,no-resolve",
+          "IP-CIDR,63.92.224.0/19,no-resolve",
+          "IP-CIDR,65.199.22.0/23,no-resolve",
+          "IP-CIDR,139.178.128.0/18,no-resolve"
+        ]
+      },
+      "license": "AGPL-3.0",
+      "policy": "proxy",
+      "recovered_domains": 0,
+      "rewrite": 0,
+      "rules": 10,
+      "source": "ip/apple_services",
+      "statistics": {
+        "markers_removed": 1,
+        "no_resolve_not_supported": 10,
+        "source_rule_lines": 11
+      }
+    },
+    {
+      "deferred_ip": 0,
+      "issues": {},
+      "license": "AGPL-3.0",
+      "policy": "direct",
+      "recovered_domains": 0,
+      "rewrite": 0,
+      "rules": 3,
+      "source": "ip/cdn",
+      "statistics": {
+        "markers_removed": 1,
+        "source_rule_lines": 4
+      }
+    },
+    {
+      "deferred_ip": 0,
+      "issues": {},
+      "license": "CC BY-SA 2.0",
+      "policy": "direct",
+      "recovered_domains": 0,
+      "rewrite": 0,
+      "rules": 3916,
+      "source": "ip/china_ip",
+      "statistics": {
+        "markers_removed": 1,
+        "source_rule_lines": 3917
+      }
+    },
+    {
+      "deferred_ip": 0,
+      "issues": {},
+      "license": "AGPL-3.0",
+      "policy": "direct",
+      "recovered_domains": 0,
+      "rewrite": 0,
+      "rules": 1235,
+      "source": "ip/china_ip_ipv6",
+      "statistics": {
+        "markers_removed": 1,
+        "source_rule_lines": 1236
+      }
+    },
+    {
+      "deferred_ip": 0,
+      "issues": {
+        "no_resolve_not_supported": [
+          "IP-CIDR,140.205.1.0/24,no-resolve",
+          "IP-CIDR,162.14.0.0/18,no-resolve"
+        ]
+      },
+      "license": "AGPL-3.0",
+      "policy": "direct",
+      "recovered_domains": 0,
+      "rewrite": 0,
+      "rules": 2,
+      "source": "ip/domestic",
+      "statistics": {
+        "markers_removed": 1,
+        "no_resolve_not_supported": 2,
+        "source_rule_lines": 3
+      }
+    },
+    {
+      "deferred_ip": 0,
+      "issues": {
+        "no_resolve_not_supported": [
+          "IP-CIDR,66.203.126.0/23,no-resolve",
+          "IP-CIDR,94.24.36.0/23,no-resolve",
+          "IP-CIDR,162.208.16.0/24,no-resolve",
+          "IP-CIDR,185.206.24.0/22,no-resolve"
+        ]
+      },
+      "license": "AGPL-3.0",
+      "policy": "direct",
+      "recovered_domains": 0,
+      "rewrite": 0,
+      "rules": 11,
+      "source": "ip/download",
+      "statistics": {
+        "markers_removed": 1,
+        "no_resolve_not_supported": 11,
+        "source_rule_lines": 12
+      }
+    },
+    {
+      "deferred_ip": 0,
+      "issues": {},
+      "license": "AGPL-3.0",
+      "policy": "direct",
+      "recovered_domains": 0,
+      "rewrite": 0,
+      "rules": 11,
+      "source": "ip/lan",
+      "statistics": {
+        "markers_removed": 1,
+        "source_rule_lines": 12
+      }
+    },
+    {
+      "deferred_ip": 0,
+      "issues": {
+        "no_resolve_not_supported": [
+          "IP-CIDR,39.105.63.80/32,no-resolve",
+          "IP-CIDR,45.254.48.1/32,no-resolve",
+          "IP-CIDR,47.100.127.239/32,no-resolve",
+          "IP-CIDR,59.111.160.195/32,no-resolve"
+        ]
+      },
+      "license": "AGPL-3.0",
+      "policy": "direct",
+      "recovered_domains": 0,
+      "rewrite": 0,
+      "rules": 17,
+      "source": "ip/neteasemusic",
+      "statistics": {
+        "markers_removed": 1,
+        "no_resolve_not_supported": 17,
+        "source_rule_lines": 18
+      }
+    },
+    {
+      "deferred_ip": 0,
+      "issues": {
+        "no_resolve_not_supported": [
+          "IP-CIDR,10.72.25.0/24,no-resolve",
+          "IP-CIDR,39.107.15.115/32,no-resolve",
+          "IP-CIDR,47.89.59.182/32,no-resolve",
+          "IP-CIDR,61.160.200.223/32,no-resolve"
+        ]
+      },
+      "license": "AGPL-3.0",
+      "policy": "reject",
+      "recovered_domains": 0,
+      "rewrite": 0,
+      "rules": 779,
+      "source": "ip/reject",
+      "statistics": {
+        "markers_removed": 1,
+        "no_resolve_not_supported": 42,
+        "source_rule_lines": 780
+      }
+    },
+    {
+      "deferred_ip": 0,
+      "issues": {
+        "no_resolve_not_supported": [
+          "IP-CIDR,23.246.18.0/23,no-resolve",
+          "IP-CIDR,35.186.224.47/32,no-resolve",
+          "IP-CIDR,37.77.184.0/21,no-resolve",
+          "IP-CIDR,45.57.0.0/17,no-resolve"
+        ]
+      },
+      "license": "AGPL-3.0",
+      "policy": "proxy",
+      "recovered_domains": 0,
+      "rewrite": 0,
+      "rules": 19,
+      "source": "ip/stream",
+      "statistics": {
+        "markers_removed": 1,
+        "no_resolve_not_supported": 19,
+        "source_rule_lines": 20
+      }
+    },
+    {
+      "deferred_ip": 0,
+      "issues": {},
+      "license": "AGPL-3.0",
+      "policy": "proxy",
+      "recovered_domains": 1,
+      "rewrite": 0,
+      "rules": 0,
+      "source": "ip/stream_biliintl",
+      "statistics": {
+        "source_rule_lines": 1
+      }
+    },
+    {
+      "deferred_ip": 0,
+      "issues": {},
+      "license": "AGPL-3.0",
+      "policy": "proxy",
+      "recovered_domains": 0,
+      "rewrite": 0,
+      "rules": 0,
+      "source": "ip/stream_eu",
+      "statistics": {
+        "markers_removed": 1,
+        "source_rule_lines": 1
+      }
+    },
+    {
+      "deferred_ip": 0,
+      "issues": {},
+      "license": "AGPL-3.0",
+      "policy": "proxy",
+      "recovered_domains": 0,
+      "rewrite": 0,
+      "rules": 0,
+      "source": "ip/stream_hk",
+      "statistics": {
+        "markers_removed": 1,
+        "source_rule_lines": 1
+      }
+    },
+    {
+      "deferred_ip": 0,
+      "issues": {},
+      "license": "AGPL-3.0",
+      "policy": "proxy",
+      "recovered_domains": 0,
+      "rewrite": 0,
+      "rules": 0,
+      "source": "ip/stream_jp",
+      "statistics": {
+        "markers_removed": 1,
+        "source_rule_lines": 1
+      }
+    },
+    {
+      "deferred_ip": 0,
+      "issues": {},
+      "license": "AGPL-3.0",
+      "policy": "proxy",
+      "recovered_domains": 0,
+      "rewrite": 0,
+      "rules": 0,
+      "source": "ip/stream_kr",
+      "statistics": {
+        "markers_removed": 1,
+        "source_rule_lines": 1
+      }
+    },
+    {
+      "deferred_ip": 0,
+      "issues": {},
+      "license": "AGPL-3.0",
+      "policy": "proxy",
+      "recovered_domains": 0,
+      "rewrite": 0,
+      "rules": 0,
+      "source": "ip/stream_tw",
+      "statistics": {
+        "markers_removed": 1,
+        "source_rule_lines": 1
+      }
+    },
+    {
+      "deferred_ip": 0,
+      "issues": {},
+      "license": "AGPL-3.0",
+      "policy": "proxy",
+      "recovered_domains": 0,
+      "rewrite": 0,
+      "rules": 0,
+      "source": "ip/stream_us",
+      "statistics": {
+        "markers_removed": 1,
+        "source_rule_lines": 1
+      }
+    },
+    {
+      "deferred_ip": 0,
+      "issues": {
+        "no_resolve_not_supported": [
+          "IP-CIDR,91.105.192.0/23,no-resolve",
+          "IP-CIDR,91.108.4.0/22,no-resolve",
+          "IP-CIDR,91.108.8.0/21,no-resolve",
+          "IP-CIDR,91.108.16.0/21,no-resolve"
+        ]
+      },
+      "license": "AGPL-3.0",
+      "policy": "proxy",
+      "recovered_domains": 0,
+      "rewrite": 0,
+      "rules": 14,
+      "source": "ip/telegram",
+      "statistics": {
+        "markers_removed": 1,
+        "no_resolve_not_supported": 14,
+        "source_rule_lines": 15
+      }
+    },
+    {
+      "deferred_ip": 0,
+      "issues": {},
+      "license": "AGPL-3.0",
+      "policy": "proxy",
+      "recovered_domains": 0,
+      "rewrite": 0,
+      "rules": 5,
+      "source": "ip/telegram_asn",
+      "statistics": {
+        "markers_removed": 1,
+        "source_rule_lines": 6
+      }
+    }
+  ],
+  "successful_sources": 67,
+  "total_rules": 378574,
+  "totals": {
+    "markers_removed": 64,
+    "no_resolve_not_supported": 186,
+    "reject_action_normalized": 2,
+    "source_rule_lines": 378988,
+    "unsupported_and": 42,
+    "unsupported_dest_port": 1,
+    "unsupported_process_name": 75,
+    "upstream_deprecated": 2,
+    "url_regex_moved_to_rewrite": 179,
+    "url_regex_policy_unsupported": 4
+  }
+}

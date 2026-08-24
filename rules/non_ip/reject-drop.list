@@ -1,0 +1,32 @@
+# Quantumult X native rules converted from Sukka Ruleset.
+# Source: https://ruleset.skk.moe/List/non_ip/reject-drop.conf
+# Upstream: https://github.com/SukkaW/Surge
+# License: AGPL-3.0
+# Type: main; policy: reject; rules: 27
+host-suffix, null, reject
+host-suffix, jpush.cn, reject
+host-suffix, jpush.io, reject
+host-suffix, getui.com, reject
+host-suffix, getui.net, reject
+host-suffix, undefined, reject
+host-suffix, gepush.com, reject
+host-suffix, slackb.com, reject
+host-suffix, trace.qq.com, reject
+host-suffix, beacon.qq.com, reject
+host-suffix, geo2.adobe.com, reject
+host-suffix, easytomessage.com, reject
+host-suffix, femetrics.qagr.io, reject
+host, stats.grafana.org, reject
+host-suffix, tracking.miui.com, reject
+host-suffix, data.grammarly.com, reject
+host-suffix, data.microsoft.com, reject
+host, stat.youpin.mi.com, reject
+host, dataflow.biliapi.com, reject
+host, nom.telemetrydeck.com, reject
+host-suffix, telemetry.mozilla.org, reject
+host-suffix, femetrics.grammarly.io, reject
+host-suffix, tracking.intl.miui.com, reject
+host-suffix, f-log-assistant.grammarly.io, reject
+host-suffix, f-log-extension.grammarly.io, reject
+host-suffix, in.applicationinsights.azure.com, reject
+host-wildcard, f-log*.grammarly.io, reject

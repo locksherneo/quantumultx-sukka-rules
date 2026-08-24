@@ -1,0 +1,9 @@
+# Quantumult X native rules converted from Sukka Ruleset.
+# Source: https://ruleset.skk.moe/List/non_ip/reject.conf
+# Upstream: https://github.com/SukkaW/Surge
+# License: AGPL-3.0
+# Type: rewrite; policy: reject; rules: 3
+# Optional: HTTPS matching may require carefully scoped MITM.
+/igd\.xml url reject
+/\d+/resolve url reject
+/\d+/sign_d url reject

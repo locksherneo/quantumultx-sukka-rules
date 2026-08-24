@@ -1,0 +1,18 @@
+# Quantumult X native rules converted from Sukka Ruleset.
+# Source: https://ruleset.skk.moe/List/non_ip/my_tw.conf
+# Upstream: https://github.com/SukkaW/Surge
+# License: AGPL-3.0
+# Type: main; policy: proxy; rules: 13
+host, javdb.com, proxy
+host, mhgui.com, proxy
+host, avbebe.com, proxy
+host, hanime1.me, proxy
+host, yymanhua.com, proxy
+host-suffix, cdn.hinet.net, proxy
+host, av.jkforum.net, proxy
+host, www.yymanhua.com, proxy
+host, www.manhuagui.com, proxy
+host-wildcard, *.ffzy-online?.com, proxy
+host-wildcard, *.ffzy-play?.com, proxy
+host-wildcard, *.lz-cdn?.com, proxy
+host-wildcard, *.lz-cdn??.com, proxy

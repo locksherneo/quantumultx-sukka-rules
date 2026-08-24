@@ -1,0 +1,32 @@
+# Quantumult X native rules converted from Sukka Ruleset.
+# Source: https://ruleset.skk.moe/List/non_ip/stream_jp.conf
+# Upstream: https://github.com/SukkaW/Surge
+# License: AGPL-3.0
+# Type: main; policy: proxy; rules: 27
+host-suffix, dmm.com, proxy
+host-suffix, hulu.jp, proxy
+host-suffix, tver.jp, proxy
+host-suffix, abema.io, proxy
+host-suffix, abema.tv, proxy
+host-suffix, ameba.jp, proxy
+host-suffix, dmc.nico, proxy
+host-suffix, ameblo.jp, proxy
+host-suffix, dmm.co.jp, proxy
+host-suffix, socdm.com, proxy
+host-suffix, happyon.jp, proxy
+host-suffix, amebame.com, proxy
+host-suffix, hayabusa.io, proxy
+host-suffix, abema-tv.com, proxy
+host-suffix, hayabusa.dev, proxy
+host-suffix, nicovideo.jp, proxy
+host-suffix, winticket.jp, proxy
+host-suffix, amebaownd.com, proxy
+host-suffix, hjholdings.jp, proxy
+host-suffix, hayabusa.media, proxy
+host-suffix, amebaowndme.com, proxy
+host-suffix, dmm-extension.com, proxy
+host-suffix, dokusho-ojikan.jp, proxy
+host-suffix, location-plus.nhk.jp, proxy
+host, ds-linear-abematv.akamaized.net, proxy
+user-agent, AbemaTV*, proxy
+user-agent, Niconico*, proxy

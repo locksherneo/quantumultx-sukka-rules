@@ -1,0 +1,42 @@
+# Quantumult X native rules converted from Sukka Ruleset.
+# Source: https://ruleset.skk.moe/List/non_ip/stream_tw.conf
+# Upstream: https://github.com/SukkaW/Surge
+# License: AGPL-3.0
+# Type: main; policy: proxy; rules: 37
+host-suffix, 4gtv.tv, proxy
+host-suffix, kktv.me, proxy
+host-suffix, kk.stream, proxy
+host-suffix, linetv.tw, proxy
+host-suffix, fanfox.net, proxy
+host-suffix, hboasia.com, proxy
+host-suffix, kktv.com.tw, proxy
+host-suffix, mangafox.me, proxy
+host-suffix, viblast.com, proxy
+host, www.litv.tv, proxy
+host-suffix, hbogoasia.hk, proxy
+host-suffix, hbogoasia.id, proxy
+host-suffix, hbogoasia.ph, proxy
+host-suffix, hbogoasia.sg, proxy
+host-suffix, hbogoasia.tw, proxy
+host, cdi.ofiii.com, proxy
+host-suffix, hbogoasia.com, proxy
+host-suffix, bahamut.com.tw, proxy
+host, video.friday.tw, proxy
+host-suffix, ani.gamer.com.tw, proxy
+host-suffix, api.gamer.com.tw, proxy
+host, ana.video.friday.tw, proxy
+host, hbolb.onwardsmg.com, proxy
+host, players.brightcove.net, proxy
+host, gamer-cds.cdn.hinet.net, proxy
+host, gamer2-cds.cdn.hinet.net, proxy
+host, manifest.prod.boltdns.net, proxy
+host, hbounify-prod.evergent.com, proxy
+host, ntdfreepc-tgc.cdn.hinet.net, proxy
+host, d3c7rimkq79yfu.cloudfront.net, proxy
+host, 4gtvfreepcvod-cds.cdn.hinet.net, proxy
+host, litvfreemobile-hichannel.cdn.hinet.net, proxy
+host, 44wilhpljf.execute-api.ap-southeast-1.amazonaws.com, proxy
+user-agent, com.kktv.ios.kktv*, proxy
+user-agent, KKTV*, proxy
+user-agent, LINE TV*, proxy
+user-agent, Anime*, proxy

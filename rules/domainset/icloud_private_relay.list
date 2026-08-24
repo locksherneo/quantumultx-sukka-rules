@@ -1,0 +1,11 @@
+# Quantumult X native rules converted from Sukka Ruleset.
+# Source: https://ruleset.skk.moe/List/domainset/icloud_private_relay.conf
+# Upstream: https://github.com/SukkaW/Surge
+# License: AGPL-3.0
+# Type: main; policy: reject; rules: 6
+host, mask.icloud.com, reject
+host, mask-h2.icloud.com, reject
+host, mask.apple-dns.net, reject
+host, mask-api.icloud.com, reject
+host, mask-canary.icloud.com, reject
+host, canary.mask.apple-dns.net, reject

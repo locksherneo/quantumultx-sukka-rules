@@ -1,0 +1,19 @@
+# Quantumult X native rules converted from Sukka Ruleset.
+# Source: https://ruleset.skk.moe/List/non_ip/telegram.conf
+# Upstream: https://github.com/SukkaW/Surge
+# License: AGPL-3.0
+# Type: main; policy: proxy; rules: 14
+host-suffix, t.me, proxy
+host-suffix, tx.me, proxy
+host-suffix, tg.dev, proxy
+host-suffix, legra.ph, proxy
+host-suffix, graph.org, proxy
+host-suffix, telega.one, proxy
+host-suffix, telegra.ph, proxy
+host-suffix, telesco.pe, proxy
+host-suffix, telegram.me, proxy
+host-suffix, tdesktop.com, proxy
+host-suffix, telegram.dog, proxy
+host-suffix, telegram.org, proxy
+host-suffix, telegram.space, proxy
+host-suffix, cdn-telegram.org, proxy

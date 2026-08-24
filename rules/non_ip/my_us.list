@@ -1,0 +1,11 @@
+# Quantumult X native rules converted from Sukka Ruleset.
+# Source: https://ruleset.skk.moe/List/non_ip/my_us.conf
+# Upstream: https://github.com/SukkaW/Surge
+# License: AGPL-3.0
+# Type: main; policy: proxy; rules: 6
+host, jav.guru, proxy
+host, cableav.tv, proxy
+host-suffix, mandaom.com, proxy
+host, copymanga.site, proxy
+host-suffix, crunchyroll.com, proxy
+host, www.coinbase.com, proxy

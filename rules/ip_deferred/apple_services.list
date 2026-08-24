@@ -1,0 +1,7 @@
+# Quantumult X native rules converted from Sukka Ruleset.
+# Source: https://ruleset.skk.moe/List/non_ip/apple_services.conf
+# Upstream: https://github.com/SukkaW/Surge
+# License: AGPL-3.0
+# Type: deferred; policy: proxy; rules: 1
+# no-resolve cannot be preserved; load only after all domain rules.
+ip-cidr, 17.0.0.0/8, proxy

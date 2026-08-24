@@ -1,0 +1,15 @@
+# Quantumult X native rules converted from Sukka Ruleset.
+# Source: https://ruleset.skk.moe/List/non_ip/stream_eu.conf
+# Upstream: https://github.com/SukkaW/Surge
+# License: AGPL-3.0
+# Type: main; policy: proxy; rules: 10
+host-suffix, itv.com, proxy
+host-suffix, bbc.co.uk, proxy
+host-suffix, bbci.co.uk, proxy
+host, bbc.mp-pxcdn.com, proxy
+host-suffix, tvlicensing.co.uk, proxy
+host, itvpnpmobile-a.akamaihd.net, proxy
+host-keyword, bbcfmt, proxy
+host-keyword, uk-live, proxy
+user-agent, ITV_Player*, proxy
+user-agent, BBCiPlayer*, proxy

@@ -1,0 +1,36 @@
+# Quantumult X native rules converted from Sukka Ruleset.
+# Source: https://ruleset.skk.moe/List/non_ip/stream_hk.conf
+# Upstream: https://github.com/SukkaW/Surge
+# License: AGPL-3.0
+# Type: main; policy: proxy; rules: 31
+host-suffix, viu.tv, proxy
+host-suffix, tvb.com, proxy
+host-suffix, viu.com, proxy
+host-suffix, nowe.com, proxy
+host-suffix, bilibili.tv, proxy
+host-suffix, hboasia.com, proxy
+host-suffix, viu.now.com, proxy
+host-suffix, biliintl.com, proxy
+host-suffix, hbogoasia.hk, proxy
+host-suffix, hbogoasia.id, proxy
+host-suffix, hbogoasia.ph, proxy
+host-suffix, hbogoasia.sg, proxy
+host-suffix, hbogoasia.tw, proxy
+host-suffix, hbogoasia.com, proxy
+host-suffix, mytvsuper.com, proxy
+host-suffix, psg.cdn.hgc.com.hk, proxy
+host, hbolb.onwardsmg.com, proxy
+host, apm-misaka.biliapi.net, proxy
+host, players.brightcove.net, proxy
+host, manifest.prod.boltdns.net, proxy
+host, hbounify-prod.evergent.com, proxy
+host, dfp6rglgjqszk.cloudfront.net, proxy
+host, d1k2us671qcoau.cloudfront.net, proxy
+host, d2anahhhmp1ffz.cloudfront.net, proxy
+host, upos-bstar-mirrorakam.akamaized.net, proxy
+host, upos-bstar1-mirrorakam.akamaized.net, proxy
+host, 44wilhpljf.execute-api.ap-southeast-1.amazonaws.com, proxy
+host-keyword, nowtv100, proxy
+host-keyword, rthklive, proxy
+user-agent, Viu*, proxy
+user-agent, mytv*, proxy

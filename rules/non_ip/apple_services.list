@@ -1,0 +1,21 @@
+# Quantumult X native rules converted from Sukka Ruleset.
+# Source: https://ruleset.skk.moe/List/non_ip/apple_services.conf
+# Upstream: https://github.com/SukkaW/Surge
+# License: AGPL-3.0
+# Type: main; policy: proxy; rules: 16
+host-suffix, me.com, proxy
+host-suffix, apple.co, proxy
+host-suffix, apple.com, proxy
+host-suffix, appsto.re, proxy
+host-suffix, apple.news, proxy
+host-suffix, icloud.com, proxy
+host-suffix, itunes.com, proxy
+host-suffix, aaplimg.com, proxy
+host-suffix, appstore.com, proxy
+host-suffix, apple-dns.net, proxy
+host-suffix, cdn-apple.com, proxy
+host-suffix, apple-mapkit.com, proxy
+host-suffix, apple-cloudkit.com, proxy
+host-suffix, icloud-content.com, proxy
+host-suffix, organicfruitapps.com, proxy
+host-suffix, push-apple.com.akadns.net, proxy

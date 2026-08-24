@@ -1,0 +1,21 @@
+# Quantumult X native rules converted from Sukka Ruleset.
+# Source: https://ruleset.skk.moe/List/non_ip/my_proxy.conf
+# Upstream: https://github.com/SukkaW/Surge
+# License: AGPL-3.0
+# Type: main; policy: proxy; rules: 16
+host, ip.cn, proxy
+host-suffix, ip.sb, proxy
+host-suffix, ipwho.is, proxy
+host-suffix, db-ip.com, proxy
+host-suffix, ipdata.co, proxy
+host-suffix, ip-api.com, proxy
+host-suffix, nextdns.io, proxy
+host-suffix, ipstack.com, proxy
+host-suffix, ipregistry.co, proxy
+host, fonts.gstatic.cn, proxy
+host-suffix, ipgeolocation.io, proxy
+host, sglong.wechat.com, proxy
+host, sgshort.wechat.com, proxy
+host, fonts.googleapis.cn, proxy
+host-suffix, services.googleapis.cn, proxy
+host, sgminorshort.wechat.com, proxy

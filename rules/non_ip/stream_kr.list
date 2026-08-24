@@ -1,0 +1,8 @@
+# Quantumult X native rules converted from Sukka Ruleset.
+# Source: https://ruleset.skk.moe/List/non_ip/stream_kr.conf
+# Upstream: https://github.com/SukkaW/Surge
+# License: AGPL-3.0
+# Type: main; policy: proxy; rules: 3
+host-suffix, tv.naver.com, proxy
+host-suffix, smartmediarep.com, proxy
+user-agent, Naver TV*, proxy

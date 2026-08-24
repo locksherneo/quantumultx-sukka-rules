@@ -1,0 +1,12 @@
+# Quantumult X native rules converted from Sukka Ruleset.
+# Source: https://ruleset.skk.moe/List/non_ip/my_git.conf
+# Upstream: https://github.com/SukkaW/Surge
+# License: AGPL-3.0
+# Type: main; policy: proxy; rules: 7
+host, github.com, proxy
+host, github.dev, proxy
+host, api.github.com, proxy
+host-suffix, huggingface.co, proxy
+host, alive.github.com, proxy
+host-suffix, githubcopilot.com, proxy
+host, android.googlesource.com, proxy
