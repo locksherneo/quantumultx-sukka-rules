@@ -1,0 +1,489 @@
+name: Sync Sukka Rules to Quantumult X
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "23 */12 * * *"
+  push:
+    branches: [main, master]
+    paths:
+      - ".github/workflows/sync.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sukka-quantumultx-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v7
+
+      - name: Set up Python
+        uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+
+      - name: Convert Sukka List rules to Quantumult X
+        env:
+          QX_REPOSITORY: ${{ github.repository }}
+          QX_BRANCH: ${{ github.event.repository.default_branch }}
+        shell: bash
+        run: |
+          python - <<'PY'
+          import concurrent.futures
+          import ipaddress
+          import json
+          import os
+          import re
+          import sys
+          import time
+          import urllib.error
+          import urllib.parse
+          import urllib.request
+          from collections import Counter
+          from pathlib import Path
+
+          BASE = "https://ruleset.skk.moe"
+          MIRROR = "https://ruleset-mirror.skk.moe"
+          MARKER = "7h15.ru1353t.1s.m4d3.by.5ukk4w.skk.moe"
+          REPOSITORY = os.environ.get("QX_REPOSITORY", "locksherneo/quantumultx-sukka-rules")
+          BRANCH = os.environ.get("QX_BRANCH") or "main"
+          LOCAL_SOURCE = os.environ.get("QX_FIXTURES_DIR")
+          SELECTED = set(os.environ.get("QX_ONLY", "").split())
+
+          SOURCES = {
+              "domainset": """
+                  apple_cdn cdn download game-download icloud_private_relay
+                  reject reject_extra reject_phishing reject_sukka speedtest
+              """.split(),
+              "non_ip": """
+                  ai apple_cdn apple_cn apple_intelligence apple_services cdn cloudmounter
+                  direct domestic download gitlab global global_plus lan microsoft
+                  microsoft_cdn my_direct my_git my_plus my_proxy my_reject my_tw my_us
+                  neteasemusic reject-drop reject-no-drop reject-url-regex reject
+                  sogouinput stream stream_biliintl stream_eu stream_hk stream_jp
+                  stream_kr stream_tw stream_us telegram
+              """.split(),
+              "ip": """
+                  ai apple_services cdn china_ip china_ip_ipv6 domestic download lan
+                  neteasemusic reject stream stream_biliintl stream_eu stream_hk
+                  stream_jp stream_kr stream_tw stream_us telegram telegram_asn
+              """.split(),
+          }
+
+          DISABLED_SOURCES = {"domainset/reject_sukka"}
+          REQUIRED_SOURCES = {
+              "non_ip/lan", "non_ip/reject", "non_ip/ai", "non_ip/apple_cn",
+              "non_ip/global", "non_ip/domestic", "ip/lan", "ip/telegram",
+          }
+          DIRECT_NAMES = {
+              "apple_cdn", "apple_cn", "cdn", "china_ip", "china_ip_ipv6", "direct",
+              "domestic", "download", "game-download", "lan", "microsoft_cdn",
+              "my_direct", "neteasemusic", "sogouinput", "speedtest",
+          }
+          LITE_EXCLUDE = {
+              "domainset/reject", "domainset/reject_extra", "domainset/reject_phishing",
+              "domainset/icloud_private_relay", "non_ip/reject-url-regex",
+              "non_ip/cloudmounter", "non_ip/my_direct", "non_ip/my_git",
+              "non_ip/my_plus", "non_ip/my_proxy", "non_ip/my_reject",
+              "non_ip/my_tw", "non_ip/my_us", "ip/china_ip", "ip/china_ip_ipv6",
+              "ip/telegram_asn",
+          }
+          DEFAULT_OFF = {
+              "domainset/reject_extra", "domainset/reject_phishing",
+              "domainset/icloud_private_relay", "ip/china_ip_ipv6", "ip/telegram_asn",
+          }
+          ORDER = """
+              non_ip/lan non_ip/reject-drop non_ip/reject-no-drop non_ip/reject
+              domainset/reject domainset/reject_extra domainset/reject_phishing
+              domainset/icloud_private_relay non_ip/my_reject non_ip/ai
+              non_ip/apple_intelligence non_ip/apple_cn domainset/apple_cdn
+              non_ip/apple_cdn non_ip/apple_services non_ip/microsoft_cdn
+              non_ip/microsoft non_ip/telegram non_ip/stream_biliintl
+              non_ip/stream_hk non_ip/stream_tw non_ip/stream_jp non_ip/stream_kr
+              non_ip/stream_us non_ip/stream_eu non_ip/stream non_ip/neteasemusic
+              non_ip/sogouinput domainset/speedtest domainset/game-download
+              domainset/download non_ip/download domainset/cdn non_ip/cdn
+              non_ip/gitlab non_ip/cloudmounter non_ip/my_git non_ip/my_plus
+              non_ip/my_proxy non_ip/my_tw non_ip/my_us non_ip/global_plus
+              non_ip/global non_ip/my_direct non_ip/direct non_ip/domestic
+              ip/lan ip/reject ip/telegram ip/telegram_asn ip/ai ip/apple_services
+              ip/stream_biliintl ip/stream_hk ip/stream_tw ip/stream_jp ip/stream_kr
+              ip/stream_us ip/stream_eu ip/stream ip/neteasemusic ip/cdn
+              ip/download ip/domestic ip/china_ip ip/china_ip_ipv6
+          """.split()
+          HOST_TYPES = {
+              "DOMAIN": "host", "DOMAIN-SUFFIX": "host-suffix",
+              "DOMAIN-KEYWORD": "host-keyword", "DOMAIN-WILDCARD": "host-wildcard",
+              "USER-AGENT": "user-agent",
+          }
+          IP_TYPES = {"IP-CIDR", "IP-CIDR6", "IP6-CIDR", "IP-ASN", "GEOIP"}
+          VALID_QX_TYPES = set(HOST_TYPES.values()) | {"ip-cidr", "ip6-cidr", "ip-asn", "geoip"}
+
+          if not re.fullmatch(r"[\w.-]+/[\w.-]+", REPOSITORY):
+              raise SystemExit(f"Invalid GitHub repository: {REPOSITORY!r}")
+
+          def policy(category, name):
+              if "reject" in name or "phishing" in name or name == "icloud_private_relay":
+                  return "reject"
+              return "direct" if name in DIRECT_NAMES else "proxy"
+
+          def download(url, allow_html=False):
+              request = urllib.request.Request(url, headers={"User-Agent": "Sukka-QuantumultX-Sync/1.0"})
+              with urllib.request.urlopen(request, timeout=35) as response:
+                  data = response.read(33_554_433)
+              if len(data) > 33_554_432:
+                  raise ValueError("Upstream ruleset exceeds 32 MiB")
+              text = data.decode("utf-8-sig")
+              if not allow_html and text.lstrip().lower().startswith(("<!doctype html", "<html")):
+                  raise ValueError("Received HTML instead of a ruleset")
+              return text
+
+          def discover_sources():
+              if LOCAL_SOURCE:
+                  return
+              try:
+                  homepage = download(BASE + "/", allow_html=True)
+                  paths = re.findall(r"(?:https?://[^\"'<> ]+)?/?List/(domainset|non_ip|ip)/([\w.-]+)\.conf", homepage)
+                  for category, name in sorted(set(paths)):
+                      if name not in SOURCES[category]:
+                          SOURCES[category].append(name)
+                          print(f"Discovered new Sukka source: {category}/{name}")
+              except Exception as error:
+                  print(f"Source discovery unavailable; using built-in manifest: {error}")
+
+          def fetch(task):
+              category, name = task
+              key = f"{category}/{name}"
+              if LOCAL_SOURCE:
+                  path = Path(LOCAL_SOURCE) / category / f"{name}.conf"
+                  try:
+                      return task, path.read_text(encoding="utf-8-sig"), None
+                  except Exception as error:
+                      return task, None, str(error)
+              errors = []
+              for base in (BASE, MIRROR):
+                  url = f"{base}/List/{key}.conf"
+                  for attempt in range(3):
+                      try:
+                          return task, download(url), None
+                      except Exception as error:
+                          errors.append(f"{url}: {error}")
+                          if isinstance(error, urllib.error.HTTPError) and error.code in {400, 401, 403, 404, 410}:
+                              break
+                          if attempt < 2:
+                              time.sleep(0.35 * 2 ** attempt)
+              return task, None, " | ".join(errors[-4:])
+
+          def marker(value):
+              return value.strip().strip("'\"").lstrip("+.").rstrip(".").lower() == MARKER
+
+          def issue(result, name, line):
+              result["statistics"][name] += 1
+              examples = result["issues"].setdefault(name, [])
+              if len(examples) < 4:
+                  examples.append(line[:220])
+
+          def append_unique(result, target, value):
+              if value in result["seen"][target]:
+                  result["statistics"]["duplicates_removed"] += 1
+              else:
+                  result["seen"][target].add(value)
+                  result[target].append(value)
+
+          def convert(task, text):
+              category, name = task
+              selected_policy = policy(category, name)
+              result = {
+                  "category": category, "name": name, "key": f"{category}/{name}",
+                  "policy": selected_policy, "main": [], "deferred": [], "recovered": [],
+                  "rewrite": [], "statistics": Counter(), "issues": {},
+                  "seen": {key: set() for key in ("main", "deferred", "recovered", "rewrite")},
+                  "license": "CC BY-SA 2.0" if category == "ip" and name == "china_ip" else "AGPL-3.0",
+              }
+              if name in {"reject-drop", "reject-no-drop"}:
+                  result["statistics"]["reject_action_normalized"] += 1
+              if re.search(r"(?im)^#.*\bdeprecated\b", text):
+                  result["statistics"]["upstream_deprecated"] += 1
+
+              for original in text.splitlines():
+                  line = original.strip().lstrip("\ufeff")
+                  if not line or line.startswith(("#", ";", "//", "!")):
+                      continue
+                  result["statistics"]["source_rule_lines"] += 1
+
+                  if category == "domainset" and "," not in line:
+                      if marker(line):
+                          result["statistics"]["markers_removed"] += 1
+                          continue
+                      if line.startswith((".", "+.")):
+                          qx_type, value = "host-suffix", line.lstrip("+.").rstrip(".").lower()
+                      elif "*" in line or "?" in line:
+                          qx_type, value = "host-wildcard", line.lower()
+                      else:
+                          qx_type, value = "host", line.rstrip(".").lower()
+                      if not value or any(character.isspace() for character in value):
+                          issue(result, "invalid_domain", line)
+                          continue
+                      append_unique(result, "main", f"{qx_type}, {value}, {selected_policy}")
+                      continue
+
+                  if "," not in line:
+                      issue(result, "malformed_rule", line)
+                      continue
+                  source_type, payload = line.split(",", 1)
+                  source_type = source_type.strip().upper()
+
+                  if source_type == "URL-REGEX":
+                      expression = payload.strip()
+                      if selected_policy != "reject":
+                          issue(result, "url_regex_policy_unsupported", line)
+                      elif not expression or any(character.isspace() for character in expression):
+                          issue(result, "invalid_url_regex", line)
+                      else:
+                          try:
+                              re.compile(expression)
+                          except re.error:
+                              issue(result, "invalid_url_regex", line)
+                          else:
+                              append_unique(result, "rewrite", expression + " url reject")
+                              result["statistics"]["url_regex_moved_to_rewrite"] += 1
+                      continue
+
+                  fields = [field.strip() for field in payload.split(",")]
+                  value, options = fields[0], [field for field in fields[1:] if field]
+                  if source_type in {"DOMAIN", "DOMAIN-SUFFIX", "DOMAIN-WILDCARD"} and marker(value):
+                      result["statistics"]["markers_removed"] += 1
+                      continue
+
+                  if source_type in HOST_TYPES:
+                      if options:
+                          issue(result, "unsupported_rule_option", line)
+                          continue
+                      qx_type = HOST_TYPES[source_type]
+                      value = value if qx_type == "user-agent" else value.lower()
+                      if qx_type in {"host", "host-suffix"}:
+                          value = value.lstrip(".").rstrip(".")
+                      if not value or "," in value or (qx_type != "user-agent" and any(c.isspace() for c in value)):
+                          issue(result, "invalid_host_rule", line)
+                          continue
+                      target = "recovered" if category == "ip" else "main"
+                      append_unique(result, target, f"{qx_type}, {value}, {selected_policy}")
+                      continue
+
+                  if source_type in IP_TYPES:
+                      normalized_options = {option.lower().replace("_", "-") for option in options}
+                      if normalized_options - {"no-resolve"}:
+                          issue(result, "unsupported_rule_option", line)
+                          continue
+                      if "no-resolve" in normalized_options:
+                          issue(result, "no_resolve_not_supported", line)
+                      try:
+                          if source_type in {"IP-CIDR", "IP-CIDR6", "IP6-CIDR"}:
+                              network = ipaddress.ip_network(value, strict=False)
+                              expected = 4 if source_type == "IP-CIDR" else 6
+                              if network.version != expected:
+                                  raise ValueError("IP version does not match rule type")
+                              qx_type = "ip-cidr" if network.version == 4 else "ip6-cidr"
+                              value = str(network)
+                          elif source_type == "IP-ASN":
+                              number = int(value)
+                              if not 1 <= number <= 4_294_967_295:
+                                  raise ValueError("Invalid ASN")
+                              qx_type, value = "ip-asn", str(number)
+                          else:
+                              if not re.fullmatch(r"[A-Za-z]{2}", value):
+                                  raise ValueError("Invalid GEOIP country")
+                              qx_type, value = "geoip", value.lower()
+                      except ValueError as error:
+                          issue(result, "invalid_ip_rule", f"{line}: {error}")
+                          continue
+                      target = "main" if category == "ip" else "deferred"
+                      append_unique(result, target, f"{qx_type}, {value}, {selected_policy}")
+                      continue
+
+                  issue(result, "unsupported_" + source_type.lower().replace("-", "_"), line)
+
+              return result
+
+          def output_path(result, kind="main"):
+              category, name = result["category"], result["name"]
+              if kind == "main":
+                  return Path("rules") / category / f"{name}.list"
+              if kind == "deferred":
+                  return Path("rules/ip_deferred") / f"{name}.list"
+              if kind == "recovered":
+                  return Path("rules/non_ip_recovered") / f"{name}.list"
+              return Path("rules/rewrite") / f"{name}.snippet"
+
+          def write(path, content):
+              path = Path(path)
+              path.parent.mkdir(parents=True, exist_ok=True)
+              if not path.exists() or path.read_text(encoding="utf-8") != content:
+                  path.write_text(content, encoding="utf-8", newline="\n")
+
+          def header(result, kind, count):
+              lines = [
+                  "# Quantumult X native rules converted from Sukka Ruleset.",
+                  f"# Source: {BASE}/List/{result['key']}.conf",
+                  "# Upstream: https://github.com/SukkaW/Surge",
+                  f"# License: {result['license']}",
+                  f"# Type: {kind}; policy: {result['policy']}; rules: {count}",
+              ]
+              if kind == "deferred":
+                  lines.append("# no-resolve cannot be preserved; load only after all domain rules.")
+              if kind == "rewrite":
+                  lines.append("# Optional: HTTPS matching may require carefully scoped MITM.")
+              return "\n".join(lines) + "\n"
+
+          def resource_line(result, kind="main", enabled=True):
+              path = output_path(result, kind).as_posix()
+              url = f"https://raw.githubusercontent.com/{REPOSITORY}/{BRANCH}/{path}"
+              tag = f"SUKKA-{result['category']}-{result['name']}"
+              if kind == "deferred":
+                  tag = f"SUKKA-IP-DEFERRED-{result['name']}"
+              if kind == "recovered":
+                  tag = f"SUKKA-RECOVERED-{result['name']}"
+              state = "true" if enabled else "false"
+              return f"{url}, tag={tag}, force-policy={result['policy']}, update-interval=86400, enabled={state}"
+
+          def build_profile(results, profile):
+              ranks = {key: position for position, key in enumerate(ORDER)}
+              selected = [item for item in results if item["main"] and not (profile == "lite" and item["key"] in LITE_EXCLUDE)]
+              host = sorted((item for item in selected if item["category"] != "ip"), key=lambda x: (ranks.get(x["key"], 9999), x["key"]))
+              ip = sorted((item for item in selected if item["category"] == "ip"), key=lambda x: (ranks.get(x["key"], 9999), x["key"]))
+              recovered = [item for item in results if item["recovered"] and not (profile == "lite" and item["key"] in LITE_EXCLUDE)]
+              deferred = [item for item in results if item["deferred"] and not (profile == "lite" and item["key"] in LITE_EXCLUDE)]
+              lines = [f"# Quantumult X Sukka {profile.upper()} profile", "[filter_remote]", "", "# Domain / non-IP resources"]
+              lines.extend(resource_line(item, enabled=item["key"] not in DEFAULT_OFF) for item in host)
+              lines.extend(resource_line(item, "recovered") for item in recovered)
+              lines.extend(["", "# IP resources: keep below every domain resource"])
+              emitted = False
+              for item in ip:
+                  lines.append(resource_line(item, enabled=item["key"] not in DEFAULT_OFF))
+                  if item["key"] == "ip/lan":
+                      lines.extend(resource_line(value, "deferred", False) for value in deferred)
+                      emitted = True
+              if not emitted:
+                  lines.extend(resource_line(value, "deferred", False) for value in deferred)
+              lines.extend(["", "# Add these to your existing [filter_local] section:", "# geoip, cn, direct", "# final, proxy"])
+              return "\n".join(lines) + "\n"
+
+          def validate_generated_files():
+              files = list(Path("rules").rglob("*.list"))
+              if not files:
+                  raise ValueError("No Quantumult X rule files were generated")
+              for path in files:
+                  for number, raw in enumerate(path.read_text(encoding="utf-8").splitlines(), 1):
+                      line = raw.strip()
+                      if not line or line.startswith("#"):
+                          continue
+                      fields = [field.strip() for field in line.split(",")]
+                      if len(fields) != 3 or fields[0] not in VALID_QX_TYPES or fields[2] not in {"proxy", "direct", "reject"}:
+                          raise ValueError(f"Invalid Quantumult X rule: {path}:{number}: {line}")
+                      if marker(fields[1]):
+                          raise ValueError(f"Sukka Marker survived conversion: {path}:{number}")
+                      is_ip = fields[0] in {"ip-cidr", "ip6-cidr", "ip-asn", "geoip"}
+                      if path.parts[1] in {"domainset", "non_ip", "non_ip_recovered"} and is_ip:
+                          raise ValueError(f"IP rule leaked into a domain ruleset: {path}:{number}")
+                      if path.parts[1] in {"ip", "ip_deferred"} and not is_ip:
+                          raise ValueError(f"Domain rule leaked into an IP ruleset: {path}:{number}")
+
+          sample = convert(("non_ip", "reject"), f"DOMAIN,{MARKER}\nDOMAIN-KEYWORD,analytics-cdn.\nIP-CIDR,1.2.3.4/32,no-resolve")
+          assert sample["statistics"]["markers_removed"] == 1
+          assert sample["main"] == ["host-keyword, analytics-cdn., reject"]
+          assert sample["deferred"] == ["ip-cidr, 1.2.3.4/32, reject"]
+
+          discover_sources()
+          tasks = [(category, name) for category, names in SOURCES.items() for name in names
+                   if f"{category}/{name}" not in DISABLED_SOURCES
+                   and (not SELECTED or f"{category}/{name}" in SELECTED)]
+          if not tasks:
+              raise SystemExit("No Sukka rule sources selected")
+
+          print(f"Downloading and converting {len(tasks)} Sukka source files...")
+          with concurrent.futures.ThreadPoolExecutor(max_workers=4) as executor:
+              fetched = list(executor.map(fetch, tasks))
+
+          failures = [(task, error) for task, text, error in fetched if text is None]
+          required_failures = [item for item in failures if f"{item[0][0]}/{item[0][1]}" in REQUIRED_SOURCES]
+          if required_failures or len(fetched) - len(failures) < len(fetched) * 0.9:
+              for task, error in failures:
+                  print(f"FAILED {task[0]}/{task[1]}: {error}", file=sys.stderr)
+              raise SystemExit("Publication cancelled: too many failed sources or a required source is unavailable")
+
+          results = [convert(task, text) for task, text, error in fetched if text is not None]
+          for result in results:
+              for kind in ("main", "deferred", "recovered", "rewrite"):
+                  values = result[kind]
+                  if values:
+                      write(output_path(result, kind), header(result, kind, len(values)) + "\n".join(values) + "\n")
+
+          write("snippets/quantumultx-lite.conf", build_profile(results, "lite"))
+          write("snippets/quantumultx-full.conf", build_profile(results, "full"))
+          rewrite_lines = ["# Optional URL Rewrite resources: disabled by default", "[rewrite_remote]", ""]
+          for result in results:
+              if result["rewrite"]:
+                  url = f"https://raw.githubusercontent.com/{REPOSITORY}/{BRANCH}/{output_path(result, 'rewrite').as_posix()}"
+                  rewrite_lines.append(f"{url}, tag=SUKKA-REWRITE-{result['name']}, update-interval=86400, enabled=false")
+          write("snippets/quantumultx-rewrite-optional.conf", "\n".join(rewrite_lines) + "\n")
+
+          totals = Counter()
+          source_reports = []
+          for result in results:
+              totals.update(result["statistics"])
+              source_reports.append({
+                  "source": result["key"], "policy": result["policy"], "license": result["license"],
+                  "rules": len(result["main"]), "deferred_ip": len(result["deferred"]),
+                  "recovered_domains": len(result["recovered"]), "rewrite": len(result["rewrite"]),
+                  "statistics": dict(sorted(result["statistics"].items())), "issues": result["issues"],
+              })
+          report = {
+              "repository": REPOSITORY, "branch": BRANCH, "successful_sources": len(results),
+              "failed_sources": [f"{task[0]}/{task[1]}" for task, error in failures],
+              "total_rules": sum(len(result["main"]) for result in results),
+              "deferred_ip_rules": sum(len(result["deferred"]) for result in results),
+              "rewrite_rules": sum(len(result["rewrite"]) for result in results),
+              "totals": dict(sorted(totals.items())), "sources": source_reports,
+          }
+          write("reports/conversion-report.json", json.dumps(report, ensure_ascii=False, indent=2, sort_keys=True) + "\n")
+          audit_lines = [
+              "# Quantumult X Sukka semantic audit", "",
+              f"- Sources: {report['successful_sources']}",
+              f"- Native filter rules: {report['total_rules']}",
+              f"- Removed Sukka markers: {totals.get('markers_removed', 0)}",
+              f"- Removed duplicate rules: {totals.get('duplicates_removed', 0)}",
+              f"- Deferred IP rules: {report['deferred_ip_rules']}",
+              f"- URL rewrite rules: {report['rewrite_rules']}",
+              f"- Unsupported no-resolve options: {totals.get('no_resolve_not_supported', 0)}", "",
+              "| Source | Policy | Rules | Deferred IP | Rewrite |", "| --- | --- | ---: | ---: | ---: |",
+          ]
+          for item in source_reports:
+              audit_lines.append(f"| `{item['source']}` | `{item['policy']}` | {item['rules']} | {item['deferred_ip']} | {item['rewrite']} |")
+          write("reports/semantic-audit.md", "\n".join(audit_lines) + "\n")
+          validate_generated_files()
+          print(json.dumps({key: report[key] for key in ("successful_sources", "total_rules", "deferred_ip_rules", "rewrite_rules")}, ensure_ascii=False))
+          print(f"Sukka markers removed: {totals.get('markers_removed', 0)}")
+          PY
+
+      - name: Commit and push converted Quantumult X rules
+        shell: bash
+        run: |
+          git add rules snippets reports
+
+          if git diff --cached --quiet; then
+            echo "No upstream rule changes."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Sync Sukka rules to Quantumult X [skip ci]"
+          git push
