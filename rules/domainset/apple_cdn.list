@@ -2,7 +2,7 @@
 # Source: https://ruleset.skk.moe/List/domainset/apple_cdn.conf
 # Upstream: https://github.com/SukkaW/Surge
 # License: AGPL-3.0
-# Type: main; policy: direct; rules: 158
+# Type: main; policy: direct; rules: 159
 host-suffix, xp.apple.com, direct
 host-suffix, cds.apple.com, direct
 host-suffix, cl1.apple.com, direct
@@ -118,6 +118,7 @@ host-suffix, seed-swallow.siri.apple.com, direct
 host-suffix, store.apple.com.edgekey.net, direct
 host-suffix, swdist.apple.com.akadns.net, direct
 host-suffix, download.developer.apple.com, direct
+host-suffix, gspe11-2-cn-ssl.ls.apple.com, direct
 host-suffix, gspe19-2-cn-ssl.ls.apple.com, direct
 host-suffix, iosapps.itunes.g.aaplimg.com, direct
 host-suffix, osxapps.itunes.g.aaplimg.com, direct
