@@ -2,7 +2,7 @@
 # Source: https://ruleset.skk.moe/List/domainset/cdn.conf
 # Upstream: https://github.com/SukkaW/Surge
 # License: AGPL-3.0
-# Type: main; policy: direct; rules: 4631
+# Type: main; policy: direct; rules: 4632
 host, 0x0.st, direct
 host, eep.io, direct
 host-suffix, esm.sh, direct
@@ -2358,6 +2358,7 @@ host, public.linear.app, direct
 host, public.zoorix.com, direct
 host, purehalo.logto.io, direct
 host, r2.gear4music.com, direct
+host-suffix, reconvert-cdn.com, direct
 host-suffix, res.office365.com, direct
 host, res2.weblium.site, direct
 host-suffix, rescript-lang.org, direct
