@@ -2,7 +2,7 @@
 # Source: https://ruleset.skk.moe/List/domainset/download.conf
 # Upstream: https://github.com/SukkaW/Surge
 # License: AGPL-3.0
-# Type: main; policy: direct; rules: 1965
+# Type: main; policy: direct; rules: 1966
 host-suffix, gcr.io, direct
 host, ghp.ci, direct
 host-suffix, k8s.io, direct
@@ -1633,6 +1633,7 @@ host, pubmirrors.dal.corespace.com, direct
 host, redstone-launcher.mojang.com, direct
 host, softwareupdate.pilotmoon.com, direct
 host, update.code.visualstudio.com, direct
+host, assets-tcpviewer.proxyman.com, direct
 host, centos-stream.ip-connect.info, direct
 host-suffix, cos.ap-singapore.myqcloud.com, direct
 host-suffix, cos.eu-frankfurt.myqcloud.com, direct

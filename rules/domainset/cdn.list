@@ -2,7 +2,7 @@
 # Source: https://ruleset.skk.moe/List/domainset/cdn.conf
 # Upstream: https://github.com/SukkaW/Surge
 # License: AGPL-3.0
-# Type: main; policy: direct; rules: 4632
+# Type: main; policy: direct; rules: 4639
 host, 0x0.st, direct
 host, eep.io, direct
 host-suffix, esm.sh, direct
@@ -1024,6 +1024,7 @@ host, r2.dejavu.moe, direct
 host, r2cdn.c7d.dev, direct
 host-suffix, randomuser.me, direct
 host-suffix, rawgithub.com, direct
+host-suffix, rcsobjects.it, direct
 host, rdr.windy.com, direct
 host-suffix, runkitcdn.com, direct
 host-suffix, s-nbcnews.com, direct
@@ -2576,6 +2577,7 @@ host, favicon.yandex.net, direct
 host, files.gempages.net, direct
 host, flows.trysavvy.com, direct
 host, fonts.codeberg.org, direct
+host-suffix, gazzettaobjects.it, direct
 host, genesis-cdn.ff.com, direct
 host, global.divhunt.com, direct
 host, graph.facebook.com, direct
@@ -2913,6 +2915,7 @@ host, error.rakuten.co.jp, direct
 host, event.ithome.com.tw, direct
 host-suffix, events.backtrace.io, direct
 host, favicons.nextdns.io, direct
+host, files.blocktempo.ai, direct
 host, files.namecheap.com, direct
 host-suffix, files.wordpress.com, direct
 host, geoserveis.icgc.cat, direct
@@ -3205,6 +3208,7 @@ host-suffix, hscollectedforms.net, direct
 host, hubspotonwebflow.com, direct
 host, icons.duckduckgo.com, direct
 host, image-us.samsung.com, direct
+host, image.blocktempo.com, direct
 host, imageproxy.ifunny.co, direct
 host, images.anandtech.com, direct
 host, images.blockscan.com, direct
@@ -3351,6 +3355,7 @@ host, uploads.pullfrog.com, direct
 host, variations.brave.com, direct
 host, vice-prod.sdiapi.com, direct
 host, video-meta.humix.com, direct
+host, video.giroditalia.it, direct
 host-suffix, vodvideo.cbsnews.com, direct
 host, vpncdn.protonweb.com, direct
 host, wandi-6402.kxcdn.com, direct
@@ -3775,6 +3780,7 @@ host, static.tradingview.com, direct
 host, static.tryprofound.com, direct
 host, static.underhentai.net, direct
 host, static.webclicks24.com, direct
+host, static2.giroditalia.it, direct
 host-suffix, static2cdn.hubspot.com, direct
 host, statics.streamable.com, direct
 host-suffix, storage.googleapis.com, direct
@@ -4025,6 +4031,7 @@ host, cms-assets.nodecraft.com, direct
 host, conf.config-security.com, direct
 host, cookie-cdn.cookiepro.com, direct
 host, css.blackmagicdesign.com, direct
+host, delivery.twentythree.com, direct
 host, detectportal.firefox.com, direct
 host, dynamic-cdn.cms.ayoba.me, direct
 host, ecn.dev.virtualearth.net, direct

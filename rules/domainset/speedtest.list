@@ -2,7 +2,7 @@
 # Source: https://ruleset.skk.moe/List/domainset/speedtest.conf
 # Upstream: https://github.com/SukkaW/Surge
 # License: AGPL-3.0
-# Type: main; policy: direct; rules: 3355
+# Type: main; policy: direct; rules: 3357
 host-suffix, fast.com, direct
 host, fastme.ir, direct
 host-suffix, nperf.net, direct
@@ -768,6 +768,7 @@ host, spt-for1.edgeuno.com, direct
 host, spt-jfk1.edgeuno.com, direct
 host, spt-lax1.edgeuno.com, direct
 host, spt-lon1.edgeuno.com, direct
+host, spt-noc.umal-nds.com, direct
 host, spt-sjo1.edgeuno.com, direct
 host, srv-st03.arcolink.it, direct
 host, srv-st04.arcolink.it, direct
@@ -1788,6 +1789,7 @@ host, veloteste.mrjomar.com.br, direct
 host, aragonnetspeedtest.com.br, direct
 host, bassoon-sg-1.violin.co.th, direct
 host, bursaspeedtest.pendns.net, direct
+host, cns-speedtest.duckdns.org, direct
 host, hiztesti-ist.codit.com.tr, direct
 host, hl-speed.twmbroadband.com, direct
 host, iskendurum.veganet.com.tr, direct

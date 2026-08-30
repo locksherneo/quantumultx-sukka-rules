@@ -2,7 +2,7 @@
 # Source: https://ruleset.skk.moe/List/non_ip/direct.conf
 # Upstream: https://github.com/SukkaW/Surge
 # License: AGPL-3.0
-# Type: main; policy: direct; rules: 182
+# Type: main; policy: direct; rules: 183
 host-suffix, lan, direct
 host-suffix, m2m, direct
 host-suffix, home, direct
@@ -172,6 +172,7 @@ host, public.localsend.org, direct
 host-suffix, blackwell-synergy.com, direct
 host, injections.adguard.org, direct
 host-suffix, lcdn-locator.apple.com, direct
+host, mirrorlist.cdn.skk.moe, direct
 host-suffix, classix-unlimited.co.uk, direct
 host, instant.arubanetworks.com, direct
 host, setmeup.arubanetworks.com, direct
