@@ -2,7 +2,7 @@
 # Source: https://ruleset.skk.moe/List/non_ip/reject-no-drop.conf
 # Upstream: https://github.com/SukkaW/Surge
 # License: AGPL-3.0
-# Type: main; policy: reject; rules: 43
+# Type: main; policy: reject; rules: 44
 host-suffix, bvmlt.top, reject
 host-suffix, gjfzpt.cn, reject
 host-suffix, p2cdn.com, reject
@@ -46,3 +46,4 @@ host-wildcard, p2pchunk-*.douyucdn.cn, reject
 host-wildcard, dyp2p-*.douyucdn.cn, reject
 host-wildcard, p2plive-*.douyucdn.cn, reject
 host-wildcard, stun*.douyucdn.cn, reject
+host-wildcard, upos-sz-302*.bilivideo.com, reject

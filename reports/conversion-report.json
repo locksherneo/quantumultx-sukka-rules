@@ -26,11 +26,11 @@
       "policy": "direct",
       "recovered_domains": 0,
       "rewrite": 0,
-      "rules": 4639,
+      "rules": 4645,
       "source": "domainset/cdn",
       "statistics": {
         "markers_removed": 1,
-        "source_rule_lines": 4640
+        "source_rule_lines": 4646
       }
     },
     {
@@ -82,11 +82,11 @@
       "policy": "reject",
       "recovered_domains": 0,
       "rewrite": 0,
-      "rules": 135513,
+      "rules": 135484,
       "source": "domainset/reject",
       "statistics": {
         "markers_removed": 1,
-        "source_rule_lines": 135514
+        "source_rule_lines": 135485
       }
     },
     {
@@ -96,11 +96,11 @@
       "policy": "reject",
       "recovered_domains": 0,
       "rewrite": 0,
-      "rules": 76465,
+      "rules": 76704,
       "source": "domainset/reject_extra",
       "statistics": {
         "markers_removed": 1,
-        "source_rule_lines": 76466
+        "source_rule_lines": 76705
       }
     },
     {
@@ -110,11 +110,11 @@
       "policy": "reject",
       "recovered_domains": 0,
       "rewrite": 0,
-      "rules": 148342,
+      "rules": 148695,
       "source": "domainset/reject_phishing",
       "statistics": {
         "markers_removed": 1,
-        "source_rule_lines": 148343
+        "source_rule_lines": 148696
       }
     },
     {
@@ -478,11 +478,11 @@
       "policy": "reject",
       "recovered_domains": 0,
       "rewrite": 0,
-      "rules": 45,
+      "rules": 47,
       "source": "non_ip/my_reject",
       "statistics": {
         "markers_removed": 1,
-        "source_rule_lines": 53,
+        "source_rule_lines": 55,
         "unsupported_and": 1,
         "unsupported_dest_port": 1,
         "unsupported_process_name": 5
@@ -537,12 +537,12 @@
       "policy": "reject",
       "recovered_domains": 0,
       "rewrite": 0,
-      "rules": 27,
+      "rules": 28,
       "source": "non_ip/reject-drop",
       "statistics": {
         "markers_removed": 1,
         "reject_action_normalized": 1,
-        "source_rule_lines": 28
+        "source_rule_lines": 29
       }
     },
     {
@@ -556,12 +556,12 @@
       "policy": "reject",
       "recovered_domains": 0,
       "rewrite": 0,
-      "rules": 43,
+      "rules": 44,
       "source": "non_ip/reject-no-drop",
       "statistics": {
         "markers_removed": 1,
         "reject_action_normalized": 1,
-        "source_rule_lines": 45,
+        "source_rule_lines": 46,
         "unsupported_and": 1
       }
     },
@@ -1123,12 +1123,12 @@
     }
   ],
   "successful_sources": 67,
-  "total_rules": 382385,
+  "total_rules": 382958,
   "totals": {
     "markers_removed": 64,
     "no_resolve_not_supported": 186,
     "reject_action_normalized": 2,
-    "source_rule_lines": 382799,
+    "source_rule_lines": 383372,
     "unsupported_and": 42,
     "unsupported_dest_port": 1,
     "unsupported_process_name": 75,

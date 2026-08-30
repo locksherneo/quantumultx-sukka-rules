@@ -2,7 +2,7 @@
 # Source: https://ruleset.skk.moe/List/domainset/cdn.conf
 # Upstream: https://github.com/SukkaW/Surge
 # License: AGPL-3.0
-# Type: main; policy: direct; rules: 4639
+# Type: main; policy: direct; rules: 4645
 host, 0x0.st, direct
 host, eep.io, direct
 host-suffix, esm.sh, direct
@@ -1521,9 +1521,11 @@ host, cdn1.telesco.pe, direct
 host, cdn2.hextom.com, direct
 host, cdn2.macpaw.com, direct
 host, cdn2.stamped.io, direct
+host, cdn2.telesco.pe, direct
 host, cdn2.ttloli.com, direct
 host, cdn3.hextom.com, direct
 host, cdn3.stamped.io, direct
+host, cdn3.telesco.pe, direct
 host, cdn4.telesco.pe, direct
 host, cdn5.hextom.com, direct
 host, cdn5.telesco.pe, direct
@@ -2159,6 +2161,7 @@ host, cdn.babylonjs.com, direct
 host, cdn.blogarama.com, direct
 host, cdn.brandfetch.io, direct
 host, cdn.buttercms.com, direct
+host, cdn.candycode.com, direct
 host, cdn.cds.dmm.co.jp, direct
 host, cdn.changelog.com, direct
 host, cdn.cloudcraft.co, direct
@@ -2882,9 +2885,11 @@ host, cdn1.telegram.space, direct
 host, cdn1.tubeteen18.com, direct
 host, cdn2.editmysite.com, direct
 host, cdn2.iconfinder.com, direct
+host, cdn2.telegram.space, direct
 host, cdn2.tubeteen18.com, direct
 host, cdn2.turboviplay.cc, direct
 host, cdn3.iconfinder.com, direct
+host, cdn3.telegram.space, direct
 host, cdn3.tubeteen18.com, direct
 host, cdn4.iconfinder.com, direct
 host, cdn4.telegram.space, direct
@@ -3592,6 +3597,7 @@ host, videos2-h.sendvid.com, direct
 host, wac-cdn.atlassian.com, direct
 host, web-assets.strava.com, direct
 host, website-cdn.ipinfo.io, direct
+host, websiteres.nmteam.xyz, direct
 host, widget.allkeyshop.com, direct
 host, widget.automizely.com, direct
 host, widget.freshworks.com, direct
