@@ -2,7 +2,7 @@
 # Source: https://ruleset.skk.moe/List/domainset/cdn.conf
 # Upstream: https://github.com/SukkaW/Surge
 # License: AGPL-3.0
-# Type: main; policy: direct; rules: 4645
+# Type: main; policy: direct; rules: 4646
 host, 0x0.st, direct
 host, eep.io, direct
 host-suffix, esm.sh, direct
@@ -4578,6 +4578,7 @@ host-suffix, assets.brightspot.abebooks.a2z.com, direct
 host, categoriespages-cdn.trustpilot.net, direct
 host, cdn-a.sonyentertainmentnetwork.com, direct
 host, cdn.prod.ext.web.purview.azure.com, direct
+host, client-log-forwarder.1password.com, direct
 host, consumersite-assets.trustpilot.net, direct
 host, content-management-files.canva.com, direct
 host, disco-static.productessentials.app, direct
