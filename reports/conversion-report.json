@@ -82,11 +82,11 @@
       "policy": "reject",
       "recovered_domains": 0,
       "rewrite": 0,
-      "rules": 135484,
+      "rules": 135586,
       "source": "domainset/reject",
       "statistics": {
         "markers_removed": 1,
-        "source_rule_lines": 135485
+        "source_rule_lines": 135587
       }
     },
     {
@@ -96,11 +96,11 @@
       "policy": "reject",
       "recovered_domains": 0,
       "rewrite": 0,
-      "rules": 76704,
+      "rules": 76706,
       "source": "domainset/reject_extra",
       "statistics": {
         "markers_removed": 1,
-        "source_rule_lines": 76705
+        "source_rule_lines": 76707
       }
     },
     {
@@ -110,11 +110,11 @@
       "policy": "reject",
       "recovered_domains": 0,
       "rewrite": 0,
-      "rules": 148695,
+      "rules": 148863,
       "source": "domainset/reject_phishing",
       "statistics": {
         "markers_removed": 1,
-        "source_rule_lines": 148696
+        "source_rule_lines": 148864
       }
     },
     {
@@ -124,11 +124,11 @@
       "policy": "direct",
       "recovered_domains": 0,
       "rewrite": 0,
-      "rules": 3357,
+      "rules": 3360,
       "source": "domainset/speedtest",
       "statistics": {
         "markers_removed": 2,
-        "source_rule_lines": 3359
+        "source_rule_lines": 3362
       }
     },
     {
@@ -1123,12 +1123,12 @@
     }
   ],
   "successful_sources": 67,
-  "total_rules": 382958,
+  "total_rules": 383233,
   "totals": {
     "markers_removed": 64,
     "no_resolve_not_supported": 186,
     "reject_action_normalized": 2,
-    "source_rule_lines": 383372,
+    "source_rule_lines": 383647,
     "unsupported_and": 42,
     "unsupported_dest_port": 1,
     "unsupported_process_name": 75,
