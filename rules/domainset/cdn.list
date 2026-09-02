@@ -2,7 +2,7 @@
 # Source: https://ruleset.skk.moe/List/domainset/cdn.conf
 # Upstream: https://github.com/SukkaW/Surge
 # License: AGPL-3.0
-# Type: main; policy: direct; rules: 4646
+# Type: main; policy: direct; rules: 4650
 host, 0x0.st, direct
 host, eep.io, direct
 host-suffix, esm.sh, direct
@@ -157,6 +157,7 @@ host-suffix, lencr.org, direct
 host, m.wsj.net, direct
 host-suffix, missuo.ru, direct
 host-suffix, mlcdn.com, direct
+host-suffix, mqcdn.com, direct
 host-suffix, nest.land, direct
 host-suffix, npmfs.com, direct
 host-suffix, nsimg.net, direct
@@ -1008,6 +1009,7 @@ host, media.orz.uno, direct
 host, media2.dev.to, direct
 host-suffix, myvideos.info, direct
 host-suffix, nhentaimg.com, direct
+host-suffix, nodeimage.com, direct
 host, npm.antfu.dev, direct
 host-suffix, oaistatic.com, direct
 host-suffix, oculuscdn.com, direct
@@ -1287,6 +1289,7 @@ host, js.jotform.com, direct
 host, js.pngtree.com, direct
 host, js.recurly.com, direct
 host, js.rtoaster.jp, direct
+host, layers.mapq.st, direct
 host, lc.nssurge.com, direct
 host-suffix, liangzipic.com, direct
 host-suffix, live-video.net, direct
@@ -1499,6 +1502,7 @@ host, cdn.sphlabs.com, direct
 host, cdn.st-note.com, direct
 host, cdn.svgator.com, direct
 host, cdn.svgporn.com, direct
+host, cdn.system1.com, direct
 host, cdn.termius.com, direct
 host, cdn.uptimia.com, direct
 host, cdn.userway.org, direct
@@ -2186,7 +2190,6 @@ host, cdn.joypixels.com, direct
 host, cdn.lgrckt-in.com, direct
 host, cdn.lineicons.com, direct
 host, cdn.miohentai.com, direct
-host, cdn.nodeimage.com, direct
 host, cdn.onesignal.com, direct
 host, cdn.pagerduty.com, direct
 host, cdn.permutive.com, direct
@@ -2753,6 +2756,7 @@ host, upload.teftera.com, direct
 host, uploads.guim.co.uk, direct
 host, uploads.linear.app, direct
 host, v2uploads.zopim.io, direct
+host, vector.hereapi.com, direct
 host, video3.mingpao.com, direct
 host, videos.elephas.app, direct
 host, videos.ohentai.org, direct
