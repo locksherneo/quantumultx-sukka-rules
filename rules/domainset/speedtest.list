@@ -2,7 +2,7 @@
 # Source: https://ruleset.skk.moe/List/domainset/speedtest.conf
 # Upstream: https://github.com/SukkaW/Surge
 # License: AGPL-3.0
-# Type: main; policy: direct; rules: 3360
+# Type: main; policy: direct; rules: 3362
 host-suffix, fast.com, direct
 host, fastme.ir, direct
 host-suffix, nperf.net, direct
@@ -759,6 +759,7 @@ host, speedtest3.avatel.es, direct
 host, speedtest3.lepida.it, direct
 host, speedtest31.turk.net, direct
 host, speedtest33.turk.net, direct
+host, speedtest4.lepida.it, direct
 host, speedtest54.turk.net, direct
 host, speedtest59.turk.net, direct
 host, speedtest61.turk.net, direct
@@ -2651,6 +2652,7 @@ host, speedtest.bloomingdalecom.net, direct
 host, speedtest.chie.fdcservers.net, direct
 host, speedtest.citycom-austria.com, direct
 host, speedtest.clicknconnect.co.in, direct
+host, speedtest.drw2.launtel.net.au, direct
 host, speedtest.fc-fra4.as51202.net, direct
 host, speedtest.fibernetwork.com.br, direct
 host, speedtest.fra1.hivelocity.net, direct
