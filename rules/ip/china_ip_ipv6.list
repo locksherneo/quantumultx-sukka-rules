@@ -2,7 +2,7 @@
 # Source: https://ruleset.skk.moe/List/ip/china_ip_ipv6.conf
 # Upstream: https://github.com/SukkaW/Surge
 # License: AGPL-3.0
-# Type: main; policy: direct; rules: 3391
+# Type: main; policy: direct; rules: 3393
 ip6-cidr, 2001:250::/30, direct
 ip6-cidr, 2001:254::/33, direct
 ip6-cidr, 2001:255::/32, direct
@@ -13,6 +13,7 @@ ip6-cidr, 2001:da8::/32, direct
 ip6-cidr, 2001:daa:1::/48, direct
 ip6-cidr, 2001:daa:2::/47, direct
 ip6-cidr, 2001:daa:4::/47, direct
+ip6-cidr, 2001:daa:6::/48, direct
 ip6-cidr, 2001:daa:9::/48, direct
 ip6-cidr, 2001:dc7::/45, direct
 ip6-cidr, 2001:dc7:9::/48, direct
@@ -118,7 +119,6 @@ ip6-cidr, 2400:5080::/32, direct
 ip6-cidr, 2400:5280:1400::/38, direct
 ip6-cidr, 2400:5280:1c00::/38, direct
 ip6-cidr, 2400:5280:3400::/38, direct
-ip6-cidr, 2400:5280:4000::/38, direct
 ip6-cidr, 2400:5280:4c00::/38, direct
 ip6-cidr, 2400:5280:5000::/36, direct
 ip6-cidr, 2400:5280:6000::/35, direct
@@ -780,7 +780,6 @@ ip6-cidr, 2401:f860:1000::/36, direct
 ip6-cidr, 2401:f860:2000::/35, direct
 ip6-cidr, 2401:f860:4000::/34, direct
 ip6-cidr, 2401:f860:8000::/33, direct
-ip6-cidr, 2401:fa00:40::/48, direct
 ip6-cidr, 2401:fa80::/32, direct
 ip6-cidr, 2401:fb80::/32, direct
 ip6-cidr, 2401:fc60::/32, direct
@@ -1458,15 +1457,7 @@ ip6-cidr, 2404:14c0::/32, direct
 ip6-cidr, 2404:1880::/32, direct
 ip6-cidr, 2404:1c80::/32, direct
 ip6-cidr, 2404:1cc0::/32, direct
-ip6-cidr, 2404:1d80::/44, direct
-ip6-cidr, 2404:1d80:10::/45, direct
-ip6-cidr, 2404:1d80:18::/47, direct
-ip6-cidr, 2404:1d80:1b::/48, direct
-ip6-cidr, 2404:1d80:1c::/46, direct
-ip6-cidr, 2404:1d80:20::/43, direct
-ip6-cidr, 2404:1d80:40::/42, direct
-ip6-cidr, 2404:1d80:80::/41, direct
-ip6-cidr, 2404:1d80:100::/40, direct
+ip6-cidr, 2404:1d80::/39, direct
 ip6-cidr, 2404:1d80:200::/44, direct
 ip6-cidr, 2404:1d80:210::/47, direct
 ip6-cidr, 2404:1d80:212::/48, direct
@@ -1942,7 +1933,13 @@ ip6-cidr, 2406:840:188::/45, direct
 ip6-cidr, 2406:840:190::/44, direct
 ip6-cidr, 2406:840:1a0::/43, direct
 ip6-cidr, 2406:840:1c0::/42, direct
-ip6-cidr, 2406:840:200::/41, direct
+ip6-cidr, 2406:840:201::/48, direct
+ip6-cidr, 2406:840:202::/47, direct
+ip6-cidr, 2406:840:204::/46, direct
+ip6-cidr, 2406:840:208::/45, direct
+ip6-cidr, 2406:840:210::/44, direct
+ip6-cidr, 2406:840:220::/43, direct
+ip6-cidr, 2406:840:240::/42, direct
 ip6-cidr, 2406:840:280::/42, direct
 ip6-cidr, 2406:840:2c0::/43, direct
 ip6-cidr, 2406:840:2e1::/48, direct
@@ -1951,7 +1948,6 @@ ip6-cidr, 2406:840:2e4::/46, direct
 ip6-cidr, 2406:840:2e8::/45, direct
 ip6-cidr, 2406:840:2f0::/44, direct
 ip6-cidr, 2406:840:300::/41, direct
-ip6-cidr, 2406:840:381::/48, direct
 ip6-cidr, 2406:840:382::/47, direct
 ip6-cidr, 2406:840:384::/46, direct
 ip6-cidr, 2406:840:388::/45, direct
@@ -1999,7 +1995,12 @@ ip6-cidr, 2406:840:684::/46, direct
 ip6-cidr, 2406:840:688::/45, direct
 ip6-cidr, 2406:840:690::/44, direct
 ip6-cidr, 2406:840:6a0::/43, direct
-ip6-cidr, 2406:840:6c0::/42, direct
+ip6-cidr, 2406:840:6c0::/48, direct
+ip6-cidr, 2406:840:6c2::/47, direct
+ip6-cidr, 2406:840:6c4::/46, direct
+ip6-cidr, 2406:840:6c8::/45, direct
+ip6-cidr, 2406:840:6d0::/44, direct
+ip6-cidr, 2406:840:6e0::/43, direct
 ip6-cidr, 2406:840:700::/44, direct
 ip6-cidr, 2406:840:711::/48, direct
 ip6-cidr, 2406:840:712::/47, direct
@@ -2013,7 +2014,7 @@ ip6-cidr, 2406:840:807::/48, direct
 ip6-cidr, 2406:840:808::/45, direct
 ip6-cidr, 2406:840:810::/44, direct
 ip6-cidr, 2406:840:820::/43, direct
-ip6-cidr, 2406:840:840::/47, direct
+ip6-cidr, 2406:840:840::/48, direct
 ip6-cidr, 2406:840:843::/48, direct
 ip6-cidr, 2406:840:844::/46, direct
 ip6-cidr, 2406:840:848::/45, direct
@@ -2237,7 +2238,7 @@ ip6-cidr, 2406:840:9810::/45, direct
 ip6-cidr, 2406:840:9818::/47, direct
 ip6-cidr, 2406:840:981b::/48, direct
 ip6-cidr, 2406:840:9820::/43, direct
-ip6-cidr, 2406:840:9840::/43, direct
+ip6-cidr, 2406:840:9850::/44, direct
 ip6-cidr, 2406:840:9860::/47, direct
 ip6-cidr, 2406:840:9865::/48, direct
 ip6-cidr, 2406:840:9866::/47, direct
@@ -3038,6 +3039,7 @@ ip6-cidr, 2408:4004::/30, direct
 ip6-cidr, 2408:4008::/29, direct
 ip6-cidr, 2408:4010::/30, direct
 ip6-cidr, 2408:4014::/31, direct
+ip6-cidr, 2408:4016:1::/48, direct
 ip6-cidr, 2408:4016:2::/47, direct
 ip6-cidr, 2408:4016:4::/46, direct
 ip6-cidr, 2408:4016:8::/45, direct
