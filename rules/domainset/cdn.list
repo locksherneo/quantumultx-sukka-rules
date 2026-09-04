@@ -2,7 +2,7 @@
 # Source: https://ruleset.skk.moe/List/domainset/cdn.conf
 # Upstream: https://github.com/SukkaW/Surge
 # License: AGPL-3.0
-# Type: main; policy: direct; rules: 4650
+# Type: main; policy: direct; rules: 4651
 host, 0x0.st, direct
 host, eep.io, direct
 host-suffix, esm.sh, direct
@@ -1819,6 +1819,7 @@ host, cdn.hashnode.com, direct
 host, cdn.hero-sms.com, direct
 host, cdn.highporn.net, direct
 host, cdn.hinative.com, direct
+host, cdn.imgchest.com, direct
 host-suffix, cdn.imghaste.com, direct
 host, cdn.jwplayer.com, direct
 host, cdn.kinopio.club, direct
