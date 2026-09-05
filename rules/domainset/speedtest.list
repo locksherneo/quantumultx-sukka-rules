@@ -2,7 +2,7 @@
 # Source: https://ruleset.skk.moe/List/domainset/speedtest.conf
 # Upstream: https://github.com/SukkaW/Surge
 # License: AGPL-3.0
-# Type: main; policy: direct; rules: 3365
+# Type: main; policy: direct; rules: 3367
 host-suffix, fast.com, direct
 host, fastme.ir, direct
 host-suffix, nperf.net, direct
@@ -1725,6 +1725,7 @@ host, speedtest.technofiber.co, direct
 host, speedtest.twinvalley.net, direct
 host, speedtest.unifica.net.br, direct
 host, speedtest.vanciscloud.nl, direct
+host, speedtest.virtical.cloud, direct
 host-suffix, speedtest.windstream.net, direct
 host, speedtest.worldstream.nl, direct
 host, speedtest.wrinternet.com, direct
@@ -2596,6 +2597,7 @@ host, brindb2speed1.wireline.com.au, direct
 host, chi-speedtest.net.sangoma.net, direct
 host, cspeedtest.candorsolution.com, direct
 host, dal-speedtest.net.sangoma.net, direct
+host, dlls-speedtest.northstate.net, direct
 host, dns.yesindiacommunications.in, direct
 host, edgemark-chi.cust.edgemark.io, direct
 host, edgemark-lax.cust.edgemark.io, direct
