@@ -2,7 +2,7 @@
 # Source: https://ruleset.skk.moe/List/domainset/cdn.conf
 # Upstream: https://github.com/SukkaW/Surge
 # License: AGPL-3.0
-# Type: main; policy: direct; rules: 4651
+# Type: main; policy: direct; rules: 4653
 host, 0x0.st, direct
 host, eep.io, direct
 host-suffix, esm.sh, direct
@@ -321,6 +321,7 @@ host-suffix, od-cdn.com, direct
 host-suffix, odycdn.com, direct
 host, p.sda1.dev, direct
 host-suffix, pagecdn.io, direct
+host-suffix, pgimgs.com, direct
 host-suffix, phncdn.com, direct
 host-suffix, pinimg.com, direct
 host-suffix, pixhost.to, direct
@@ -2393,6 +2394,7 @@ host, st.codeforces.com, direct
 host, st.deviantart.net, direct
 host, static-id.fc2.com, direct
 host, static-sv.fc2.com, direct
+host-suffix, static-upwork.com, direct
 host, static.ahrefs.com, direct
 host, static.anysex.com, direct
 host, static.bbci.co.uk, direct
@@ -3580,6 +3582,7 @@ host-suffix, static.chaosgroup.com, direct
 host, static.chessarena.com, direct
 host, static.clips4sale.com, direct
 host, static.getpostman.com, direct
+host, static.idp.sph.com.sg, direct
 host, static.mytonwallet.io, direct
 host, static.openreplay.com, direct
 host, static.pfrt.yna.co.kr, direct
@@ -4015,7 +4018,6 @@ host, assets.documentcloud.org, direct
 host, assets.geeksforgeeks.org, direct
 host, assets.nationbuilder.com, direct
 host, assets.prowritingaid.com, direct
-host, assets.static-upwork.com, direct
 host, assets.trainingpeaks.com, direct
 host, assets10.lottiefiles.com, direct
 host, atl-global.atlassian.com, direct
