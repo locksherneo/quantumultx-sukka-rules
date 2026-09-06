@@ -2,7 +2,7 @@
 # Source: https://ruleset.skk.moe/List/domainset/speedtest.conf
 # Upstream: https://github.com/SukkaW/Surge
 # License: AGPL-3.0
-# Type: main; policy: direct; rules: 3367
+# Type: main; policy: direct; rules: 3368
 host-suffix, fast.com, direct
 host, fastme.ir, direct
 host-suffix, nperf.net, direct
@@ -348,6 +348,7 @@ host, speedtest.inoc.net, direct
 host, speedtest.itel.com, direct
 host, speedtest.k-fo.net, direct
 host, speedtest.ktis.net, direct
+host, speedtest.lazco.tw, direct
 host, speedtest.lcom.net, direct
 host, speedtest.mdtc.net, direct
 host, speedtest.mhtc.net, direct
