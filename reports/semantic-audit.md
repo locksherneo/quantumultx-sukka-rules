@@ -1,7 +1,7 @@
 # Quantumult X Sukka semantic audit
 
 - Sources: 67
-- Native filter rules: 384085
+- Native filter rules: 380622
 - Removed Sukka markers: 64
 - Removed duplicate rules: 0
 - Deferred IP rules: 48
@@ -15,11 +15,11 @@
 | `domainset/download` | `direct` | 1966 | 0 | 0 |
 | `domainset/game-download` | `direct` | 52 | 0 | 0 |
 | `domainset/icloud_private_relay` | `reject` | 6 | 0 | 0 |
-| `domainset/reject` | `reject` | 136031 | 0 | 0 |
-| `domainset/reject_extra` | `reject` | 77922 | 0 | 0 |
-| `domainset/reject_phishing` | `reject` | 148050 | 0 | 0 |
+| `domainset/reject` | `reject` | 134261 | 0 | 0 |
+| `domainset/reject_extra` | `reject` | 75839 | 0 | 0 |
+| `domainset/reject_phishing` | `reject` | 148437 | 0 | 0 |
 | `domainset/speedtest` | `direct` | 3370 | 0 | 0 |
-| `non_ip/ai` | `proxy` | 49 | 0 | 0 |
+| `non_ip/ai` | `proxy` | 50 | 0 | 0 |
 | `non_ip/apple_cdn` | `direct` | 0 | 0 | 0 |
 | `non_ip/apple_cn` | `direct` | 9 | 0 | 0 |
 | `non_ip/apple_intelligence` | `proxy` | 5 | 0 | 0 |
@@ -60,8 +60,8 @@
 | `ip/ai` | `proxy` | 23 | 0 | 0 |
 | `ip/apple_services` | `proxy` | 10 | 0 | 0 |
 | `ip/cdn` | `direct` | 3 | 0 | 0 |
-| `ip/china_ip` | `direct` | 3902 | 0 | 0 |
-| `ip/china_ip_ipv6` | `direct` | 3395 | 0 | 0 |
+| `ip/china_ip` | `direct` | 3898 | 0 | 0 |
+| `ip/china_ip_ipv6` | `direct` | 3401 | 0 | 0 |
 | `ip/domestic` | `direct` | 2 | 0 | 0 |
 | `ip/download` | `direct` | 11 | 0 | 0 |
 | `ip/lan` | `direct` | 11 | 0 | 0 |
