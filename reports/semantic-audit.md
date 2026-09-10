@@ -1,12 +1,12 @@
 # Quantumult X Sukka semantic audit
 
-- Sources: 67
-- Native filter rules: 381625
-- Removed Sukka markers: 64
+- Sources: 68
+- Native filter rules: 381581
+- Removed Sukka markers: 65
 - Removed duplicate rules: 0
 - Deferred IP rules: 48
 - URL rewrite rules: 179
-- Unsupported no-resolve options: 186
+- Unsupported no-resolve options: 200
 
 | Source | Policy | Rules | Deferred IP | Rewrite |
 | --- | --- | ---: | ---: | ---: |
@@ -15,9 +15,9 @@
 | `domainset/download` | `direct` | 1966 | 0 | 0 |
 | `domainset/game-download` | `direct` | 52 | 0 | 0 |
 | `domainset/icloud_private_relay` | `reject` | 6 | 0 | 0 |
-| `domainset/reject` | `reject` | 134570 | 0 | 0 |
-| `domainset/reject_extra` | `reject` | 76499 | 0 | 0 |
-| `domainset/reject_phishing` | `reject` | 148464 | 0 | 0 |
+| `domainset/reject` | `reject` | 134691 | 0 | 0 |
+| `domainset/reject_extra` | `reject` | 76483 | 0 | 0 |
+| `domainset/reject_phishing` | `reject` | 148242 | 0 | 0 |
 | `domainset/speedtest` | `direct` | 3375 | 0 | 0 |
 | `non_ip/ai` | `proxy` | 50 | 0 | 0 |
 | `non_ip/apple_cdn` | `direct` | 0 | 0 | 0 |
@@ -37,10 +37,10 @@
 | `non_ip/microsoft_cdn` | `direct` | 51 | 0 | 0 |
 | `non_ip/my_direct` | `direct` | 1 | 0 | 0 |
 | `non_ip/my_git` | `proxy` | 7 | 0 | 0 |
-| `non_ip/my_plus` | `proxy` | 14 | 0 | 0 |
+| `non_ip/my_plus` | `proxy` | 15 | 0 | 0 |
 | `non_ip/my_proxy` | `proxy` | 16 | 0 | 0 |
 | `non_ip/my_reject` | `reject` | 47 | 0 | 0 |
-| `non_ip/my_tw` | `proxy` | 13 | 0 | 0 |
+| `non_ip/my_tw` | `proxy` | 12 | 0 | 0 |
 | `non_ip/my_us` | `proxy` | 6 | 0 | 0 |
 | `non_ip/neteasemusic` | `direct` | 4 | 0 | 0 |
 | `non_ip/reject-drop` | `reject` | 28 | 0 | 0 |
@@ -60,8 +60,8 @@
 | `ip/ai` | `proxy` | 23 | 0 | 0 |
 | `ip/apple_services` | `proxy` | 10 | 0 | 0 |
 | `ip/cdn` | `direct` | 3 | 0 | 0 |
-| `ip/china_ip` | `direct` | 3900 | 0 | 0 |
-| `ip/china_ip_ipv6` | `direct` | 3401 | 0 | 0 |
+| `ip/china_ip` | `direct` | 3902 | 0 | 0 |
+| `ip/china_ip_ipv6` | `direct` | 3458 | 0 | 0 |
 | `ip/domestic` | `direct` | 2 | 0 | 0 |
 | `ip/download` | `direct` | 11 | 0 | 0 |
 | `ip/lan` | `direct` | 11 | 0 | 0 |
@@ -77,3 +77,4 @@
 | `ip/stream_us` | `proxy` | 0 | 0 | 0 |
 | `ip/telegram` | `proxy` | 14 | 0 | 0 |
 | `ip/telegram_asn` | `proxy` | 5 | 0 | 0 |
+| `ip/teleproto` | `proxy` | 14 | 0 | 0 |

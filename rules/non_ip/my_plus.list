@@ -2,9 +2,10 @@
 # Source: https://ruleset.skk.moe/List/non_ip/my_plus.conf
 # Upstream: https://github.com/SukkaW/Surge
 # License: AGPL-3.0
-# Type: main; policy: proxy; rules: 14
+# Type: main; policy: proxy; rules: 15
 host-suffix, kxcdn.com, proxy
 host-suffix, sososo.io, proxy
+host, hanime1.me, proxy
 host-suffix, 18comic.org, proxy
 host-suffix, 18comic.vip, proxy
 host-suffix, azurefd.net, proxy
