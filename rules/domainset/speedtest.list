@@ -2,7 +2,7 @@
 # Source: https://ruleset.skk.moe/List/domainset/speedtest.conf
 # Upstream: https://github.com/SukkaW/Surge
 # License: AGPL-3.0
-# Type: main; policy: direct; rules: 3375
+# Type: main; policy: direct; rules: 3379
 host-suffix, fast.com, direct
 host, fastme.ir, direct
 host-suffix, nperf.net, direct
@@ -198,6 +198,7 @@ host, rsghost.rsgsn.com, direct
 host, sg.cloudhost.asia, direct
 host, sghome.govpro.app, direct
 host, sl-04.wemacom.net, direct
+host, sp1-de.delska.com, direct
 host, sp1.asthriona.com, direct
 host, sp1.burstfire.net, direct
 host, sp1.contilnet.net, direct
@@ -1354,6 +1355,7 @@ host, ookla-server.vim.web.tr, direct
 host-suffix, ookla-speedtest.fsr.com, direct
 host, ookla-speedtest.tkrz.de, direct
 host, ookla.a1.neptune.net.au, direct
+host, ookla.ams.atharva.co.id, direct
 host, ookla.b2.neptune.net.au, direct
 host, ookla.fibraleste.com.br, direct
 host, ookla.p2.neptune.net.au, direct
@@ -2021,6 +2023,7 @@ host, mumbaispeedtest.spectra.co, direct
 host, ok.conectmastelecom.com.br, direct
 host, ookla-speedtest.e-ports.eu, direct
 host, ookla.araujotelecom.com.br, direct
+host, ooklaspeedtest.d-pcomm.com, direct
 host, phc-speed.twmbroadband.com, direct
 host, sgpspeedtest.cmctelecom.vn, direct
 host, sp1.nokeconsultoria.com.br, direct
@@ -2407,6 +2410,7 @@ host, wa01svp-speed11.svc.tds.net, direct
 host, whvl-ga-st.highlinefast.com, direct
 host, afyonspeedtest.fixnet.com.tr, direct
 host, atl-speedtest.northstate.net, direct
+host, chi-speedtest.northstate.net, direct
 host, dal-speedtest.transtelco.net, direct
 host, de-bln2-ookla-01.wemacom.net, direct
 host, de-ffm1-ookla-01.wemacom.net, direct
