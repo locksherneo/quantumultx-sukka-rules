@@ -2,7 +2,7 @@
 # Source: https://ruleset.skk.moe/List/domainset/cdn.conf
 # Upstream: https://github.com/SukkaW/Surge
 # License: AGPL-3.0
-# Type: main; policy: direct; rules: 4655
+# Type: main; policy: direct; rules: 4661
 host, 0x0.st, direct
 host, eep.io, direct
 host-suffix, esm.sh, direct
@@ -593,6 +593,7 @@ host-suffix, 4everland.io, direct
 host, aimg.fc2.com, direct
 host, ajax.cat.net, direct
 host-suffix, apperoni.top, direct
+host-suffix, axiom-cdn.io, direct
 host-suffix, axis-cdn.net, direct
 host, b.peatio.com, direct
 host, b.sf-syn.com, direct
@@ -1053,6 +1054,7 @@ host-suffix, stackblitz.io, direct
 host, static.dw.com, direct
 host, static.ffx.io, direct
 host, static.iyf.tv, direct
+host, static.jup.ag, direct
 host, static.k2s.cc, direct
 host, static.nrk.no, direct
 host, static.ui.com, direct
@@ -3072,6 +3074,7 @@ host, sync.getpublica.com, direct
 host, tag.unifyintent.com, direct
 host, tags.nationwide.com, direct
 host, thumb.wikimedia.org, direct
+host, thumbnails.padre.gg, direct
 host, thumbs.onlyfans.com, direct
 host, thumbs2.sendvid.com, direct
 host, tile2.intervals.icu, direct
@@ -4122,6 +4125,7 @@ host, tiles.openrailwaymap.org, direct
 host, tools-static.wmflabs.org, direct
 host, typescript.azureedge.net, direct
 host, ubistatic2-a.ubisoft.com, direct
+host, ugc.production.linktr.ee, direct
 host, viu-static.akamaized.net, direct
 host, web-assets.zendesk.co.jp, direct
 host, wl-apps.yourwebsite.life, direct
@@ -4145,6 +4149,7 @@ host, cdn.privacy.paramount.com, direct
 host, cdn.registerdisney.go.com, direct
 host, changelog-widget.canny.io, direct
 host, chunk-composing.canva.com, direct
+host, coin-images.coingecko.com, direct
 host, components.justanswer.com, direct
 host, cors-proxy.htmldriven.com, direct
 host-suffix, crashlytics2.l.google.com, direct
@@ -4317,6 +4322,7 @@ host, antiqua-ux-cdn.monotype.com, direct
 host, app-static-prod.posthog.com, direct
 host, article-image-ix.nikkei.com, direct
 host, assets.braintreegateway.com, direct
+host, assets.production.linktr.ee, direct
 host, assets.weather-forecast.com, direct
 host-suffix, cdn-lfs-us-1.huggingface.co, direct
 host, cdn-live.foreignaffairs.com, direct
