@@ -2,7 +2,7 @@
 # Source: https://ruleset.skk.moe/List/ip/china_ip.conf
 # Upstream: https://github.com/SukkaW/Surge
 # License: CC BY-SA 2.0
-# Type: main; policy: direct; rules: 3901
+# Type: main; policy: direct; rules: 3900
 ip-cidr, 1.1.8.0/24, direct
 ip-cidr, 1.2.4.0/24, direct
 ip-cidr, 1.8.1.0/24, direct
@@ -253,7 +253,7 @@ ip-cidr, 43.231.170.0/24, direct
 ip-cidr, 43.239.120.0/22, direct
 ip-cidr, 43.239.172.0/23, direct
 ip-cidr, 43.240.0.0/22, direct
-ip-cidr, 43.240.60.0/22, direct
+ip-cidr, 43.240.56.0/21, direct
 ip-cidr, 43.240.72.0/22, direct
 ip-cidr, 43.240.124.0/22, direct
 ip-cidr, 43.240.128.0/22, direct
@@ -788,7 +788,6 @@ ip-cidr, 103.8.220.0/22, direct
 ip-cidr, 103.9.8.0/22, direct
 ip-cidr, 103.9.252.0/22, direct
 ip-cidr, 103.10.84.0/22, direct
-ip-cidr, 103.12.98.0/23, direct
 ip-cidr, 103.12.184.0/22, direct
 ip-cidr, 103.12.232.0/22, direct
 ip-cidr, 103.13.244.0/22, direct
