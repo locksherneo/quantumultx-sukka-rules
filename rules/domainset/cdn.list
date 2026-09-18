@@ -2,7 +2,7 @@
 # Source: https://ruleset.skk.moe/List/domainset/cdn.conf
 # Upstream: https://github.com/SukkaW/Surge
 # License: AGPL-3.0
-# Type: main; policy: direct; rules: 4661
+# Type: main; policy: direct; rules: 4664
 host, 0x0.st, direct
 host, eep.io, direct
 host-suffix, esm.sh, direct
@@ -348,6 +348,7 @@ host-suffix, sascdn.com, direct
 host-suffix, sc-cdn.com, direct
 host-suffix, scene7.com, direct
 host-suffix, seecdn.com, direct
+host-suffix, seecdn.net, direct
 host-suffix, sftcdn.net, direct
 host-suffix, shgcdn.com, direct
 host-suffix, shields.io, direct
@@ -565,7 +566,6 @@ host, th.bing.com, direct
 host, tile.osm.be, direct
 host-suffix, tile.osm.ch, direct
 host, tn.vjav.com, direct
-host-suffix, tripcdn.com, direct
 host-suffix, ttcache.com, direct
 host, turbo.build, direct
 host-suffix, tutu1.space, direct
@@ -1365,6 +1365,7 @@ host, static.fc2.com, direct
 host, static.itch.io, direct
 host, static.j51.net, direct
 host, static.lwn.net, direct
+host, static.okou.io, direct
 host, static.okx.cab, direct
 host, static.okx.com, direct
 host, static.reo.dev, direct
@@ -1812,6 +1813,7 @@ host, cdn.dribbble.com, direct
 host-suffix, cdn.easyling.com, direct
 host, cdn.ecomm.ui.com, direct
 host, cdn.equalweb.com, direct
+host, cdn.eye-able.com, direct
 host, cdn.firebase.com, direct
 host, cdn.foxycart.com, direct
 host, cdn.getkoala.com, direct
@@ -3711,6 +3713,7 @@ host, images-assets.nasa.gov, direct
 host, images.contentstack.io, direct
 host, images.hothardware.com, direct
 host, images.newrepublic.com, direct
+host, images.radio-canada.ca, direct
 host, images.socialblade.com, direct
 host, images.wsjcommerce.net, direct
 host, images.wurstclient.net, direct
