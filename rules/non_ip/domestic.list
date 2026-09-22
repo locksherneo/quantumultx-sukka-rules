@@ -2,7 +2,7 @@
 # Source: https://ruleset.skk.moe/List/non_ip/domestic.conf
 # Upstream: https://github.com/SukkaW/Surge
 # License: AGPL-3.0
-# Type: main; policy: direct; rules: 869
+# Type: main; policy: direct; rules: 870
 host-suffix, 3.cn, direct
 host-suffix, 6.cn, direct
 host-suffix, t.cn, direct
@@ -281,6 +281,7 @@ host-suffix, qhres.com, direct
 host-suffix, qiniu.com, direct
 host-suffix, qixin.com, direct
 host-suffix, qzone.com, direct
+host-suffix, rnote.com, direct
 host-suffix, roblox.cn, direct
 host-suffix, sifou.com, direct
 host-suffix, sinajs.cn, direct
