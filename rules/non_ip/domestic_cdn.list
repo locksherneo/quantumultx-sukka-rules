@@ -1,0 +1,12 @@
+# Quantumult X native rules converted from Sukka Ruleset.
+# Source: https://ruleset.skk.moe/List/non_ip/domestic_cdn.conf
+# Upstream: https://github.com/SukkaW/Surge
+# License: AGPL-3.0
+# Type: main; policy: proxy; rules: 7
+host-suffix, hdslb.com, proxy
+host-suffix, qhimg.com, proxy
+host-suffix, qhres.com, proxy
+host-suffix, qhimgs.com, proxy
+host-suffix, qhres2.com, proxy
+host-suffix, music.126.net, proxy
+host-wildcard, qhimgs?.com, proxy

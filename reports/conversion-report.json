@@ -82,11 +82,11 @@
       "policy": "reject",
       "recovered_domains": 0,
       "rewrite": 0,
-      "rules": 135183,
+      "rules": 135324,
       "source": "domainset/reject",
       "statistics": {
         "markers_removed": 1,
-        "source_rule_lines": 135184
+        "source_rule_lines": 135325
       }
     },
     {
@@ -96,11 +96,11 @@
       "policy": "reject",
       "recovered_domains": 0,
       "rewrite": 0,
-      "rules": 79492,
+      "rules": 79503,
       "source": "domainset/reject_extra",
       "statistics": {
         "markers_removed": 1,
-        "source_rule_lines": 79493
+        "source_rule_lines": 79504
       }
     },
     {
@@ -124,11 +124,11 @@
       "policy": "direct",
       "recovered_domains": 0,
       "rewrite": 0,
-      "rules": 3393,
+      "rules": 3397,
       "source": "domainset/speedtest",
       "statistics": {
         "markers_removed": 2,
-        "source_rule_lines": 3395
+        "source_rule_lines": 3399
       }
     },
     {
@@ -782,6 +782,20 @@
     },
     {
       "deferred_ip": 0,
+      "issues": {},
+      "license": "AGPL-3.0",
+      "policy": "proxy",
+      "recovered_domains": 0,
+      "rewrite": 0,
+      "rules": 7,
+      "source": "non_ip/domestic_cdn",
+      "statistics": {
+        "markers_removed": 1,
+        "source_rule_lines": 8
+      }
+    },
+    {
+      "deferred_ip": 0,
       "issues": {
         "no_resolve_not_supported": [
           "IP-CIDR,4.151.200.38/32,no-resolve",
@@ -845,11 +859,11 @@
       "policy": "direct",
       "recovered_domains": 0,
       "rewrite": 0,
-      "rules": 3903,
+      "rules": 3901,
       "source": "ip/china_ip",
       "statistics": {
         "markers_removed": 1,
-        "source_rule_lines": 3904
+        "source_rule_lines": 3902
       }
     },
     {
@@ -1144,13 +1158,13 @@
       }
     }
   ],
-  "successful_sources": 68,
-  "total_rules": 381228,
+  "successful_sources": 69,
+  "total_rules": 381389,
   "totals": {
-    "markers_removed": 65,
+    "markers_removed": 66,
     "no_resolve_not_supported": 200,
     "reject_action_normalized": 2,
-    "source_rule_lines": 381643,
+    "source_rule_lines": 381805,
     "unsupported_and": 42,
     "unsupported_dest_port": 1,
     "unsupported_process_name": 75,
