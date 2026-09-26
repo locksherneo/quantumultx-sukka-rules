@@ -2,7 +2,7 @@
 # Source: https://ruleset.skk.moe/List/domainset/cdn.conf
 # Upstream: https://github.com/SukkaW/Surge
 # License: AGPL-3.0
-# Type: main; policy: direct; rules: 4674
+# Type: main; policy: direct; rules: 4675
 host, 0x0.st, direct
 host, eep.io, direct
 host-suffix, esm.sh, direct
@@ -1201,6 +1201,7 @@ host-suffix, cursor-cdn.com, direct
 host, d.newsweek.com, direct
 host, dc-cdn.cdw.com, direct
 host-suffix, descopecdn.com, direct
+host, dma.canyon.com, direct
 host-suffix, doppiocdn.live, direct
 host-suffix, dummyimage.com, direct
 host-suffix, ebaystatic.com, direct
@@ -2327,7 +2328,6 @@ host, img3.airdroid.com, direct
 host, img4.airdroid.com, direct
 host, img6.airdroid.com, direct
 host, imgcdn.cna.com.tw, direct
-host-suffix, ipfs.ecolatam.com, direct
 host, js.chilipiper.com, direct
 host, js.convertflow.co, direct
 host, js1.chargebee.com, direct
@@ -2991,6 +2991,7 @@ host-suffix, media.amplience.net, direct
 host, media.breitbart.com, direct
 host, media.crazyshit.com, direct
 host, media.glassdoor.com, direct
+host, media.karousell.com, direct
 host, media.newyorker.com, direct
 host, media.shopimind.com, direct
 host-suffix, media.strapiapp.com, direct
