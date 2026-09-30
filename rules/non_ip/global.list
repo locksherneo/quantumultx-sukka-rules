@@ -2,7 +2,7 @@
 # Source: https://ruleset.skk.moe/List/non_ip/global.conf
 # Upstream: https://github.com/SukkaW/Surge
 # License: AGPL-3.0
-# Type: main; policy: proxy; rules: 1270
+# Type: main; policy: proxy; rules: 1271
 host-suffix, ac, proxy
 host-suffix, ai, proxy
 host-suffix, at, proxy
@@ -401,6 +401,7 @@ host-suffix, slack.com, proxy
 host-suffix, tenor.com, proxy
 host-suffix, tesco.com, proxy
 host-suffix, tfbnw.net, proxy
+host-suffix, tokens.ci, proxy
 host-suffix, tube8.com, proxy
 host-suffix, twimg.com, proxy
 host-suffix, twitch.tv, proxy
