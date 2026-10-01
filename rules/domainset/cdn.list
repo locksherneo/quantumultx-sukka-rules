@@ -2,7 +2,7 @@
 # Source: https://ruleset.skk.moe/List/domainset/cdn.conf
 # Upstream: https://github.com/SukkaW/Surge
 # License: AGPL-3.0
-# Type: main; policy: direct; rules: 4678
+# Type: main; policy: direct; rules: 4680
 host, 0x0.st, direct
 host, eep.io, direct
 host-suffix, esm.sh, direct
@@ -121,6 +121,7 @@ host-suffix, epimg.net, direct
 host-suffix, erocdn.co, direct
 host-suffix, eth.sucks, direct
 host-suffix, f-cdn.com, direct
+host-suffix, fal.media, direct
 host-suffix, fbcdn.com, direct
 host-suffix, fbcdn.net, direct
 host-suffix, fbsbx.com, direct
@@ -3867,6 +3868,7 @@ host-suffix, assets.digitalocean.com, direct
 host, assets.lemonsqueezy.com, direct
 host, assets.mcp.corespeed.io, direct
 host, assets.science.nasa.gov, direct
+host, assets.singaporeair.com, direct
 host, assets.streamlinehq.com, direct
 host, assets.xboxservices.com, direct
 host, assets1.lottiefiles.com, direct
