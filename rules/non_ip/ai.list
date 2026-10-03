@@ -2,10 +2,11 @@
 # Source: https://ruleset.skk.moe/List/non_ip/ai.conf
 # Upstream: https://github.com/SukkaW/Surge
 # License: AGPL-3.0
-# Type: main; policy: proxy; rules: 50
+# Type: main; policy: proxy; rules: 51
 host-suffix, g.ai, proxy
 host-suffix, x.ai, proxy
 host-suffix, ai.com, proxy
+host-suffix, clau.de, proxy
 host-suffix, dify.ai, proxy
 host-suffix, meta.ai, proxy
 host-suffix, poe.com, proxy
