@@ -2,7 +2,7 @@
 # Source: https://ruleset.skk.moe/List/domainset/speedtest.conf
 # Upstream: https://github.com/SukkaW/Surge
 # License: AGPL-3.0
-# Type: main; policy: direct; rules: 3415
+# Type: main; policy: direct; rules: 3418
 host-suffix, fast.com, direct
 host, fastme.ir, direct
 host-suffix, nperf.net, direct
@@ -321,6 +321,7 @@ host, spd53.claro.com.br, direct
 host, spd60.claro.com.br, direct
 host, spd76.claro.com.br, direct
 host, spd79.claro.com.br, direct
+host, spdt.lanxus.com.br, direct
 host, speed.as198997.net, direct
 host, speed.cablelink.at, direct
 host, speed.clair.global, direct
@@ -1853,6 +1854,7 @@ host, spd-100g-ookla.stelogy.io, direct
 host, speed-br2.gigacomm.net.au, direct
 host, speed-mel.gigacomm.net.au, direct
 host, speed-syd.gigacomm.net.au, direct
+host, speed.airmaxbroadband.com, direct
 host, speed.newmarket.telmax.ca, direct
 host, speed.telecablecartaya.es, direct
 host, speed.upnetcaucaia.com.br, direct
@@ -3002,6 +3004,7 @@ host, speedtest.bradfordbroadband.com, direct
 host, speedtest.deltatelecomam.com.br, direct
 host, speedtest.euronettelecom.com.br, direct
 host, speedtest.extremanetwork.com.br, direct
+host, speedtest.g5nortetelecom.com.br, direct
 host, speedtest.hkg01.node.as9516.com, direct
 host, speedtest.isplinkdigital.com.br, direct
 host, speedtest.japanettelecom.com.br, direct
