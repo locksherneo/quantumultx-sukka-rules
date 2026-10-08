@@ -2,7 +2,7 @@
 # Source: https://ruleset.skk.moe/List/domainset/cdn.conf
 # Upstream: https://github.com/SukkaW/Surge
 # License: AGPL-3.0
-# Type: main; policy: direct; rules: 4680
+# Type: main; policy: direct; rules: 4684
 host, 0x0.st, direct
 host, eep.io, direct
 host-suffix, esm.sh, direct
@@ -1781,6 +1781,7 @@ host, assets.stash.com, direct
 host, assets.toot.cafe, direct
 host, assets.twitch.tv, direct
 host, assets.upload.io, direct
+host, assets.vanta.com, direct
 host, assets.vogue.com, direct
 host, assets.volvo.com, direct
 host, assets.xmind.net, direct
@@ -2352,6 +2353,7 @@ host, media.nownews.com, direct
 host-suffix, media.zestyio.com, direct
 host-suffix, mediadelivery.net, direct
 host-suffix, monitor.azure.com, direct
+host, n.approveit.today, direct
 host, netlify.apollo.io, direct
 host-suffix, notion-static.com, direct
 host, ocsp.comodoca.com, direct
@@ -4392,6 +4394,7 @@ host, player-frontend.cnevids.com, direct
 host, prego-cache.prod.sketch.com, direct
 host, public-pages.cbinsights.com, direct
 host, resources-live.sketch.cloud, direct
+host, rum-ingest.us1.signalfx.com, direct
 host, safebrowsing.googleapis.com, direct
 host, sessions-bugsnag.docker.com, direct
 host-suffix, siteintercept.qualtrics.com, direct
@@ -4401,6 +4404,7 @@ host, static-homepage-en.pluto.tv, direct
 host, static-mh.content.disney.io, direct
 host, static-production.npmjs.com, direct
 host, static-webfonts.myfonts.com, direct
+host, static.acm.account.sony.com, direct
 host, static.captcha-delivery.com, direct
 host, sts.online.visualstudio.com, direct
 host, tvdownloaddw-a.akamaihd.net, direct

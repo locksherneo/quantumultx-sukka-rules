@@ -2,7 +2,7 @@
 # Source: https://ruleset.skk.moe/List/non_ip/cdn.conf
 # Upstream: https://github.com/SukkaW/Surge
 # License: AGPL-3.0
-# Type: main; policy: direct; rules: 83
+# Type: main; policy: direct; rules: 84
 host, cdn-msp.jmcomic.me, direct
 host, cdn-msp.18comic.org, direct
 host, cdn-msp.18comic.vip, direct
@@ -86,3 +86,4 @@ host-wildcard, fastly-*.allmovie.com, direct
 host-wildcard, cdn*.porn87.com, direct
 host-wildcard, cdn*.pornhost.com, direct
 host-wildcard, cdn*.boysfood.com, direct
+host-wildcard, rum-ingest.*.signalfx.com, direct

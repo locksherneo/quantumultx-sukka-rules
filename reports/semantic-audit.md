@@ -1,7 +1,7 @@
 # Quantumult X Sukka semantic audit
 
 - Sources: 69
-- Native filter rules: 371183
+- Native filter rules: 371131
 - Removed Sukka markers: 66
 - Removed duplicate rules: 0
 - Deferred IP rules: 48
@@ -11,26 +11,26 @@
 | Source | Policy | Rules | Deferred IP | Rewrite |
 | --- | --- | ---: | ---: | ---: |
 | `domainset/apple_cdn` | `direct` | 159 | 0 | 0 |
-| `domainset/cdn` | `direct` | 4680 | 0 | 0 |
-| `domainset/download` | `direct` | 1970 | 0 | 0 |
+| `domainset/cdn` | `direct` | 4684 | 0 | 0 |
+| `domainset/download` | `direct` | 1971 | 0 | 0 |
 | `domainset/game-download` | `direct` | 52 | 0 | 0 |
 | `domainset/icloud_private_relay` | `reject` | 6 | 0 | 0 |
-| `domainset/reject` | `reject` | 135820 | 0 | 0 |
-| `domainset/reject_extra` | `reject` | 76369 | 0 | 0 |
-| `domainset/reject_phishing` | `reject` | 136740 | 0 | 0 |
+| `domainset/reject` | `reject` | 135821 | 0 | 0 |
+| `domainset/reject_extra` | `reject` | 76550 | 0 | 0 |
+| `domainset/reject_phishing` | `reject` | 136476 | 0 | 0 |
 | `domainset/speedtest` | `direct` | 3419 | 0 | 0 |
 | `non_ip/ai` | `proxy` | 51 | 0 | 0 |
 | `non_ip/apple_cdn` | `direct` | 0 | 0 | 0 |
 | `non_ip/apple_cn` | `direct` | 9 | 0 | 0 |
 | `non_ip/apple_intelligence` | `proxy` | 5 | 0 | 0 |
 | `non_ip/apple_services` | `proxy` | 16 | 1 | 0 |
-| `non_ip/cdn` | `direct` | 83 | 0 | 0 |
+| `non_ip/cdn` | `direct` | 84 | 0 | 0 |
 | `non_ip/cloudmounter` | `proxy` | 0 | 0 | 0 |
 | `non_ip/direct` | `direct` | 183 | 0 | 0 |
 | `non_ip/domestic` | `direct` | 871 | 0 | 0 |
 | `non_ip/download` | `direct` | 9 | 0 | 0 |
 | `non_ip/gitlab` | `proxy` | 1 | 0 | 0 |
-| `non_ip/global` | `proxy` | 1271 | 0 | 0 |
+| `non_ip/global` | `proxy` | 1274 | 0 | 0 |
 | `non_ip/global_plus` | `proxy` | 0 | 0 | 0 |
 | `non_ip/lan` | `direct` | 49 | 0 | 0 |
 | `non_ip/microsoft` | `proxy` | 83 | 0 | 0 |
@@ -62,7 +62,7 @@
 | `ip/apple_services` | `proxy` | 10 | 0 | 0 |
 | `ip/cdn` | `direct` | 3 | 0 | 0 |
 | `ip/china_ip` | `direct` | 3903 | 0 | 0 |
-| `ip/china_ip_ipv6` | `direct` | 3446 | 0 | 0 |
+| `ip/china_ip_ipv6` | `direct` | 3467 | 0 | 0 |
 | `ip/domestic` | `direct` | 2 | 0 | 0 |
 | `ip/download` | `direct` | 11 | 0 | 0 |
 | `ip/lan` | `direct` | 11 | 0 | 0 |
