@@ -2,7 +2,7 @@
 # Source: https://ruleset.skk.moe/List/domainset/speedtest.conf
 # Upstream: https://github.com/SukkaW/Surge
 # License: AGPL-3.0
-# Type: main; policy: direct; rules: 3419
+# Type: main; policy: direct; rules: 3424
 host-suffix, fast.com, direct
 host, fastme.ir, direct
 host-suffix, nperf.net, direct
@@ -281,6 +281,7 @@ host, teste.i9va.net.br, direct
 host, tnookla.tn.edu.tw, direct
 host, two.speed.airc.it, direct
 host, vitesse.cogeco.ca, direct
+host, wrlcc.synology.me, direct
 host, www.librespeed.fi, direct
 host, ch1.chtm.hinet.net, direct
 host, ds19.vipconnect.mx, direct
@@ -515,6 +516,7 @@ host, speedtest.netcup.at, direct
 host, speedtest.netone.nl, direct
 host, speedtest.newsxs.nl, direct
 host, speedtest.nocix.net, direct
+host, speedtest.nwlab.org, direct
 host-suffix, speedtest.orange.fr, direct
 host-suffix, speedtest.orange.pl, direct
 host, speedtest.osage.net, direct
@@ -1689,6 +1691,7 @@ host, speedtest.cadence.net.uk, direct
 host, speedtest.chisholmbb.com, direct
 host, speedtest.citytelecom.ru, direct
 host, speedtest.connectzone.in, direct
+host, speedtest.dacomfibra.com, direct
 host, speedtest.datafex.com.tr, direct
 host, speedtest.del.excitel.in, direct
 host, speedtest.deltacable.com, direct
@@ -2450,9 +2453,11 @@ host, gh-speedtest.homeplus.net.tw, direct
 host, hk-bgp-speedtest.nearoute.io, direct
 host, hmc-speedtest.northstate.net, direct
 host, iad-eqx10-ookla-1.99.network, direct
+host, imrteixeira.brsserver.com.br, direct
 host, kl-speedtest.homeplus.net.tw, direct
 host, koreaspeedtest.cmctelecom.vn, direct
 host, ks-speedtest.homeplus.net.tw, direct
+host, kzspeedtest01.aunalytics.com, direct
 host, ldc01-speedtest.whipcord.com, direct
 host, lg-speedtest.homeplus.net.tw, direct
 host, lifitelecom.brsserver.com.br, direct
