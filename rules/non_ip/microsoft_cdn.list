@@ -2,12 +2,11 @@
 # Source: https://ruleset.skk.moe/List/non_ip/microsoft_cdn.conf
 # Upstream: https://github.com/SukkaW/Surge
 # License: AGPL-3.0
-# Type: main; policy: direct; rules: 51
+# Type: main; policy: direct; rules: 50
 host-suffix, sdx.microsoft.com, direct
 host, res.cdn.office.net, direct
 host, res-1.cdn.office.net, direct
 host, res-2.cdn.office.net, direct
-host-suffix, download.microsoft.com, direct
 host-suffix, b.c2r.ts.cdn.office.net, direct
 host-suffix, ctldl.windowsupdate.com, direct
 host-suffix, f.c2r.ts.cdn.office.net, direct

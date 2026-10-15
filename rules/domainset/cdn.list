@@ -2,7 +2,7 @@
 # Source: https://ruleset.skk.moe/List/domainset/cdn.conf
 # Upstream: https://github.com/SukkaW/Surge
 # License: AGPL-3.0
-# Type: main; policy: direct; rules: 4688
+# Type: main; policy: direct; rules: 4689
 host, 0x0.st, direct
 host, eep.io, direct
 host-suffix, esm.sh, direct
@@ -1592,6 +1592,7 @@ host, icons.llamao.fi, direct
 host, image.gyutto.jp, direct
 host, image.status.io, direct
 host, images.dmca.com, direct
+host, images.higgs.ai, direct
 host, images.kick.com, direct
 host, images.pluto.tv, direct
 host, images.vudu.com, direct
