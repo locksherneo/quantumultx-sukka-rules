@@ -2,7 +2,7 @@
 # Source: https://ruleset.skk.moe/List/domainset/cdn.conf
 # Upstream: https://github.com/SukkaW/Surge
 # License: AGPL-3.0
-# Type: main; policy: direct; rules: 4689
+# Type: main; policy: direct; rules: 4691
 host, 0x0.st, direct
 host, eep.io, direct
 host-suffix, esm.sh, direct
@@ -3577,6 +3577,7 @@ host, sequoia.cdn-apple.com, direct
 host, services.linkfire.com, direct
 host, sig.grumpybumpers.com, direct
 host, siloh-ns1.plutotv.net, direct
+host, sl3-cdn.karousell.com, direct
 host, speedmedia2.jfrog.com, direct
 host-suffix, ssl-images-amazon.com, direct
 host, st3.depositphotos.com, direct
@@ -3759,6 +3760,7 @@ host, media.steampowered.com, direct
 host, megapx-assets.dcard.tw, direct
 host-suffix, misskeyusercontent.com, direct
 host, moderate.cleantalk.org, direct
+host, mweb-cdn.karousell.com, direct
 host-suffix, nel.measure.office.net, direct
 host, newassets.hcaptcha.com, direct
 host, nodeassets.nbcnews.com, direct
