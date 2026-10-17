@@ -2,7 +2,7 @@
 # Source: https://ruleset.skk.moe/List/domainset/speedtest.conf
 # Upstream: https://github.com/SukkaW/Surge
 # License: AGPL-3.0
-# Type: main; policy: direct; rules: 3431
+# Type: main; policy: direct; rules: 3434
 host-suffix, fast.com, direct
 host, fastme.ir, direct
 host-suffix, nperf.net, direct
@@ -550,6 +550,7 @@ host, speedtest.xsnews.nl, direct
 host, speedtest.xxlnet.nl, direct
 host, speedtest1.claro.cr, direct
 host, speedtest1.co-fi.es, direct
+host, speedtest2.co-fi.es, direct
 host, speedtest2.telin.sg, direct
 host, speedtest3.dacor.de, direct
 host-suffix, speedtestcustom.com, direct
@@ -3099,6 +3100,7 @@ host, ookla-london.briantbroadband.com, direct
 host, ookla-london01.tropicalgames.net, direct
 host, ookla.jgainterlinktelecom.com.br, direct
 host, ooklaspeedtest.wilcowireless.com, direct
+host, pri-r450-speedtest.metrocomm.com, direct
 host, puteaux3.d2m.c2d.liveservices.fr, direct
 host, qoeookla-mimi-01.sys.comcast.net, direct
 host, qoeookla-ncst-01.sys.comcast.net, direct
@@ -3372,6 +3374,7 @@ host, sfosj0096speedtestserver02.wiline.com, direct
 host, speedtest-eastburwood.optusnet.com.au, direct
 host, speedtest-germany.veribarindir.com.tr, direct
 host, speedtest-sydney.macquarietelecom.com, direct
+host, speedtest.fiberlinksolutionsltd.co.ke, direct
 host, speedtest.mumbai.charotarbroadband.in, direct
 host, speedtest01-cty-gfld-ma-prod.gcet.net, direct
 host, speedtest1.ric1.va.hostedbackbone.net, direct
