@@ -2,7 +2,7 @@
 # Source: https://ruleset.skk.moe/List/domainset/speedtest.conf
 # Upstream: https://github.com/SukkaW/Surge
 # License: AGPL-3.0
-# Type: main; policy: direct; rules: 3434
+# Type: main; policy: direct; rules: 3440
 host-suffix, fast.com, direct
 host, fastme.ir, direct
 host-suffix, nperf.net, direct
@@ -86,6 +86,7 @@ host, st.ruinet.work, direct
 host, st1.ligtel.com, direct
 host, str.seyfert.in, direct
 host, test.intred.it, direct
+host, de.riospeed.com, direct
 host, istanbul.sth.tr, direct
 host, ld1.vayutel.net, direct
 host, lg-ffm.aeza.net, direct
@@ -2667,6 +2668,10 @@ host, miaspeedtest.blackburn-pr.com, direct
 host, mum-speedtest.sanghviinfo.com, direct
 host, netservice01.ber01.lwlcom.net, direct
 host, ntp-speedtest.homeplus.net.tw, direct
+host, ookla-dc3.services.proxad.net, direct
+host, ookla-dc5.services.proxad.net, direct
+host, ookla-lyo.services.proxad.net, direct
+host, ookla-mrs.services.proxad.net, direct
 host, ookla-toronto.aerioncloud.com, direct
 host, sea-speedtest.net.sangoma.net, direct
 host, sgp-speedtest.limtechlabs.top, direct
@@ -3184,6 +3189,7 @@ host, velocidade.netshowtelecom.com.br, direct
 host, velocidade.phinfortelecom.com.br, direct
 host, velocidade.webzoomtelecom.com.br, direct
 host, velocimetro.speednetworks.com.br, direct
+host, yyc-speedtest.xeronetworks.co.uk, direct
 host, btlr-speedtest-02.brightspeed.com, direct
 host, buft-speedtest-02.brightspeed.com, direct
 host, chvl-speedtest-02.brightspeed.com, direct
