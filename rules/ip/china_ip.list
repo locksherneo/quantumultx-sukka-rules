@@ -2,7 +2,7 @@
 # Source: https://ruleset.skk.moe/List/ip/china_ip.conf
 # Upstream: https://github.com/SukkaW/Surge
 # License: CC BY-SA 2.0
-# Type: main; policy: direct; rules: 3885
+# Type: main; policy: direct; rules: 3881
 ip-cidr, 1.1.8.0/24, direct
 ip-cidr, 1.2.4.0/24, direct
 ip-cidr, 1.8.1.0/24, direct
@@ -468,7 +468,6 @@ ip-cidr, 49.221.64.0/19, direct
 ip-cidr, 49.221.128.0/19, direct
 ip-cidr, 49.232.0.0/14, direct
 ip-cidr, 49.239.192.0/18, direct
-ip-cidr, 50.114.187.0/24, direct
 ip-cidr, 52.80.0.0/15, direct
 ip-cidr, 52.82.0.0/17, direct
 ip-cidr, 52.82.128.0/23, direct
@@ -655,7 +654,6 @@ ip-cidr, 81.173.18.0/23, direct
 ip-cidr, 81.173.20.0/22, direct
 ip-cidr, 82.156.0.0/15, direct
 ip-cidr, 87.82.58.0/24, direct
-ip-cidr, 87.232.115.0/24, direct
 ip-cidr, 87.254.207.0/24, direct
 ip-cidr, 93.183.14.0/24, direct
 ip-cidr, 93.183.18.0/24, direct
@@ -1428,7 +1426,6 @@ ip-cidr, 106.112.0.0/12, direct
 ip-cidr, 106.224.0.0/14, direct
 ip-cidr, 106.228.0.0/15, direct
 ip-cidr, 106.230.0.0/16, direct
-ip-cidr, 107.148.6.0/24, direct
 ip-cidr, 107.151.212.0/24, direct
 ip-cidr, 107.190.229.0/24, direct
 ip-cidr, 109.244.0.0/16, direct
@@ -2585,8 +2582,6 @@ ip-cidr, 144.48.212.0/22, direct
 ip-cidr, 144.52.0.0/16, direct
 ip-cidr, 144.79.54.0/23, direct
 ip-cidr, 144.123.0.0/16, direct
-ip-cidr, 144.225.109.0/24, direct
-ip-cidr, 144.225.151.0/24, direct
 ip-cidr, 144.255.0.0/16, direct
 ip-cidr, 146.56.192.0/18, direct
 ip-cidr, 146.196.56.0/22, direct
@@ -2614,7 +2609,6 @@ ip-cidr, 150.242.238.0/23, direct
 ip-cidr, 150.242.244.0/22, direct
 ip-cidr, 150.242.248.0/22, direct
 ip-cidr, 150.255.0.0/16, direct
-ip-cidr, 151.243.189.0/24, direct
 ip-cidr, 152.104.128.0/17, direct
 ip-cidr, 152.136.0.0/16, direct
 ip-cidr, 153.0.0.0/16, direct
@@ -3405,7 +3399,9 @@ ip-cidr, 211.97.160.0/21, direct
 ip-cidr, 211.97.176.0/20, direct
 ip-cidr, 211.97.192.0/18, direct
 ip-cidr, 211.98.0.0/16, direct
-ip-cidr, 211.99.8.0/21, direct
+ip-cidr, 211.99.8.0/22, direct
+ip-cidr, 211.99.12.0/24, direct
+ip-cidr, 211.99.14.0/23, direct
 ip-cidr, 211.99.16.0/23, direct
 ip-cidr, 211.99.25.0/24, direct
 ip-cidr, 211.99.26.0/24, direct

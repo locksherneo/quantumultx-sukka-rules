@@ -2,7 +2,7 @@
 # Source: https://ruleset.skk.moe/List/domainset/cdn.conf
 # Upstream: https://github.com/SukkaW/Surge
 # License: AGPL-3.0
-# Type: main; policy: direct; rules: 4691
+# Type: main; policy: direct; rules: 4694
 host, 0x0.st, direct
 host, eep.io, direct
 host-suffix, esm.sh, direct
@@ -2774,6 +2774,7 @@ host, upload.teftera.com, direct
 host, uploads.guim.co.uk, direct
 host, uploads.linear.app, direct
 host, v2uploads.zopim.io, direct
+host, vcc-assets.8x8.com, direct
 host, vector.hereapi.com, direct
 host, video3.mingpao.com, direct
 host, videos.elephas.app, direct
@@ -3001,6 +3002,7 @@ host, media.karousell.com, direct
 host, media.newyorker.com, direct
 host, media.shopimind.com, direct
 host-suffix, media.strapiapp.com, direct
+host, media.trekbikes.com, direct
 host, medium-media.vgm.io, direct
 host-suffix, motherlessmedia.com, direct
 host-suffix, msftconnecttest.com, direct
@@ -3502,6 +3504,7 @@ host-suffix, fimfiction-static.net, direct
 host, font-public.canva.com, direct
 host-suffix, framerusercontent.com, direct
 host, front-resource.fs.com, direct
+host, frontend2.locally.com, direct
 host-suffix, gateway.serph.network, direct
 host-suffix, githubusercontent.com, direct
 host, gitpkg-fork.vercel.sh, direct
