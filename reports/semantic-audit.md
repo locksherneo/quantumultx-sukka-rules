@@ -1,7 +1,7 @@
 # Quantumult X Sukka semantic audit
 
 - Sources: 69
-- Native filter rules: 385320
+- Native filter rules: 385761
 - Removed Sukka markers: 66
 - Removed duplicate rules: 0
 - Deferred IP rules: 48
@@ -11,13 +11,13 @@
 | Source | Policy | Rules | Deferred IP | Rewrite |
 | --- | --- | ---: | ---: | ---: |
 | `domainset/apple_cdn` | `direct` | 159 | 0 | 0 |
-| `domainset/cdn` | `direct` | 4694 | 0 | 0 |
-| `domainset/download` | `direct` | 1972 | 0 | 0 |
+| `domainset/cdn` | `direct` | 4696 | 0 | 0 |
+| `domainset/download` | `direct` | 1971 | 0 | 0 |
 | `domainset/game-download` | `direct` | 52 | 0 | 0 |
 | `domainset/icloud_private_relay` | `reject` | 6 | 0 | 0 |
-| `domainset/reject` | `reject` | 143051 | 0 | 0 |
-| `domainset/reject_extra` | `reject` | 78968 | 0 | 0 |
-| `domainset/reject_phishing` | `reject` | 140975 | 0 | 0 |
+| `domainset/reject` | `reject` | 142997 | 0 | 0 |
+| `domainset/reject_extra` | `reject` | 79434 | 0 | 0 |
+| `domainset/reject_phishing` | `reject` | 141000 | 0 | 0 |
 | `domainset/speedtest` | `direct` | 3443 | 0 | 0 |
 | `non_ip/ai` | `proxy` | 54 | 0 | 0 |
 | `non_ip/apple_cdn` | `direct` | 0 | 0 | 0 |
@@ -27,7 +27,7 @@
 | `non_ip/cdn` | `direct` | 84 | 0 | 0 |
 | `non_ip/cloudmounter` | `proxy` | 0 | 0 | 0 |
 | `non_ip/direct` | `direct` | 183 | 0 | 0 |
-| `non_ip/domestic` | `direct` | 871 | 0 | 0 |
+| `non_ip/domestic` | `direct` | 872 | 0 | 0 |
 | `non_ip/download` | `direct` | 9 | 0 | 0 |
 | `non_ip/gitlab` | `proxy` | 1 | 0 | 0 |
 | `non_ip/global` | `proxy` | 1275 | 0 | 0 |
@@ -62,12 +62,12 @@
 | `ip/apple_services` | `proxy` | 10 | 0 | 0 |
 | `ip/cdn` | `direct` | 3 | 0 | 0 |
 | `ip/china_ip` | `direct` | 3885 | 0 | 0 |
-| `ip/china_ip_ipv6` | `direct` | 3488 | 0 | 0 |
+| `ip/china_ip_ipv6` | `direct` | 3489 | 0 | 0 |
 | `ip/domestic` | `direct` | 2 | 0 | 0 |
 | `ip/download` | `direct` | 11 | 0 | 0 |
 | `ip/lan` | `direct` | 11 | 0 | 0 |
 | `ip/neteasemusic` | `direct` | 17 | 0 | 0 |
-| `ip/reject` | `reject` | 779 | 0 | 0 |
+| `ip/reject` | `reject` | 780 | 0 | 0 |
 | `ip/stream` | `proxy` | 19 | 0 | 0 |
 | `ip/stream_biliintl` | `proxy` | 0 | 0 | 0 |
 | `ip/stream_eu` | `proxy` | 0 | 0 | 0 |
