@@ -2,7 +2,7 @@
 # Source: https://ruleset.skk.moe/List/domainset/cdn.conf
 # Upstream: https://github.com/SukkaW/Surge
 # License: AGPL-3.0
-# Type: main; policy: direct; rules: 4696
+# Type: main; policy: direct; rules: 4698
 host, 0x0.st, direct
 host, eep.io, direct
 host-suffix, esm.sh, direct
@@ -1393,6 +1393,7 @@ host, tile.ourmap.us, direct
 host, time.apple.com, direct
 host, tn.upornia.com, direct
 host-suffix, torproject.org, direct
+host-suffix, trvl-media.com, direct
 host-suffix, typography.com, direct
 host-suffix, ungrounded.net, direct
 host, us-js.zonka.co, direct
@@ -2462,6 +2463,7 @@ host, tiles3.planet.com, direct
 host, todoist.b-cdn.net, direct
 host, tools.refokus.com, direct
 host-suffix, transcend-cdn.com, direct
+host-suffix, travel-assets.com, direct
 host, uhf.microsoft.com, direct
 host, v2.listenloop.com, direct
 host-suffix, videodelivery.net, direct
