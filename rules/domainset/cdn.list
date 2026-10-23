@@ -2,7 +2,7 @@
 # Source: https://ruleset.skk.moe/List/domainset/cdn.conf
 # Upstream: https://github.com/SukkaW/Surge
 # License: AGPL-3.0
-# Type: main; policy: direct; rules: 4698
+# Type: main; policy: direct; rules: 4705
 host, 0x0.st, direct
 host, eep.io, direct
 host-suffix, esm.sh, direct
@@ -324,6 +324,7 @@ host, p.sda1.dev, direct
 host-suffix, pagecdn.io, direct
 host-suffix, pgimgs.com, direct
 host-suffix, phncdn.com, direct
+host, pic2.99.co, direct
 host-suffix, pinimg.com, direct
 host-suffix, pixhost.to, direct
 host, pixoraa.cc, direct
@@ -1424,6 +1425,7 @@ host, api.bintray.com, direct
 host, api.weather.com, direct
 host-suffix, app.gitbook.com, direct
 host, asset.chase.com, direct
+host, assets-v2.99.co, direct
 host, assets.about.me, direct
 host, assets.bbhub.io, direct
 host, assets.canny.io, direct
@@ -1431,6 +1433,7 @@ host, assets.cello.so, direct
 host, assets.clibo.tw, direct
 host, assets.game8.co, direct
 host, assets.goat.com, direct
+host, assets.grab.com, direct
 host, assets.habr.com, direct
 host, assets.jable.tv, direct
 host, assets.kagi.com, direct
@@ -2814,6 +2817,7 @@ host, archive.mozilla.org, direct
 host, assets-cdn.jable.tv, direct
 host, assets-cdn.porn.com, direct
 host, assets-docs.dify.ai, direct
+host, assets-static.99.co, direct
 host, assets-www.xbox.com, direct
 host, assets.adobedtm.com, direct
 host, assets.airbuddy.app, direct
@@ -3983,6 +3987,7 @@ host, s3media.squarespace.com, direct
 host, safebrowsing.google.com, direct
 host-suffix, sciencedirectassets.com, direct
 host, screenshots.webflow.com, direct
+host, scribe-web-sdk.grab.com, direct
 host, scripts.dailymail.co.uk, direct
 host, server.arcgisonline.com, direct
 host, static-assets.juksy.com, direct
@@ -4419,6 +4424,7 @@ host, static-production.npmjs.com, direct
 host, static-webfonts.myfonts.com, direct
 host, static.acm.account.sony.com, direct
 host, static.captcha-delivery.com, direct
+host, static1.straitstimes.com.sg, direct
 host, sts.online.visualstudio.com, direct
 host, tvdownloaddw-a.akamaihd.net, direct
 host, typescript.visualstudio.com, direct
@@ -4684,6 +4690,7 @@ host, edge-cloud-resource-static.azureedge.net, direct
 host, edgecdn-embza6g8cacagcbn.z01.azurefd.net, direct
 host, cdn.mcauto-images-production.sendgrid.net, direct
 host, cf-images.ap-northeast-1.prod.boltdns.net, direct
+host, cf-images.ap-southeast-1.prod.boltdns.net, direct
 host, marfeelexperimentsexperienceengine.mrf.io, direct
 host, prod-streaming-video-msn-com.akamaized.net, direct
 host, talon-website-prod.ecosec.on.epicgames.com, direct
