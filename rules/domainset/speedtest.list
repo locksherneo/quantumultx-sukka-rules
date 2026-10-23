@@ -2,7 +2,7 @@
 # Source: https://ruleset.skk.moe/List/domainset/speedtest.conf
 # Upstream: https://github.com/SukkaW/Surge
 # License: AGPL-3.0
-# Type: main; policy: direct; rules: 3444
+# Type: main; policy: direct; rules: 3448
 host-suffix, fast.com, direct
 host, fastme.ir, direct
 host-suffix, nperf.net, direct
@@ -63,6 +63,7 @@ host, de-lg.h2.nexus, direct
 host, nl.tanhost.com, direct
 host, ny1.ocean.host, direct
 host, o-uk-1.flwc.cc, direct
+host, ookla.alida.it, direct
 host-suffix, ookla.bytel.fr, direct
 host, owst.gilat.net, direct
 host, perf.keyyo.net, direct
@@ -628,6 +629,7 @@ host, ookla.snt.utwente.nl, direct
 host, ookla.svw.as6453.net, direct
 host, ookla.tv2.as6453.net, direct
 host, ookla.xponnet.com.br, direct
+host, perf1.moji1.sapi.net, direct
 host, pl-1.node.delton.ovh, direct
 host, qspt.technofiber.net, direct
 host, scnx-ng01.homesc.com, direct
@@ -1883,6 +1885,7 @@ host, speedtest-hk.tgb-host.com, direct
 host, speedtest-ict.ideatek.com, direct
 host, speedtest-jp.tgb-host.com, direct
 host, speedtest-london.start.ca, direct
+host, speedtest-net.hyprnode.de, direct
 host, speedtest-satt.pr-link.at, direct
 host, speedtest-tf.masmovil.com, direct
 host, speedtest.603.sbaedge.net, direct
@@ -2258,6 +2261,7 @@ host, testvelocidadten.orange.es, direct
 host, testvelocidadval.orange.es, direct
 host, testvelocidadvld.orange.es, direct
 host, trtspeedtest.altimatel.com, direct
+host, tx.speedtest.openinfra.com, direct
 host, txg-speedtest.infinirc.com, direct
 host, uptelecom.brsserver.com.br, direct
 host, urbanonet.brsserver.com.br, direct
