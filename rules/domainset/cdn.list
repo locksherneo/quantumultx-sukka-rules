@@ -2,7 +2,7 @@
 # Source: https://ruleset.skk.moe/List/domainset/cdn.conf
 # Upstream: https://github.com/SukkaW/Surge
 # License: AGPL-3.0
-# Type: main; policy: direct; rules: 4707
+# Type: main; policy: direct; rules: 4695
 host, 0x0.st, direct
 host, eep.io, direct
 host-suffix, esm.sh, direct
@@ -652,7 +652,6 @@ host-suffix, chasecdn.com, direct
 host-suffix, cloudlin.vip, direct
 host-suffix, corsproxy.io, direct
 host-suffix, crossbell.io, direct
-host, css.4jpg.top, direct
 host, data.peer.as, direct
 host, david-dm.org, direct
 host-suffix, dditsadn.com, direct
@@ -1026,7 +1025,6 @@ host, pics.vpdmm.cc, direct
 host-suffix, picsum.photos, direct
 host-suffix, place-hold.it, direct
 host, pomf2.lain.la, direct
-host, proxy.cors.sh, direct
 host, r2.dejavu.moe, direct
 host, r2cdn.c7d.dev, direct
 host-suffix, randomuser.me, direct
@@ -1085,7 +1083,6 @@ host-suffix, webinfcdn.net, direct
 host-suffix, wixstatic.com, direct
 host-suffix, workoscdn.com, direct
 host-suffix, wowmodels.com, direct
-host, www.10086.win, direct
 host, www.acgpix.de, direct
 host-suffix, xdaimages.com, direct
 host-suffix, xhpingcdn.com, direct
@@ -1120,7 +1117,6 @@ host-suffix, bytebucket.org, direct
 host, c.animaapp.com, direct
 host, c.marsflag.com, direct
 host, c.navattic.com, direct
-host, c1.patreon.com, direct
 host, c4.patreon.com, direct
 host, c5.patreon.com, direct
 host, c6.patreon.com, direct
@@ -1302,7 +1298,6 @@ host-suffix, liangzipic.com, direct
 host-suffix, live-video.net, direct
 host-suffix, media-imdb.com, direct
 host-suffix, media.ci-en.jp, direct
-host, media.evolv.ai, direct
 host, media.masto.nu, direct
 host, media.mstdn.io, direct
 host, media.trakt.tv, direct
@@ -1444,7 +1439,6 @@ host, assets.time.com, direct
 host, assets.yande.re, direct
 host, assets.zpic.biz, direct
 host, attach.setn.com, direct
-host, avts.wmlabs.net, direct
 host-suffix, bestfreecdn.com, direct
 host-suffix, bleepstatic.com, direct
 host-suffix, bp.blogspot.com, direct
@@ -1801,7 +1795,6 @@ host-suffix, bootstrapcdn.com, direct
 host-suffix, bugly.qcloud.com, direct
 host, bundlephobia.com, direct
 host, cache.ip-api.com, direct
-host, cache.sgvafs.com, direct
 host-suffix, capcutstatic.com, direct
 host, cdn-1.porn87.com, direct
 host, cdn-1.strava.com, direct
@@ -1851,7 +1844,6 @@ host, cdn.playwire.com, direct
 host, cdn.roboflow.com, direct
 host, cdn.roseperl.com, direct
 host, cdn.scaleflex.it, direct
-host, cdn.seedance2.ai, direct
 host-suffix, cdn.signalfx.com, direct
 host, cdn.simplesat.io, direct
 host, cdn.skymavis.com, direct
@@ -2420,6 +2412,7 @@ host, static.anysex.com, direct
 host, static.bbci.co.uk, direct
 host, static.beebom.com, direct
 host, static.buffer.com, direct
+host, static.capcom.com, direct
 host, static.carfax.com, direct
 host, static.chaika.moe, direct
 host, static.change.org, direct
@@ -2471,7 +2464,6 @@ host-suffix, travel-assets.com, direct
 host, uhf.microsoft.com, direct
 host, v2.listenloop.com, direct
 host-suffix, videodelivery.net, direct
-host, w2.influxdata.com, direct
 host, wa.arounddeal.com, direct
 host, wa1.aninoapps.com, direct
 host-suffix, walmartimages.com, direct
@@ -2637,7 +2629,6 @@ host, img.fastcybers.com, direct
 host, img.hellofresh.com, direct
 host, img.sparknotes.com, direct
 host, imgproxy.windy.com, direct
-host, imgrs.apkcombo.com, direct
 host, imgs3.hcaptcha.com, direct
 host-suffix, intercomassets.com, direct
 host-suffix, ipfs-gateway.cloud, direct
@@ -2789,7 +2780,6 @@ host, videos.elephas.app, direct
 host, videos.ohentai.org, direct
 host, videos2.edclub.com, direct
 host, vids.imagepost.com, direct
-host, walter-r2.trakt.tv, direct
 host-suffix, warnermediacdn.com, direct
 host, web-cdn.bitrise.io, direct
 host, webp.frostming.com, direct
@@ -3097,7 +3087,6 @@ host, static.zerochan.net, direct
 host, storageapi.fleek.co, direct
 host, sync.getpublica.com, direct
 host, tag.unifyintent.com, direct
-host, tags.nationwide.com, direct
 host, thumb.wikimedia.org, direct
 host, thumbnails.padre.gg, direct
 host, thumbs.onlyfans.com, direct
@@ -3177,9 +3166,9 @@ host, cdn.boostcommerce.io, direct
 host, cdn.botframework.com, direct
 host, cdn.buymeacoffee.com, direct
 host, cdn.c1.amplience.net, direct
+host, cdn.capcom-unity.com, direct
 host, cdn.clever-cloud.com, direct
 host, cdn.cnx-software.com, direct
-host, cdn.downdetector.com, direct
 host, cdn.dynamicyield.com, direct
 host, cdn.fastcomments.com, direct
 host, cdn.forms.office.net, direct
@@ -3374,8 +3363,6 @@ host, statics.simpshub.com, direct
 host, stats.codesandbox.io, direct
 host, status.canarymail.io, direct
 host-suffix, steamusercontent.com, direct
-host, storage.synctrack.io, direct
-host, storageapi.fleek.one, direct
 host, storageapi2.fleek.co, direct
 host-suffix, superfiliate-cdn.com, direct
 host-suffix, superhumanstatic.com, direct
@@ -3476,7 +3463,9 @@ host, cdn11.bigcommerce.com, direct
 host, cdn2-imgix.macpaw.com, direct
 host, cdn2.downdetector.com, direct
 host, cdn2.unrealengine.com, direct
+host, cdn3.downdetector.com, direct
 host, cdn3.unrealengine.com, direct
+host, cdn4.downdetector.com, direct
 host, cdn77.boyfriendtv.com, direct
 host, cdna.pcpartpicker.com, direct
 host, cdne-pics.youjizz.com, direct
@@ -3569,7 +3558,6 @@ host, oneocsp.microsoft.com, direct
 host, opensignal.cdnbye.com, direct
 host, organizer.bizzabo.com, direct
 host-suffix, parsecusercontent.com, direct
-host, participants.evolv.ai, direct
 host, pictures-cdn.porn.com, direct
 host, pixel-cdn.default.com, direct
 host, platform.theverge.com, direct
@@ -3915,6 +3903,7 @@ host, cdn-static-1.medium.com, direct
 host, cdn-uicons.flaticon.com, direct
 host, cdn.northropgrumman.com, direct
 host, cdn.prod.www.spiegel.de, direct
+host, cdn.promo.capcomusa.com, direct
 host, cdn.ready-market.com.tw, direct
 host-suffix, cdn.survey.medallia.com, direct
 host, cdn.worldvectorlogo.com, direct
@@ -4212,6 +4201,7 @@ host, hub-assets.displaycal.net, direct
 host, hv-monsterdb-data.skk.moe, direct
 host, im.np-payment-gateway.com, direct
 host, image-forwarder.notaku.so, direct
+host, image.icon-gen.svc.ui.com, direct
 host, image.p-c2-x.abema-tv.com, direct
 host, images.microcms-assets.io, direct
 host, images.opencollective.com, direct
@@ -4221,6 +4211,7 @@ host, lastfm.freetls.fastly.net, direct
 host, lift-ai-js.marketlinc.com, direct
 host, logos.speedtestcustom.com, direct
 host, lzd-img-global.slatic.net, direct
+host, manifest.prod.boltdns.net, direct
 host, marketing.thingiverse.com, direct
 host, mir-s3-cdn-cf.behance.net, direct
 host, mixin-images.zeromesh.net, direct
@@ -4266,9 +4257,6 @@ host, trekcdnprod.azureedge.net, direct
 host, tuf-repo-cdn.sigstore.dev, direct
 host, ubistatic2-a.akamaihd.net, direct
 host, unlimited-cdn.waifu2x.net, direct
-host, v-tiles1.downdetector.com, direct
-host, v-tiles2.downdetector.com, direct
-host, v-tiles3.downdetector.com, direct
 host, vz-2222604c-50b.b-cdn.net, direct
 host, vz-c0fe498e-5ab.b-cdn.net, direct
 host, web-assets.esetstatic.com, direct

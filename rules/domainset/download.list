@@ -2,7 +2,7 @@
 # Source: https://ruleset.skk.moe/List/domainset/download.conf
 # Upstream: https://github.com/SukkaW/Surge
 # License: AGPL-3.0
-# Type: main; policy: direct; rules: 1971
+# Type: main; policy: direct; rules: 1968
 host-suffix, gcr.io, direct
 host, ghp.ci, direct
 host-suffix, k8s.io, direct
@@ -134,7 +134,6 @@ host-suffix, fuwamofu.com, direct
 host, gotest.tools, direct
 host, lib.ugent.be, direct
 host, mir.linux.kg, direct
-host, mirror.0x.sg, direct
 host, mirror.5i.fi, direct
 host, mirror.a1.mk, direct
 host-suffix, mirror.ac.ke, direct
@@ -831,7 +830,6 @@ host, mirror.isoc.org.il, direct
 host, mirror.karneval.cz, direct
 host, mirror.katapult.io, direct
 host, mirror.liquidrp.de, direct
-host, mirror.marcusn.net, direct
 host, mirror.papua.go.id, direct
 host, mirror.previder.nl, direct
 host, mirror.reverse.net, direct
@@ -1017,6 +1015,7 @@ host, mirrors.xtom.com.hk, direct
 host, opensource.xtdv.net, direct
 host, packages.termux.dev, direct
 host, pubmirror.plutex.de, direct
+host, registry.gitlab.com, direct
 host, release.runcloud.io, direct
 host, releases.claude.com, direct
 host, replicate.npmjs.com, direct
@@ -1279,7 +1278,6 @@ host, downloads.majestic.com, direct
 host, downloads.portainer.io, direct
 host, enterprise.proxmox.com, direct
 host, fdroid.tetaneutral.net, direct
-host, ftp.tsukuba.wide.ad.jp, direct
 host, ftpmirror1.infania.net, direct
 host, gog-cdn-fastly.gog.com, direct
 host, i18n.prismlauncher.org, direct
@@ -1349,7 +1347,6 @@ host, vfat.classicreload.com, direct
 host, vn-mirrors.techhost.vn, direct
 host-suffix, wup.eshop.nintendo.net, direct
 host, www.gutscheinrausch.de, direct
-host, www2.aomeisoftware.com, direct
 host, apache.ip-connect.vn.ua, direct
 host, apache.miloslavbrada.cz, direct
 host, archive.raspberrypi.com, direct

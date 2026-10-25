@@ -26,11 +26,11 @@
       "policy": "direct",
       "recovered_domains": 0,
       "rewrite": 0,
-      "rules": 4707,
+      "rules": 4695,
       "source": "domainset/cdn",
       "statistics": {
         "markers_removed": 1,
-        "source_rule_lines": 4708
+        "source_rule_lines": 4696
       }
     },
     {
@@ -40,11 +40,11 @@
       "policy": "direct",
       "recovered_domains": 0,
       "rewrite": 0,
-      "rules": 1971,
+      "rules": 1968,
       "source": "domainset/download",
       "statistics": {
         "markers_removed": 1,
-        "source_rule_lines": 1972
+        "source_rule_lines": 1969
       }
     },
     {
@@ -82,11 +82,11 @@
       "policy": "reject",
       "recovered_domains": 0,
       "rewrite": 0,
-      "rules": 144758,
+      "rules": 144774,
       "source": "domainset/reject",
       "statistics": {
         "markers_removed": 1,
-        "source_rule_lines": 144759
+        "source_rule_lines": 144775
       }
     },
     {
@@ -96,11 +96,11 @@
       "policy": "reject",
       "recovered_domains": 0,
       "rewrite": 0,
-      "rules": 81104,
+      "rules": 81392,
       "source": "domainset/reject_extra",
       "statistics": {
         "markers_removed": 1,
-        "source_rule_lines": 81105
+        "source_rule_lines": 81393
       }
     },
     {
@@ -110,11 +110,11 @@
       "policy": "reject",
       "recovered_domains": 0,
       "rewrite": 0,
-      "rules": 141425,
+      "rules": 141329,
       "source": "domainset/reject_phishing",
       "statistics": {
         "markers_removed": 1,
-        "source_rule_lines": 141426
+        "source_rule_lines": 141330
       }
     },
     {
@@ -478,11 +478,11 @@
       "policy": "reject",
       "recovered_domains": 0,
       "rewrite": 0,
-      "rules": 47,
+      "rules": 48,
       "source": "non_ip/my_reject",
       "statistics": {
         "markers_removed": 1,
-        "source_rule_lines": 55,
+        "source_rule_lines": 56,
         "unsupported_and": 1,
         "unsupported_dest_port": 1,
         "unsupported_process_name": 5
@@ -859,11 +859,11 @@
       "policy": "direct",
       "recovered_domains": 0,
       "rewrite": 0,
-      "rules": 3890,
+      "rules": 3886,
       "source": "ip/china_ip",
       "statistics": {
         "markers_removed": 1,
-        "source_rule_lines": 3891
+        "source_rule_lines": 3887
       }
     },
     {
@@ -1159,12 +1159,12 @@
     }
   ],
   "successful_sources": 69,
-  "total_rules": 389644,
+  "total_rules": 389834,
   "totals": {
     "markers_removed": 66,
     "no_resolve_not_supported": 204,
     "reject_action_normalized": 2,
-    "source_rule_lines": 390064,
+    "source_rule_lines": 390254,
     "unsupported_and": 42,
     "unsupported_dest_port": 1,
     "unsupported_process_name": 75,
