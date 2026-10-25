@@ -1,7 +1,7 @@
 # Quantumult X Sukka semantic audit
 
 - Sources: 69
-- Native filter rules: 389956
+- Native filter rules: 389644
 - Removed Sukka markers: 66
 - Removed duplicate rules: 0
 - Deferred IP rules: 52
@@ -15,10 +15,10 @@
 | `domainset/download` | `direct` | 1971 | 0 | 0 |
 | `domainset/game-download` | `direct` | 52 | 0 | 0 |
 | `domainset/icloud_private_relay` | `reject` | 6 | 0 | 0 |
-| `domainset/reject` | `reject` | 144699 | 0 | 0 |
-| `domainset/reject_extra` | `reject` | 81103 | 0 | 0 |
-| `domainset/reject_phishing` | `reject` | 141801 | 0 | 0 |
-| `domainset/speedtest` | `direct` | 3450 | 0 | 0 |
+| `domainset/reject` | `reject` | 144758 | 0 | 0 |
+| `domainset/reject_extra` | `reject` | 81104 | 0 | 0 |
+| `domainset/reject_phishing` | `reject` | 141425 | 0 | 0 |
+| `domainset/speedtest` | `direct` | 3454 | 0 | 0 |
 | `non_ip/ai` | `proxy` | 54 | 0 | 0 |
 | `non_ip/apple_cdn` | `direct` | 0 | 0 | 0 |
 | `non_ip/apple_cn` | `direct` | 9 | 0 | 0 |
