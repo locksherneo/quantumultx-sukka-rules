@@ -82,11 +82,11 @@
       "policy": "reject",
       "recovered_domains": 0,
       "rewrite": 0,
-      "rules": 144774,
+      "rules": 144851,
       "source": "domainset/reject",
       "statistics": {
         "markers_removed": 1,
-        "source_rule_lines": 144775
+        "source_rule_lines": 144852
       }
     },
     {
@@ -96,11 +96,11 @@
       "policy": "reject",
       "recovered_domains": 0,
       "rewrite": 0,
-      "rules": 81392,
+      "rules": 81377,
       "source": "domainset/reject_extra",
       "statistics": {
         "markers_removed": 1,
-        "source_rule_lines": 81393
+        "source_rule_lines": 81378
       }
     },
     {
@@ -110,11 +110,11 @@
       "policy": "reject",
       "recovered_domains": 0,
       "rewrite": 0,
-      "rules": 141329,
+      "rules": 141467,
       "source": "domainset/reject_phishing",
       "statistics": {
         "markers_removed": 1,
-        "source_rule_lines": 141330
+        "source_rule_lines": 141468
       }
     },
     {
@@ -124,11 +124,11 @@
       "policy": "direct",
       "recovered_domains": 0,
       "rewrite": 0,
-      "rules": 3454,
+      "rules": 3455,
       "source": "domainset/speedtest",
       "statistics": {
         "markers_removed": 2,
-        "source_rule_lines": 3456
+        "source_rule_lines": 3457
       }
     },
     {
@@ -798,22 +798,22 @@
       "deferred_ip": 0,
       "issues": {
         "no_resolve_not_supported": [
-          "IP-CIDR,4.151.200.38/32,no-resolve",
-          "IP-CIDR,4.155.146.196/32,no-resolve",
-          "IP-CIDR,4.197.172.116/32,no-resolve",
-          "IP-CIDR,4.217.235.100/32,no-resolve"
+          "IP-CIDR,4.151.50.34/32,no-resolve",
+          "IP-CIDR,4.151.150.176/32,no-resolve",
+          "IP-CIDR,4.151.178.112/32,no-resolve",
+          "IP-CIDR,4.151.200.38/32,no-resolve"
         ]
       },
       "license": "AGPL-3.0",
       "policy": "proxy",
       "recovered_domains": 0,
       "rewrite": 0,
-      "rules": 24,
+      "rules": 151,
       "source": "ip/ai",
       "statistics": {
         "markers_removed": 1,
-        "no_resolve_not_supported": 23,
-        "source_rule_lines": 25
+        "no_resolve_not_supported": 150,
+        "source_rule_lines": 152
       }
     },
     {
@@ -1159,12 +1159,12 @@
     }
   ],
   "successful_sources": 69,
-  "total_rules": 389834,
+  "total_rules": 390162,
   "totals": {
     "markers_removed": 66,
-    "no_resolve_not_supported": 204,
+    "no_resolve_not_supported": 331,
     "reject_action_normalized": 2,
-    "source_rule_lines": 390254,
+    "source_rule_lines": 390582,
     "unsupported_and": 42,
     "unsupported_dest_port": 1,
     "unsupported_process_name": 75,
