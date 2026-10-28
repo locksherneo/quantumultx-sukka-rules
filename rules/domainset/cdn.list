@@ -2,7 +2,7 @@
 # Source: https://ruleset.skk.moe/List/domainset/cdn.conf
 # Upstream: https://github.com/SukkaW/Surge
 # License: AGPL-3.0
-# Type: main; policy: direct; rules: 4695
+# Type: main; policy: direct; rules: 4697
 host, 0x0.st, direct
 host, eep.io, direct
 host-suffix, esm.sh, direct
@@ -67,6 +67,7 @@ host, i.gzn.jp, direct
 host, i.ibb.co, direct
 host, i.vgy.me, direct
 host, icons.ly, direct
+host, imgur.la, direct
 host-suffix, jspm.dev, direct
 host-suffix, jspm.org, direct
 host-suffix, loli.net, direct
@@ -362,6 +363,7 @@ host-suffix, sndimg.com, direct
 host, sp.nba.com, direct
 host-suffix, ss-cdn.com, direct
 host, st.agrd.eu, direct
+host-suffix, static.pub, direct
 host-suffix, strpst.com, direct
 host-suffix, surrit.com, direct
 host-suffix, sxccdn.com, direct

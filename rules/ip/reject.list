@@ -2,7 +2,7 @@
 # Source: https://ruleset.skk.moe/List/ip/reject.conf
 # Upstream: https://github.com/SukkaW/Surge
 # License: AGPL-3.0
-# Type: main; policy: reject; rules: 780
+# Type: main; policy: reject; rules: 781
 ip-cidr, 10.72.25.0/24, reject
 ip-cidr, 39.107.15.115/32, reject
 ip-cidr, 47.89.59.182/32, reject
@@ -645,6 +645,7 @@ ip-cidr, 193.200.64.20/32, reject
 ip-cidr, 193.200.64.24/32, reject
 ip-cidr, 193.200.64.30/31, reject
 ip-cidr, 193.200.65.61/32, reject
+ip-cidr, 194.26.232.61/32, reject
 ip-cidr, 194.59.220.161/32, reject
 ip-cidr, 194.63.140.103/32, reject
 ip-cidr, 194.63.143.61/32, reject

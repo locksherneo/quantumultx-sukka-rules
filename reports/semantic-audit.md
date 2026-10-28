@@ -1,23 +1,23 @@
 # Quantumult X Sukka semantic audit
 
 - Sources: 69
-- Native filter rules: 388461
+- Native filter rules: 388906
 - Removed Sukka markers: 66
 - Removed duplicate rules: 0
 - Deferred IP rules: 52
 - URL rewrite rules: 179
-- Unsupported no-resolve options: 559
+- Unsupported no-resolve options: 581
 
 | Source | Policy | Rules | Deferred IP | Rewrite |
 | --- | --- | ---: | ---: | ---: |
 | `domainset/apple_cdn` | `direct` | 159 | 0 | 0 |
-| `domainset/cdn` | `direct` | 4695 | 0 | 0 |
+| `domainset/cdn` | `direct` | 4697 | 0 | 0 |
 | `domainset/download` | `direct` | 1968 | 0 | 0 |
 | `domainset/game-download` | `direct` | 52 | 0 | 0 |
 | `domainset/icloud_private_relay` | `reject` | 6 | 0 | 0 |
-| `domainset/reject` | `reject` | 145342 | 0 | 0 |
-| `domainset/reject_extra` | `reject` | 78889 | 0 | 0 |
-| `domainset/reject_phishing` | `reject` | 141520 | 0 | 0 |
+| `domainset/reject` | `reject` | 145469 | 0 | 0 |
+| `domainset/reject_extra` | `reject` | 79035 | 0 | 0 |
+| `domainset/reject_phishing` | `reject` | 141665 | 0 | 0 |
 | `domainset/speedtest` | `direct` | 3458 | 0 | 0 |
 | `non_ip/ai` | `proxy` | 54 | 0 | 0 |
 | `non_ip/apple_cdn` | `direct` | 0 | 0 | 0 |
@@ -58,16 +58,16 @@
 | `non_ip/stream_us` | `proxy` | 51 | 0 | 0 |
 | `non_ip/telegram` | `proxy` | 14 | 0 | 0 |
 | `non_ip/domestic_cdn` | `proxy` | 19 | 0 | 0 |
-| `ip/ai` | `proxy` | 379 | 0 | 0 |
+| `ip/ai` | `proxy` | 401 | 0 | 0 |
 | `ip/apple_services` | `proxy` | 10 | 0 | 0 |
 | `ip/cdn` | `direct` | 3 | 0 | 0 |
-| `ip/china_ip` | `direct` | 3889 | 0 | 0 |
-| `ip/china_ip_ipv6` | `direct` | 3497 | 0 | 0 |
+| `ip/china_ip` | `direct` | 3892 | 0 | 0 |
+| `ip/china_ip_ipv6` | `direct` | 3496 | 0 | 0 |
 | `ip/domestic` | `direct` | 2 | 0 | 0 |
 | `ip/download` | `direct` | 11 | 0 | 0 |
 | `ip/lan` | `direct` | 11 | 0 | 0 |
 | `ip/neteasemusic` | `direct` | 17 | 0 | 0 |
-| `ip/reject` | `reject` | 780 | 0 | 0 |
+| `ip/reject` | `reject` | 781 | 0 | 0 |
 | `ip/stream` | `proxy` | 19 | 0 | 0 |
 | `ip/stream_biliintl` | `proxy` | 0 | 0 | 0 |
 | `ip/stream_eu` | `proxy` | 0 | 0 | 0 |
