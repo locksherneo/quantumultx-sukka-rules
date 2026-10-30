@@ -82,11 +82,11 @@
       "policy": "reject",
       "recovered_domains": 0,
       "rewrite": 0,
-      "rules": 145733,
+      "rules": 145838,
       "source": "domainset/reject",
       "statistics": {
         "markers_removed": 1,
-        "source_rule_lines": 145734
+        "source_rule_lines": 145839
       }
     },
     {
@@ -96,11 +96,11 @@
       "policy": "reject",
       "recovered_domains": 0,
       "rewrite": 0,
-      "rules": 79205,
+      "rules": 79362,
       "source": "domainset/reject_extra",
       "statistics": {
         "markers_removed": 1,
-        "source_rule_lines": 79206
+        "source_rule_lines": 79363
       }
     },
     {
@@ -110,11 +110,11 @@
       "policy": "reject",
       "recovered_domains": 0,
       "rewrite": 0,
-      "rules": 141774,
+      "rules": 141962,
       "source": "domainset/reject_phishing",
       "statistics": {
         "markers_removed": 1,
-        "source_rule_lines": 141775
+        "source_rule_lines": 141963
       }
     },
     {
@@ -329,11 +329,11 @@
       "policy": "proxy",
       "recovered_domains": 0,
       "rewrite": 0,
-      "rules": 1275,
+      "rules": 1276,
       "source": "non_ip/global",
       "statistics": {
         "markers_removed": 1,
-        "source_rule_lines": 1276
+        "source_rule_lines": 1277
       }
     },
     {
@@ -859,11 +859,11 @@
       "policy": "direct",
       "recovered_domains": 0,
       "rewrite": 0,
-      "rules": 3893,
+      "rules": 3891,
       "source": "ip/china_ip",
       "statistics": {
         "markers_removed": 1,
-        "source_rule_lines": 3894
+        "source_rule_lines": 3892
       }
     },
     {
@@ -873,11 +873,11 @@
       "policy": "direct",
       "recovered_domains": 0,
       "rewrite": 0,
-      "rules": 3495,
+      "rules": 3475,
       "source": "ip/china_ip_ipv6",
       "statistics": {
         "markers_removed": 1,
-        "source_rule_lines": 3496
+        "source_rule_lines": 3476
       }
     },
     {
@@ -1159,12 +1159,12 @@
     }
   ],
   "successful_sources": 69,
-  "total_rules": 389452,
+  "total_rules": 389881,
   "totals": {
     "markers_removed": 66,
     "no_resolve_not_supported": 581,
     "reject_action_normalized": 2,
-    "source_rule_lines": 389872,
+    "source_rule_lines": 390301,
     "unsupported_and": 42,
     "unsupported_dest_port": 1,
     "unsupported_process_name": 75,
