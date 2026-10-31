@@ -2,7 +2,7 @@
 # Source: https://ruleset.skk.moe/List/ip/china_ip_ipv6.conf
 # Upstream: https://github.com/SukkaW/Surge
 # License: AGPL-3.0
-# Type: main; policy: direct; rules: 3475
+# Type: main; policy: direct; rules: 3477
 ip6-cidr, 2001:250::/30, direct
 ip6-cidr, 2001:254::/33, direct
 ip6-cidr, 2001:255::/32, direct
@@ -961,6 +961,7 @@ ip6-cidr, 2402:7d80::/32, direct
 ip6-cidr, 2402:7da0::/32, direct
 ip6-cidr, 2402:7e20::/32, direct
 ip6-cidr, 2402:7ee0::/32, direct
+ip6-cidr, 2402:8160::/32, direct
 ip6-cidr, 2402:8180::/32, direct
 ip6-cidr, 2402:8300::/32, direct
 ip6-cidr, 2402:8380::/32, direct
@@ -2624,6 +2625,7 @@ ip6-cidr, 2406:840:fe26::/48, direct
 ip6-cidr, 2406:840:fe28::/45, direct
 ip6-cidr, 2406:840:fe30::/44, direct
 ip6-cidr, 2406:840:fe40::/44, direct
+ip6-cidr, 2406:840:fe51::/48, direct
 ip6-cidr, 2406:840:fe52::/47, direct
 ip6-cidr, 2406:840:fe54::/46, direct
 ip6-cidr, 2406:840:fe58::/45, direct
