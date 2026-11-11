@@ -82,11 +82,11 @@
       "policy": "reject",
       "recovered_domains": 0,
       "rewrite": 0,
-      "rules": 147963,
+      "rules": 149436,
       "source": "domainset/reject",
       "statistics": {
         "markers_removed": 1,
-        "source_rule_lines": 147964
+        "source_rule_lines": 149437
       }
     },
     {
@@ -96,11 +96,11 @@
       "policy": "reject",
       "recovered_domains": 0,
       "rewrite": 0,
-      "rules": 83103,
+      "rules": 83236,
       "source": "domainset/reject_extra",
       "statistics": {
         "markers_removed": 1,
-        "source_rule_lines": 83104
+        "source_rule_lines": 83237
       }
     },
     {
@@ -110,11 +110,11 @@
       "policy": "reject",
       "recovered_domains": 0,
       "rewrite": 0,
-      "rules": 137706,
+      "rules": 137717,
       "source": "domainset/reject_phishing",
       "statistics": {
         "markers_removed": 1,
-        "source_rule_lines": 137707
+        "source_rule_lines": 137718
       }
     },
     {
@@ -800,20 +800,20 @@
         "no_resolve_not_supported": [
           "IP-CIDR,4.150.48.254/32,no-resolve",
           "IP-CIDR,4.151.50.34/32,no-resolve",
-          "IP-CIDR,4.151.125.58/32,no-resolve",
-          "IP-CIDR,4.151.146.120/32,no-resolve"
+          "IP-CIDR,4.151.109.206/32,no-resolve",
+          "IP-CIDR,4.151.125.58/32,no-resolve"
         ]
       },
       "license": "AGPL-3.0",
       "policy": "proxy",
       "recovered_domains": 0,
       "rewrite": 0,
-      "rules": 401,
+      "rules": 422,
       "source": "ip/ai",
       "statistics": {
         "markers_removed": 1,
-        "no_resolve_not_supported": 400,
-        "source_rule_lines": 402
+        "no_resolve_not_supported": 421,
+        "source_rule_lines": 423
       }
     },
     {
@@ -859,11 +859,11 @@
       "policy": "direct",
       "recovered_domains": 0,
       "rewrite": 0,
-      "rules": 3884,
+      "rules": 3885,
       "source": "ip/china_ip",
       "statistics": {
         "markers_removed": 1,
-        "source_rule_lines": 3885
+        "source_rule_lines": 3886
       }
     },
     {
@@ -873,11 +873,11 @@
       "policy": "direct",
       "recovered_domains": 0,
       "rewrite": 0,
-      "rules": 3422,
+      "rules": 3423,
       "source": "ip/china_ip_ipv6",
       "statistics": {
         "markers_removed": 1,
-        "source_rule_lines": 3423
+        "source_rule_lines": 3424
       }
     },
     {
@@ -1159,12 +1159,12 @@
     }
   ],
   "successful_sources": 69,
-  "total_rules": 391465,
+  "total_rules": 393105,
   "totals": {
     "markers_removed": 66,
-    "no_resolve_not_supported": 581,
+    "no_resolve_not_supported": 602,
     "reject_action_normalized": 2,
-    "source_rule_lines": 391885,
+    "source_rule_lines": 393525,
     "unsupported_and": 42,
     "unsupported_dest_port": 1,
     "unsupported_process_name": 75,
