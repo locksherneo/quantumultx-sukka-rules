@@ -2,7 +2,7 @@
 # Source: https://ruleset.skk.moe/List/domainset/cdn.conf
 # Upstream: https://github.com/SukkaW/Surge
 # License: AGPL-3.0
-# Type: main; policy: direct; rules: 4698
+# Type: main; policy: direct; rules: 4699
 host, 0x0.st, direct
 host, eep.io, direct
 host-suffix, esm.sh, direct
@@ -3261,6 +3261,7 @@ host, imgproxy.flathub.org, direct
 host, instafeed.nfcube.com, direct
 host-suffix, ipfs.genenetwork.org, direct
 host-suffix, ipfs.scalaproject.io, direct
+host, iprsoftwaremedia.com, direct
 host, jac.yahoosandbox.com, direct
 host, js.verygoodvault.com, direct
 host, jsmodule.svc.litv.tv, direct
