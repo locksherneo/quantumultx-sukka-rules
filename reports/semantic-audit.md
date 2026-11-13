@@ -1,7 +1,7 @@
 # Quantumult X Sukka semantic audit
 
 - Sources: 69
-- Native filter rules: 395926
+- Native filter rules: 396095
 - Removed Sukka markers: 66
 - Removed duplicate rules: 0
 - Deferred IP rules: 52
@@ -11,13 +11,13 @@
 | Source | Policy | Rules | Deferred IP | Rewrite |
 | --- | --- | ---: | ---: | ---: |
 | `domainset/apple_cdn` | `direct` | 159 | 0 | 0 |
-| `domainset/cdn` | `direct` | 4699 | 0 | 0 |
+| `domainset/cdn` | `direct` | 4700 | 0 | 0 |
 | `domainset/download` | `direct` | 1969 | 0 | 0 |
 | `domainset/game-download` | `direct` | 52 | 0 | 0 |
 | `domainset/icloud_private_relay` | `reject` | 6 | 0 | 0 |
-| `domainset/reject` | `reject` | 149574 | 0 | 0 |
-| `domainset/reject_extra` | `reject` | 83636 | 0 | 0 |
-| `domainset/reject_phishing` | `reject` | 139870 | 0 | 0 |
+| `domainset/reject` | `reject` | 149648 | 0 | 0 |
+| `domainset/reject_extra` | `reject` | 83801 | 0 | 0 |
+| `domainset/reject_phishing` | `reject` | 139796 | 0 | 0 |
 | `domainset/speedtest` | `direct` | 3489 | 0 | 0 |
 | `non_ip/ai` | `proxy` | 54 | 0 | 0 |
 | `non_ip/apple_cdn` | `direct` | 0 | 0 | 0 |
@@ -27,7 +27,7 @@
 | `non_ip/cdn` | `direct` | 85 | 0 | 0 |
 | `non_ip/cloudmounter` | `proxy` | 0 | 0 | 0 |
 | `non_ip/direct` | `direct` | 183 | 0 | 0 |
-| `non_ip/domestic` | `direct` | 873 | 0 | 0 |
+| `non_ip/domestic` | `direct` | 875 | 0 | 0 |
 | `non_ip/download` | `direct` | 9 | 0 | 0 |
 | `non_ip/gitlab` | `proxy` | 1 | 0 | 0 |
 | `non_ip/global` | `proxy` | 1276 | 0 | 0 |
@@ -57,12 +57,12 @@
 | `non_ip/stream_tw` | `proxy` | 37 | 0 | 0 |
 | `non_ip/stream_us` | `proxy` | 51 | 0 | 0 |
 | `non_ip/telegram` | `proxy` | 14 | 0 | 0 |
-| `non_ip/domestic_cdn` | `proxy` | 19 | 0 | 0 |
+| `non_ip/domestic_cdn` | `proxy` | 21 | 0 | 0 |
 | `ip/ai` | `proxy` | 539 | 0 | 0 |
 | `ip/apple_services` | `proxy` | 10 | 0 | 0 |
 | `ip/cdn` | `direct` | 3 | 0 | 0 |
 | `ip/china_ip` | `direct` | 3889 | 0 | 0 |
-| `ip/china_ip_ipv6` | `direct` | 3429 | 0 | 0 |
+| `ip/china_ip_ipv6` | `direct` | 3428 | 0 | 0 |
 | `ip/domestic` | `direct` | 2 | 0 | 0 |
 | `ip/download` | `direct` | 11 | 0 | 0 |
 | `ip/lan` | `direct` | 11 | 0 | 0 |
