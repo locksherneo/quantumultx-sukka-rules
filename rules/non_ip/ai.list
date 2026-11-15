@@ -2,7 +2,7 @@
 # Source: https://ruleset.skk.moe/List/non_ip/ai.conf
 # Upstream: https://github.com/SukkaW/Surge
 # License: AGPL-3.0
-# Type: main; policy: proxy; rules: 54
+# Type: main; policy: proxy; rules: 57
 host-suffix, g.ai, proxy
 host-suffix, x.ai, proxy
 host-suffix, ai.com, proxy
@@ -25,6 +25,7 @@ host-suffix, chatgpt.site, proxy
 host-suffix, deepmind.com, proxy
 host, ai.google.dev, proxy
 host-suffix, anthropic.com, proxy
+host, cloud.zed.dev, proxy
 host-suffix, gemini.google, proxy
 host-suffix, oaistatic.com, proxy
 host, openrouter.ai, proxy
@@ -41,6 +42,7 @@ host, server.codeium.com, proxy
 host, aida.googleapis.com, proxy
 host-suffix, aistudio.google.com, proxy
 host-suffix, generativeai.google, proxy
+host, aicode.googleapis.com, proxy
 host, inference.codeium.com, proxy
 host-suffix, makersuite.google.com, proxy
 host-suffix, notebooklm.google.com, proxy
@@ -55,5 +57,6 @@ host, alkalicore-pa.clients6.google.com, proxy
 host, daily-cloudcode-pa.googleapis.com, proxy
 host-suffix, generativelanguage.googleapis.com, proxy
 host-suffix, proactivebackend-pa.googleapis.com, proxy
+host, daily-cloudcode-pa.sandbox.googleapis.com, proxy
 host-keyword, openai, proxy
 host-keyword, alkalimakersuite-pa.clients6.google.com, proxy
