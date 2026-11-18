@@ -2,7 +2,7 @@
 # Source: https://ruleset.skk.moe/List/ip/china_ip_ipv6.conf
 # Upstream: https://github.com/SukkaW/Surge
 # License: AGPL-3.0
-# Type: main; policy: direct; rules: 3441
+# Type: main; policy: direct; rules: 3444
 ip6-cidr, 2001:250::/30, direct
 ip6-cidr, 2001:254::/33, direct
 ip6-cidr, 2001:255::/32, direct
@@ -2305,7 +2305,9 @@ ip6-cidr, 2406:840:e0ce::/48, direct
 ip6-cidr, 2406:840:e0d0::/44, direct
 ip6-cidr, 2406:840:e0e4::/48, direct
 ip6-cidr, 2406:840:e0e6::/47, direct
-ip6-cidr, 2406:840:e0e8::/45, direct
+ip6-cidr, 2406:840:e0e9::/48, direct
+ip6-cidr, 2406:840:e0ea::/47, direct
+ip6-cidr, 2406:840:e0ec::/46, direct
 ip6-cidr, 2406:840:e0f0::/44, direct
 ip6-cidr, 2406:840:e100::/45, direct
 ip6-cidr, 2406:840:e108::/46, direct
@@ -2634,7 +2636,6 @@ ip6-cidr, 2406:840:fee0::/45, direct
 ip6-cidr, 2406:840:fee8::/46, direct
 ip6-cidr, 2406:840:feec::/48, direct
 ip6-cidr, 2406:840:feee::/47, direct
-ip6-cidr, 2406:840:feff::/48, direct
 ip6-cidr, 2406:840:ff20::/43, direct
 ip6-cidr, 2406:840:ff40::/42, direct
 ip6-cidr, 2406:840:ff80::/41, direct
@@ -3206,6 +3207,7 @@ ip6-cidr, 2605:9d80:9033::/48, direct
 ip6-cidr, 2605:9d80:9042::/48, direct
 ip6-cidr, 2605:9d80:9071::/48, direct
 ip6-cidr, 2605:9d80:9092::/48, direct
+ip6-cidr, 2620:57:4004::/47, direct
 ip6-cidr, 2a03:f900::/29, direct
 ip6-cidr, 2a04:3e00::/48, direct
 ip6-cidr, 2a04:3e00:2::/47, direct
@@ -3436,6 +3438,7 @@ ip6-cidr, 2a13:1802:d000::/36, direct
 ip6-cidr, 2a13:1802:e000::/35, direct
 ip6-cidr, 2a13:1803::/32, direct
 ip6-cidr, 2a13:1804::/30, direct
+ip6-cidr, 2a13:7100::/29, direct
 ip6-cidr, 2a13:8b40::/29, direct
 ip6-cidr, 2c0f:f7a8:8011::/48, direct
 ip6-cidr, 2c0f:f7a8:8050::/48, direct
