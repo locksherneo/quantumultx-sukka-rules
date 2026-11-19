@@ -2,7 +2,7 @@
 # Source: https://ruleset.skk.moe/List/domainset/cdn.conf
 # Upstream: https://github.com/SukkaW/Surge
 # License: AGPL-3.0
-# Type: main; policy: direct; rules: 4702
+# Type: main; policy: direct; rules: 4705
 host, 0x0.st, direct
 host, eep.io, direct
 host-suffix, esm.sh, direct
@@ -3478,7 +3478,6 @@ host, cdne-pics.youjizz.com, direct
 host, cdnjs.betterstack.com, direct
 host-suffix, chargebeestaticv2.com, direct
 host, chat-assets.front.app, direct
-host-suffix, claudeusercontent.com, direct
 host, cloud.typenetwork.com, direct
 host-suffix, cloud1.influxdata.com, direct
 host-suffix, cloud2.influxdata.com, direct
@@ -4382,6 +4381,7 @@ host, encrypted-vtbn0.gstatic.com, direct
 host, encrypted-vtbn1.gstatic.com, direct
 host, encrypted-vtbn2.gstatic.com, direct
 host, encrypted-vtbn3.gstatic.com, direct
+host-suffix, frame.claudeusercontent.com, direct
 host, images-eds-ssl.xboxlive.com, direct
 host, images-ext-1.discordapp.net, direct
 host, images-ext-2.discordapp.net, direct
@@ -4435,6 +4435,7 @@ host-suffix, agechecker-northern-apps.com, direct
 host-suffix, agechecker.northern-apps.com, direct
 host-suffix, applicationinsights.azure.cn, direct
 host, assets-cdn.watchdisneyfe.com, direct
+host, assets.claudeusercontent.com, direct
 host, assets.positional-bucket.com, direct
 host, assets4.mist-train-girls.com, direct
 host, cdn-dynmedia-1.microsoft.com, direct
@@ -4481,6 +4482,7 @@ host, static-oforms.onlyoffice.com, direct
 host-suffix, static-prod-web.miniclip.com, direct
 host, static-r.kamihimeproject.net, direct
 host, static-secure-uploads.ui.com, direct
+host, static.claudeusercontent.com, direct
 host, static.community.workday.com, direct
 host, static.edge.microsoftapp.net, direct
 host, static2.sharepointonline.com, direct
@@ -4489,6 +4491,7 @@ host, store-images.s-microsoft.com, direct
 host-suffix, tunnels.api.visualstudio.com, direct
 host, ui-statics-cf.streamable.com, direct
 host, uos-support-files.svc.ui.com, direct
+host, upload.claudeusercontent.com, direct
 host, vsmarketplacebadge.apphb.com, direct
 host, wctour-images.worldchess.com, direct
 host, akamai-assets.squarespace.com, direct
