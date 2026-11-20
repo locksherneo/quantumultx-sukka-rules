@@ -2,7 +2,7 @@
 # Source: https://ruleset.skk.moe/List/domainset/cdn.conf
 # Upstream: https://github.com/SukkaW/Surge
 # License: AGPL-3.0
-# Type: main; policy: direct; rules: 4705
+# Type: main; policy: direct; rules: 4707
 host, 0x0.st, direct
 host, eep.io, direct
 host-suffix, esm.sh, direct
@@ -4064,6 +4064,7 @@ host, axiecdn.axieinfinity.com, direct
 host, brick.freetls.fastly.net, direct
 host-suffix, buildkiteusercontent.com, direct
 host-suffix, bundle.thimatic-apps.com, direct
+host-suffix, butterfly-effect-cdn.dev, direct
 host, cache.omnicalculator.com, direct
 host, cdn-image01.casetify.com, direct
 host, cdn-image02.casetify.com, direct
@@ -4170,6 +4171,7 @@ host, app-static.sendsafely.com, direct
 host, asset-cdn.uscardforum.com, direct
 host, assets.map.brightcove.com, direct
 host, assets.media-platform.com, direct
+host, assets.monetizationos.com, direct
 host, assets.openalternative.co, direct
 host-suffix, assets.shortbread.aws.dev, direct
 host, assets.squarewebsites.org, direct
