@@ -2,7 +2,7 @@
 # Source: https://ruleset.skk.moe/List/domainset/speedtest.conf
 # Upstream: https://github.com/SukkaW/Surge
 # License: AGPL-3.0
-# Type: main; policy: direct; rules: 3498
+# Type: main; policy: direct; rules: 3500
 host-suffix, fast.com, direct
 host, fastme.ir, direct
 host-suffix, nperf.net, direct
@@ -1402,6 +1402,7 @@ host, ookla.soc.atharva.co.id, direct
 host, ookla.speedtest.cnix.cn, direct
 host, perf-01.ixn.as42689.net, direct
 host, prescott1.cabospeed.com, direct
+host, seednet-hc1.seed.net.tw, direct
 host, seednet-tc1.seed.net.tw, direct
 host, seednet-tn1.seed.net.tw, direct
 host, seednet-tp1.seed.net.tw, direct
@@ -1659,6 +1660,7 @@ host, ooklaspdtstsvr.zitel.com, direct
 host, reflector.aberythmic.com, direct
 host, riorancho1.cabospeed.com, direct
 host, seacaftest.aptalaska.net, direct
+host, seednet-ntp2.seed.net.tw, direct
 host, sg-speedtest.fast.net.id, direct
 host, siouxcity1.cabospeed.com, direct
 host, sirsa.softechinfosol.com, direct

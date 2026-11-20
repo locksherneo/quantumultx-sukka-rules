@@ -2,7 +2,7 @@
 # Source: https://ruleset.skk.moe/List/ip/china_ip.conf
 # Upstream: https://github.com/SukkaW/Surge
 # License: CC BY-SA 2.0
-# Type: main; policy: direct; rules: 3900
+# Type: main; policy: direct; rules: 3914
 ip-cidr, 1.1.8.0/24, direct
 ip-cidr, 1.2.4.0/24, direct
 ip-cidr, 1.8.1.0/24, direct
@@ -206,6 +206,7 @@ ip-cidr, 43.180.0.0/16, direct
 ip-cidr, 43.192.0.0/16, direct
 ip-cidr, 43.193.0.0/18, direct
 ip-cidr, 43.193.64.0/23, direct
+ip-cidr, 43.193.80.0/20, direct
 ip-cidr, 43.194.0.0/20, direct
 ip-cidr, 43.194.16.0/24, direct
 ip-cidr, 43.196.0.0/16, direct
@@ -629,7 +630,11 @@ ip-cidr, 61.48.0.0/13, direct
 ip-cidr, 61.87.192.0/18, direct
 ip-cidr, 61.114.80.0/20, direct
 ip-cidr, 61.128.0.0/10, direct
-ip-cidr, 61.232.0.0/14, direct
+ip-cidr, 61.232.0.0/15, direct
+ip-cidr, 61.234.0.0/16, direct
+ip-cidr, 61.235.64.0/24, direct
+ip-cidr, 61.235.76.0/24, direct
+ip-cidr, 61.235.78.0/24, direct
 ip-cidr, 61.237.0.0/16, direct
 ip-cidr, 61.240.0.0/14, direct
 ip-cidr, 62.234.0.0/16, direct
@@ -843,6 +848,7 @@ ip-cidr, 103.30.151.0/24, direct
 ip-cidr, 103.31.200.0/22, direct
 ip-cidr, 103.35.104.0/22, direct
 ip-cidr, 103.35.254.0/24, direct
+ip-cidr, 103.36.28.0/22, direct
 ip-cidr, 103.36.36.0/22, direct
 ip-cidr, 103.36.63.0/24, direct
 ip-cidr, 103.36.96.0/22, direct
@@ -1471,7 +1477,10 @@ ip-cidr, 110.94.0.0/17, direct
 ip-cidr, 110.96.0.0/16, direct
 ip-cidr, 110.100.0.0/16, direct
 ip-cidr, 110.116.0.0/16, direct
-ip-cidr, 110.120.0.0/16, direct
+ip-cidr, 110.120.0.0/23, direct
+ip-cidr, 110.120.8.0/23, direct
+ip-cidr, 110.120.10.0/24, direct
+ip-cidr, 110.120.12.0/24, direct
 ip-cidr, 110.152.0.0/14, direct
 ip-cidr, 110.156.0.0/15, direct
 ip-cidr, 110.166.0.0/15, direct
@@ -1482,7 +1491,7 @@ ip-cidr, 110.173.192.0/19, direct
 ip-cidr, 110.176.0.0/12, direct
 ip-cidr, 110.199.0.0/16, direct
 ip-cidr, 110.203.0.0/23, direct
-ip-cidr, 110.211.0.0/16, direct
+ip-cidr, 110.211.0.0/23, direct
 ip-cidr, 110.218.0.0/15, direct
 ip-cidr, 110.228.0.0/14, direct
 ip-cidr, 110.236.0.0/15, direct
@@ -1530,6 +1539,7 @@ ip-cidr, 111.235.180.0/23, direct
 ip-cidr, 111.235.182.0/24, direct
 ip-cidr, 112.0.0.0/10, direct
 ip-cidr, 112.64.0.0/14, direct
+ip-cidr, 112.73.96.0/19, direct
 ip-cidr, 112.74.0.0/16, direct
 ip-cidr, 112.80.0.0/12, direct
 ip-cidr, 112.96.0.0/13, direct
@@ -2354,7 +2364,7 @@ ip-cidr, 123.58.224.0/19, direct
 ip-cidr, 123.59.0.0/16, direct
 ip-cidr, 123.60.0.0/16, direct
 ip-cidr, 123.64.0.0/15, direct
-ip-cidr, 123.66.0.0/16, direct
+ip-cidr, 123.66.128.0/17, direct
 ip-cidr, 123.77.0.0/16, direct
 ip-cidr, 123.88.0.0/15, direct
 ip-cidr, 123.90.0.0/16, direct
@@ -3795,7 +3805,8 @@ ip-cidr, 221.133.232.0/24, direct
 ip-cidr, 221.133.235.0/24, direct
 ip-cidr, 221.133.244.0/23, direct
 ip-cidr, 221.137.0.0/16, direct
-ip-cidr, 221.174.0.0/17, direct
+ip-cidr, 221.174.16.0/21, direct
+ip-cidr, 221.174.24.0/23, direct
 ip-cidr, 221.176.0.0/13, direct
 ip-cidr, 221.192.0.0/14, direct
 ip-cidr, 221.196.0.0/15, direct
@@ -3812,7 +3823,10 @@ ip-cidr, 222.35.0.0/16, direct
 ip-cidr, 222.42.115.0/24, direct
 ip-cidr, 222.44.0.0/15, direct
 ip-cidr, 222.49.128.0/17, direct
-ip-cidr, 222.50.0.0/16, direct
+ip-cidr, 222.50.120.0/23, direct
+ip-cidr, 222.50.123.0/24, direct
+ip-cidr, 222.50.125.0/24, direct
+ip-cidr, 222.50.126.0/23, direct
 ip-cidr, 222.59.128.0/17, direct
 ip-cidr, 222.64.0.0/11, direct
 ip-cidr, 222.125.0.0/16, direct
