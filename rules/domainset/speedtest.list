@@ -2,7 +2,7 @@
 # Source: https://ruleset.skk.moe/List/domainset/speedtest.conf
 # Upstream: https://github.com/SukkaW/Surge
 # License: AGPL-3.0
-# Type: main; policy: direct; rules: 3501
+# Type: main; policy: direct; rules: 3503
 host-suffix, fast.com, direct
 host, fastme.ir, direct
 host-suffix, nperf.net, direct
@@ -943,6 +943,7 @@ host, speedtest.cvalley.net, direct
 host, speedtest.dcsi.net.au, direct
 host, speedtest.dimdams.com, direct
 host, speedtest.duocast.net, direct
+host, speedtest.edgefox.net, direct
 host, speedtest.ediscom.net, direct
 host, speedtest.elsynet.net, direct
 host, speedtest.elxireit.in, direct
@@ -2323,6 +2324,7 @@ host, madvpdspeedtesta.voiped.com, direct
 host, mars-speedtest.guzel.net.tr, direct
 host, mia-eqx1-ookla-1.99.network, direct
 host, mib-rst-sp1.mibroadband.com, direct
+host, msk.speedtest.reynard.cloud, direct
 host, mspeedtest.linkceara.com.br, direct
 host, nets-mad01.servihosting.net, direct
 host, ny00svp-speed11.svc.tds.net, direct
