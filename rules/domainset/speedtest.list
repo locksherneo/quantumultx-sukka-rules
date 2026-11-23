@@ -2,7 +2,7 @@
 # Source: https://ruleset.skk.moe/List/domainset/speedtest.conf
 # Upstream: https://github.com/SukkaW/Surge
 # License: AGPL-3.0
-# Type: main; policy: direct; rules: 3503
+# Type: main; policy: direct; rules: 3504
 host-suffix, fast.com, direct
 host, fastme.ir, direct
 host-suffix, nperf.net, direct
@@ -2701,6 +2701,7 @@ host, edgemark-lax.cust.edgemark.io, direct
 host, exc-speedtest.unitedfiber.com, direct
 host, ga-speedtest.liveoakfiber.com, direct
 host, ksc11-speedtest01.as15108.com, direct
+host, librespeed-dtw.rackgenius.com, direct
 host, librespeed.lukas-heinrich.com, direct
 host, lnk11-speedtest01.as15108.com, direct
 host, lsv11-speedtest01.as15108.com, direct
