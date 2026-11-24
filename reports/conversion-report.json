@@ -82,11 +82,11 @@
       "policy": "reject",
       "recovered_domains": 0,
       "rewrite": 0,
-      "rules": 148712,
+      "rules": 151717,
       "source": "domainset/reject",
       "statistics": {
         "markers_removed": 1,
-        "source_rule_lines": 148713
+        "source_rule_lines": 151718
       }
     },
     {
@@ -96,11 +96,11 @@
       "policy": "reject",
       "recovered_domains": 0,
       "rewrite": 0,
-      "rules": 84615,
+      "rules": 86747,
       "source": "domainset/reject_extra",
       "statistics": {
         "markers_removed": 1,
-        "source_rule_lines": 84616
+        "source_rule_lines": 86748
       }
     },
     {
@@ -110,11 +110,11 @@
       "policy": "reject",
       "recovered_domains": 0,
       "rewrite": 0,
-      "rules": 141277,
+      "rules": 141148,
       "source": "domainset/reject_phishing",
       "statistics": {
         "markers_removed": 1,
-        "source_rule_lines": 141278
+        "source_rule_lines": 141149
       }
     },
     {
@@ -124,11 +124,11 @@
       "policy": "direct",
       "recovered_domains": 0,
       "rewrite": 0,
-      "rules": 3504,
+      "rules": 3508,
       "source": "domainset/speedtest",
       "statistics": {
         "markers_removed": 2,
-        "source_rule_lines": 3506
+        "source_rule_lines": 3510
       }
     },
     {
@@ -859,11 +859,11 @@
       "policy": "direct",
       "recovered_domains": 0,
       "rewrite": 0,
-      "rules": 3908,
+      "rules": 3893,
       "source": "ip/china_ip",
       "statistics": {
         "markers_removed": 1,
-        "source_rule_lines": 3909
+        "source_rule_lines": 3894
       }
     },
     {
@@ -1159,12 +1159,12 @@
     }
   ],
   "successful_sources": 69,
-  "total_rules": 397388,
+  "total_rules": 402385,
   "totals": {
     "markers_removed": 66,
     "no_resolve_not_supported": 590,
     "reject_action_normalized": 2,
-    "source_rule_lines": 397820,
+    "source_rule_lines": 402817,
     "unsupported_and": 54,
     "unsupported_dest_port": 1,
     "unsupported_process_name": 75,
