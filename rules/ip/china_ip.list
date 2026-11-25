@@ -2,7 +2,7 @@
 # Source: https://ruleset.skk.moe/List/ip/china_ip.conf
 # Upstream: https://github.com/SukkaW/Surge
 # License: CC BY-SA 2.0
-# Type: main; policy: direct; rules: 3894
+# Type: main; policy: direct; rules: 3890
 ip-cidr, 1.1.8.0/24, direct
 ip-cidr, 1.2.4.0/24, direct
 ip-cidr, 1.8.1.0/24, direct
@@ -848,6 +848,7 @@ ip-cidr, 103.30.151.0/24, direct
 ip-cidr, 103.31.200.0/22, direct
 ip-cidr, 103.35.104.0/22, direct
 ip-cidr, 103.35.254.0/24, direct
+ip-cidr, 103.36.28.0/22, direct
 ip-cidr, 103.36.36.0/22, direct
 ip-cidr, 103.36.63.0/24, direct
 ip-cidr, 103.36.96.0/22, direct
@@ -1537,6 +1538,7 @@ ip-cidr, 111.235.180.0/23, direct
 ip-cidr, 111.235.182.0/24, direct
 ip-cidr, 112.0.0.0/10, direct
 ip-cidr, 112.64.0.0/14, direct
+ip-cidr, 112.73.96.0/19, direct
 ip-cidr, 112.74.0.0/16, direct
 ip-cidr, 112.80.0.0/12, direct
 ip-cidr, 112.96.0.0/13, direct
@@ -3192,12 +3194,10 @@ ip-cidr, 203.107.1.0/24, direct
 ip-cidr, 203.107.2.0/24, direct
 ip-cidr, 203.107.6.0/24, direct
 ip-cidr, 203.107.13.0/24, direct
-ip-cidr, 203.107.14.0/24, direct
 ip-cidr, 203.107.20.0/22, direct
 ip-cidr, 203.107.26.0/23, direct
 ip-cidr, 203.107.28.0/22, direct
 ip-cidr, 203.107.32.0/19, direct
-ip-cidr, 203.107.70.0/24, direct
 ip-cidr, 203.107.72.0/21, direct
 ip-cidr, 203.107.80.0/21, direct
 ip-cidr, 203.107.96.0/23, direct
@@ -3359,11 +3359,7 @@ ip-cidr, 210.76.192.0/19, direct
 ip-cidr, 210.77.0.0/18, direct
 ip-cidr, 210.77.64.0/19, direct
 ip-cidr, 210.77.128.0/19, direct
-ip-cidr, 210.77.176.0/22, direct
-ip-cidr, 210.77.180.0/23, direct
-ip-cidr, 210.77.184.0/24, direct
-ip-cidr, 210.77.189.0/24, direct
-ip-cidr, 210.77.190.0/23, direct
+ip-cidr, 210.77.176.0/20, direct
 ip-cidr, 210.77.192.0/18, direct
 ip-cidr, 210.78.128.0/24, direct
 ip-cidr, 210.78.134.0/23, direct
