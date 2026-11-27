@@ -2,7 +2,7 @@
 # Source: https://ruleset.skk.moe/List/domainset/cdn.conf
 # Upstream: https://github.com/SukkaW/Surge
 # License: AGPL-3.0
-# Type: main; policy: direct; rules: 4706
+# Type: main; policy: direct; rules: 4696
 host, 0x0.st, direct
 host, eep.io, direct
 host-suffix, esm.sh, direct
@@ -1028,7 +1028,6 @@ host-suffix, picsum.photos, direct
 host-suffix, place-hold.it, direct
 host, pomf2.lain.la, direct
 host, r2.dejavu.moe, direct
-host, r2cdn.c7d.dev, direct
 host-suffix, randomuser.me, direct
 host-suffix, rawgithub.com, direct
 host-suffix, rcsobjects.it, direct
@@ -1345,7 +1344,6 @@ host, s1.divhunt.com, direct
 host, s3.2233778.xyz, direct
 host-suffix, sbcdnvideo.com, direct
 host, scache.vzw.com, direct
-host, scdn.clerk.com, direct
 host, sdata.ndtv.com, direct
 host, sdk.qikify.com, direct
 host-suffix, sentry-cdn.com, direct
@@ -1373,7 +1371,6 @@ host, static.reo.dev, direct
 host, static.snyk.io, direct
 host, static.toss.im, direct
 host, static.xns.one, direct
-host, static.yfsp.tv, direct
 host, stc.utdstc.com, direct
 host-suffix, sthlstatic.com, direct
 host, stream.mux.com, direct
@@ -1646,7 +1643,6 @@ host-suffix, net.anydesk.com, direct
 host-suffix, nftstorage.link, direct
 host, object.innei.in, direct
 host, objects.hit.moe, direct
-host, pacdn.500px.org, direct
 host-suffix, parastorage.com, direct
 host, pcz.javidol.org, direct
 host-suffix, permaweb.eu.org, direct
@@ -1877,7 +1873,6 @@ host-suffix, dc-telemetry.net, direct
 host-suffix, directupload.net, direct
 host-suffix, dockerstatic.com, direct
 host-suffix, dreamscape.cloud, direct
-host, drscdn.500px.org, direct
 host, e.deviantart.net, direct
 host, embed.lantern.io, direct
 host, embed.reddit.com, direct
@@ -2041,7 +2036,6 @@ host-suffix, s3.wasabisys.com, direct
 host, s8.maxstream.org, direct
 host-suffix, scribdassets.com, direct
 host, sdk.customfit.ai, direct
-host, segapi.clerk.com, direct
 host, shots.codepen.io, direct
 host-suffix, sny.monosnap.com, direct
 host, static.arxiv.org, direct
@@ -2694,7 +2688,6 @@ host, proxy.spigotmc.org, direct
 host, public.hare200.com, direct
 host, public.popclip.app, direct
 host-suffix, quip-marketing.com, direct
-host, r2cdn.corespeed.io, direct
 host, reader.readmoo.com, direct
 host, registry.oomol.com, direct
 host-suffix, replicate.delivery, direct
@@ -3454,6 +3447,7 @@ host, cdn.freebiesupply.com, direct
 host, cdn.heapanalytics.com, direct
 host, cdn.joincommunity.xyz, direct
 host-suffix, cdn.printfriendly.com, direct
+host, cdn.protect.clerk.com, direct
 host, cdn.prowritingaid.com, direct
 host, cdn.shoppinggives.com, direct
 host, cdn.simplelocalize.io, direct
@@ -3547,7 +3541,6 @@ host, media.cleanshot.cloud, direct
 host, media.games.dmm.co.jp, direct
 host, media.gettyimages.com, direct
 host, media.graphassets.com, direct
-host, media.hentaifreak.org, direct
 host, media.identity.ui.com, direct
 host, media.invisioncic.com, direct
 host, media.istockphoto.com, direct
@@ -3879,7 +3872,6 @@ host, assets.clever-cloud.com, direct
 host, assets.clickfunnels.com, direct
 host-suffix, assets.digitalocean.com, direct
 host, assets.lemonsqueezy.com, direct
-host, assets.mcp.corespeed.io, direct
 host, assets.science.nasa.gov, direct
 host, assets.singaporeair.com, direct
 host, assets.streamlinehq.com, direct
@@ -4136,9 +4128,7 @@ host, segment.digitalocean.com, direct
 host, service-icons.zeabur.com, direct
 host-suffix, settings.crashlytics.com, direct
 host, sf-coze-web-cdn.coze.com, direct
-host, showcase.abovemarket.com, direct
 host, sp-spiegel-de.spiegel.de, direct
-host, spotlightimage.biggo.com, direct
 host, static-assets.mapbox.com, direct
 host, static-assets.vinted.com, direct
 host, static-forms.klaviyo.com, direct
@@ -4263,7 +4253,6 @@ host, tiles.maps.opensearch.org, direct
 host, trekcdnprod.azureedge.net, direct
 host, tuf-repo-cdn.sigstore.dev, direct
 host, ubistatic2-a.akamaihd.net, direct
-host, unlimited-cdn.waifu2x.net, direct
 host, vz-2222604c-50b.b-cdn.net, direct
 host, vz-c0fe498e-5ab.b-cdn.net, direct
 host, web-assets.esetstatic.com, direct
@@ -4580,6 +4569,7 @@ host, android-safebrowsing.google.com, direct
 host, bookface-static.ycombinator.com, direct
 host, brand-assets.cne.ngc.nvidia.com, direct
 host, bunnycdn-video-assets.b-cdn.net, direct
+host, cdn-resize-prod-com.500px.cloud, direct
 host, cdn-widgetsrepository.yotpo.com, direct
 host, cdn.playersupport.riotgames.com, direct
 host, cdn.techcommunity.microsoft.com, direct
